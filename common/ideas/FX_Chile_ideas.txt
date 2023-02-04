@@ -10,7 +10,7 @@ ideas = {
 			original_tag = "CHL"
 			}
 
-			picture = HON_bad_stability
+			picture = generic_disjointed_gov
 			modifier = {
 				political_power_factor = -0.5	
 			}
@@ -34,7 +34,7 @@ ideas = {
 			original_tag = "CHL"
 			}
 
-			picture = generic_economic_turmoil
+			picture = KTG_Industrial_Crisis_Town
 			modifier = {
 				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.25

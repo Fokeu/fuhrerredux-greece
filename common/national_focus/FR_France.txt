@@ -1295,7 +1295,7 @@ focus_tree = {
 	# African Missionaries
 	focus = {
 		id = fra_africa_missionary
-		icon = GFX_goal_generic_bible
+		icon = GFX_BEL_Improve_Catholic_Relations
 		cost = 2
 		x = 2
 		y = 1
@@ -1402,11 +1402,6 @@ focus_tree = {
 			}
 			GER = {
 				has_capitulated = no
-			}
-		}
-		bypass = {
-			RHI = {
-				is_subject = no
 			}
 		}
 		ai_will_do = {
@@ -4573,7 +4568,7 @@ focus_tree = {
 	# Alone We are Weak
 	focus = {
 		id = fra_alone_weak
-		icon = GFX_goal_FRA_Cut_Off_Capitalists
+		icon = GFX_goal_generic_build_navy
 		x = 1
 		y = 1
 		cost = 5

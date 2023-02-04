@@ -3,6 +3,7 @@ ideas = {
 	# Country ideas
 	##############
 	country = {
+		#STARTING
 		GRE_abysmal_economy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_abysmal_economy"}
 			picture = GRE_debt
@@ -52,6 +53,522 @@ ideas = {
 				training_time_army_factor = -0.10
 				army_org_factor = 0.05
 				stability_factor = 0.05
+			}
+		}
+
+		GRE_george_is_bacc = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea george_is_bacc :3"}
+			picture = GRE_george
+		}
+
+		GRE_golden_dawn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_golden_dawn"}
+			picture = GRE_golden_dawn
+		}
+
+		#OP SHIT
+
+		GRE_third_greek_generation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_third_greek_generation"}
+			picture = GRE_thirdgeneration
+			modifier = {
+				army_morale_factor = 0.3
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		GRE_rebuilding_for_tommorow = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_rebuilding_for_tommorow"}
+			picture = GRE_rebuilding
+			modifier = {
+				monthly_population = 0.05
+				army_core_defence_factor = 0.05
+				stability_weekly = 0.1
+			}
+		}
+
+		GRE_hellas_of_the_future = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_hellas_of_the_future"}
+			picture = GRE_future
+			modifier = {
+				industrial_capacity_factory = 0.07
+				industrial_capacity_dockyard = 0.07
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		GRE_diplomatic_miracle = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea diplomatic_miracle"}
+			picture = GRE_hellenoturkism
+			modifier = {
+				stability_weekly = 0.05
+				enemy_declare_war_tension = 0.2
+				enemy_justify_war_goal_time = 0.5
+				send_volunteer_size = 4
+			}
+		}
+
+		GRE_true_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_greece_rebornpog"}
+			picture = GRE_pavingtheway
+			modifier = {
+				industrial_capacity_factory = 0.03
+				industry_repair_factor = 0.07
+				resistance_activity = -0.2
+				trade_opinion_factor = 0.1
+			}
+		}
+
+		GRE_onwards = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_greece_rebornpog"}
+			picture = GRE_onward
+			modifier = {
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				industrial_capacity_factory = 0.03
+				industry_repair_factor = 0.07
+			}
+		}
+
+		#FOCUS
+
+		GRE_encouraging_discrimination = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_encouraging_discrimination"}
+			picture = GRE_officers
+			modifier = {
+				conscription_factor = -0.07
+			}
+		}
+
+		GRE_centralization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_centralization"}
+			picture = GRE_officers
+			modifier = {
+				political_power_gain = 0.3
+			}
+		}
+
+		GRE_corporatismm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_corporatismm"}
+			picture = GRE_officers
+			modifier = {
+				global_building_slots = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		GRE_hellenization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_hellenization"}
+			picture = GRE_minority
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.10
+			}
+		}
+
+		GRE_healthcare_reform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_hellenization"}
+			picture = GRE_minority
+			modifier = {
+				monthly_population = 0.03
+			}
+		}
+
+		GRE_economic_protectionism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_economic_protectionism"}
+			picture = GRE_minority
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+
+		GRE_state_religion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_state_religion"}
+			picture = GRE_minority
+			modifier = {
+				drift_defence_factor = 0.25
+			}
+		}
+
+		GRE_acceptance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_acceptance"}
+			picture = GRE_minority
+			modifier = {
+				stability_factor = -0.20
+			}
+		}
+
+		GRE_decentralization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_decentralization"}
+			picture = GRE_gov
+			modifier = {
+				surrender_limit = 0.2
+			}
+		}
+
+		GRE_mixed_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_mixed_economy"}
+			picture = GRE_law
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		GRE_equality_wholesome = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_equality_wholesome"}
+			picture = GRE_minority
+			modifier = {
+				war_support_factor = -0.15
+			}
+		}
+
+		GRE_idp = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_idp"}
+			picture = GRE_factory
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		GRE_laissez_faire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_laissez_faire"}
+			picture = GRE_law
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		GRE_cosmopolitanism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_cosmopolitanism"}
+			picture = GRE_gov
+			modifier = {
+				stability_factor = -0.25
+				conscription_factor = 0.07
+				war_support_factor = -0.15
+			}
+		}
+
+		GRE_rights_of_woman = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_ights_of_woman"}
+			picture = GRE_officers
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+
+		GRE_rights_of_worker = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_rights_of_worker"}
+			picture = GRE_law
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		GRE_nationalism_schools = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_nationalism_schools"}
+			picture = GRE_soldiers
+			modifier = {
+				recruitable_population_factor = 0.3
+			}
+		}
+
+		GRE_steel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_steel"}
+			picture = GRE_factory
+			modifier = {
+					industrial_capacity_dockyard = 0.1
+					industrial_capacity_factory = 0.06
+					industry_repair_factor = 0.1
+			}
+		}
+
+		GRE_emergency_conversion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_emergency_conversion"}
+			picture = GRE_factory
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -1
+			}
+		}
+
+		GRE_all_out = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_emergency_conversion"}
+			picture = GRE_soldiers
+			modifier = {
+				army_morale = 5
+			}
+		}
+
+		GRE_repair = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_repair"}
+			picture = GRE_factory
+			modifier = {
+				industry_repair_factor = 0.5
+			}
+		}
+
+		GRE_third_rome = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_third_rome"}
+			picture = GRE_soldiers
+			modifier = {
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+			}
+		}
+
+		GRE_megali = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_megali"}
+			picture = GRE_soldiers
+			modifier = {
+				army_attack_factor = 0.2
+			}
+		}
+
+		GRE_open_borders = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_open_borders"}
+			picture = GRE_factory
+			modifier = {
+				production_speed_rail_way_factor = 0.3
+				production_speed_infrastructure_factor = 0.3
+			}
+		}
+
+		GRE_open_borders2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_open_borders"}
+			picture = GRE_factory
+			modifier = {
+				production_speed_rail_way_factor = 0.3
+				production_speed_infrastructure_factor = 0.3
+				local_resources_factor = 0.1
+			}
+		}
+
+		GRE_stand_strong = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_stand_strong"}
+			picture = GRE_soldiers
+			modifier = {
+				army_defence_factor = 0.3
+			}
+		}
+
+		GRE_abysmal_economy2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_abysmal_economy2"}
+			picture = GRE_debt
+			modifier = {
+				stability_factor = -0.5
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		GRE_abysmal_economy3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_abysmal_economy3"}
+			picture = GRE_debt
+			modifier = {
+				stability_factor = -0.5
+				consumer_goods_factor = 0.5
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+		GRE_abysmal_economy4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_abysmal_economy4"}
+			picture = GRE_debt
+			modifier = {
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.10
+			}
+		}
+		GRE_economic_withering_of_smyrna2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_economic_withering2"}
+			picture = GRE_economic_withering
+			modifier = {
+				local_resources_factor = -0.20
+				supply_consumption_factor = 0.05
+			}
+		}
+		GRE_autarky = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_autarky"}
+			picture = GRE_factory
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GRE_emergency_procedures = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_emergency_procedures"}
+			picture = GRE_factory
+			modifier = {
+				static_anti_air_hit_chance_factor = 0.1
+				static_anti_air_damage_factor = 0.1
+				tech_air_damage_factor = -0.1
+			}
+		}
+		GRE_agro_modernisation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_agro_modernisation"}
+			picture = GRE_factory
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		GRE_old_ways = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_old_ways"}
+			picture = GRE_soldiers
+			modifier = {
+				monthly_population = 0.1
+				stability_weekly_factor = 0.05
+			}
+		}
+		GRE_we_are_alone = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_we_are_alone"}
+			picture = GRE_soldiers
+			modifier = {
+				army_core_defence_factor = 0.2
+			}
+		}
+		GRE_nothing_against_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_nothing_against_state"}
+			picture = GRE_gov
+			modifier = {
+				surrender_limit = 0.2
+				conscription_factor = 0.1
+			}
+		}
+		GRE_work_for_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_work_for_state"}
+			picture = GRE_factory
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GRE_support_the_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_nothing_against_state"}
+			picture = GRE_soldiers
+			modifier = {
+				targeted_modifier = {
+					tag = TUR
+					attack_bonus_against = 0.01
+				}
+			}
+		}
+		GRE_perioikoi = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_the_perioikoi"}
+			picture = GRE_gov
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.10
+			}
+		}
+		GRE_ares = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_operation_ares"}
+			picture = GRE_soldiers
+			modifier = {
+				enemy_justify_war_goal_time = -0.2
+				justify_war_goal_time = -0.7
+			}
+		}
+		GRE_agoge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_agoge"}
+			picture = GRE_soldiers
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.1
+			}
+		}
+		GRE_molon_labe = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_molon_labe"}
+			picture = GRE_soldiers
+			modifier = {
+				surrender_limit = 0.2
+			}
+		}
+		GRE_spartiate = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_spartiate"}
+			picture = GRE_gov
+			modifier = {
+				army_org = 7
+			}
+		}
+		GRE_infant_selection = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_law
+			modifier = {
+				conscription_factor = 0.1
+				monthly_population = -0.02
+			}
+		}
+		GRE_honour_ancestors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				army_morale = 7
+			}
+		}
+		GRE_slavery = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_gov
+			modifier = {
+				stability_weekly = -0.04
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		GRE_legacy_leonidas = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				surrender_limit = 0.4
+				stability_weekly = 0.05
+				army_defence_factor = 0.2
+			}
+		}
+		GRE_total_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				surrender_limit = 0.4
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
+		GRE_scorched_earth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				army_speed_factor = 0.2
+				army_morale_factor = 0.2
+				army_attack_factor = 0.2
+			}
+		}
+		GRE_to_ashes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				production_speed_buildings_factor = 0.3 
+				production_factory_efficiency_gain_factor = 0.3
+				production_factory_max_efficiency_factor = 0.3
+				monthly_population = -0.05
+			}
+		}
+		GRE_chaos_in_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				set_rule = { can_justify_wargoals = no }
+			}
+		}
+		GRE_fallen_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRE_infant_selection"}
+			picture = GRE_soldiers
+			modifier = {
+				set_rule = { can_not_declare_war = yes }
+				enemy_justify_war_goal_time = 1000
 			}
 		}
 	}
@@ -168,12 +685,15 @@ ideas = {
 	weapons_manufacturer = {
 		designer = yes
 
-		greek_powder = {
+		greek_powder = { #PYRKAL
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea greek_powder" }
-			allowed = { original_tag = GRE }
+			allowed = {
+				original_tag = GRE 
+				has_completed_focus = GRE_pyrkal
+			}
 			traits = { infantry_equipment_producer_offense_1 }
 			research_bonus = {
-				infantry_weapons = 0.1
+				infantry_weapons = 0.2
 			}
 		}
 
@@ -317,6 +837,85 @@ ideas = {
 			traits = { nav_cas_producer_mass_0 }
 			research_bonus = {
 				air_equipment = 0.1
+			}
+		}
+	}
+	
+	theorist = {	
+		GRE_Theodoros_Manetas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Theodoros_Manetas" }
+			allowed = { original_tag = GRE }
+			traits = { land_doctrine_theorist }
+			cost = 175
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+		}
+
+		GRE_Christodoulos_Tsigantes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Christodoulos_Tsigantes" }
+			allowed = { original_tag = GRE }
+			traits = { land_doctrine_theorist }
+			cost = 175
+			research_bonus = {
+				cat_superior_firepower = 0.15
+			}
+		}
+
+		GRE_Georgios_Stanotas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Georgios_Stanotas" }
+			allowed = { original_tag = GRE }
+			traits = { land_doctrine_theorist }
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+		}
+		
+		GRE_Theodoros_Lymperakis = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Theodoros_Lymperakis" }
+			allowed = { original_tag = GRE }
+			traits = { naval_doctrine_theorist }
+			cost = 175
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
+		}
+		
+		GRE_Konstantinos_Oikonomou = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Konstantinos_Oikonomou" }
+			allowed = { original_tag = GRE }
+			traits = { naval_doctrine_theorist }
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
+		}
+		
+		GRE_Ioannis_Kellas = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Ioannis_Kellas" }
+			allowed = { original_tag = GRE }
+			traits = { air_doctrine_theorist }
+			research_bonus = {
+				air_doctrine = 0.1
+			}
+		}
+		
+		GRE_Nicholas_Christofilos = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Nicholas_Christofilos" }
+			allowed = { original_tag = GRE }
+			traits = { nuclear_theorist }
+			cost = 200
+			research_bonus = {
+				nuclear = 0.1
+			}
+		}
+		
+		GRE_Demetrius_Hondros = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GRE_Demetrius_Hondros" }
+			allowed = { original_tag = GRE }
+			traits = { rocket_theorist }
+			cost = 200
+			research_bonus = {
+				rocketry = 0.1
 			}
 		}
 	}

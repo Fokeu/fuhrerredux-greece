@@ -1,48 +1,62 @@
 #############################
 #       Hellas Events       #
 #############################
-#     Made by BobRossHD     #
+#     Made by Fokel     #
 #############################
 
 add_namespace = gre
+add_namespace = grepeace
+add_namespace = gresoc
+add_namespace = greeek
+add_namespace = crisis
 
 ### Introduction Event
 
-country_event = {
+country_event = { #intro event
 	id = gre.0
 	immediate = {log = "[GetDateText]: [Root.GetName]: event gre.0"}
 	title = gre.0.t
 	desc = gre.0.d
-	picture = Megali_Idea
-	
+
 	trigger = {
 		tag = GRE
 	}
 
-	mean_time_to_happen = { days = 3 }
-    	fire_only_once = yes
-	
-	option = {
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = { #I KNOW WHAT I AM DOING!
 		name = gre.0.a
-		add_political_power = -15
-		hidden_effect = {
-			country_event = {
-				id = gre.1
-			}
+		add_to_variable = { golden_dawn_influence = 20 }
+	}
+	option = { #I DONT KNOW WHAT I AM DOING!
+		name = gre.0.b
+		add_to_variable = { golden_dawn_influence = 20 }
+		country_event = {
+			id = gre.1
 		}
 	}
 }
 
-country_event = {
+#GUIDE
+country_event = { 
 	id = gre.1
 	title = gre.1.t
 	desc = gre.1.d
-	picture = Megali_Idea
 	
 	is_triggered_only = yes
 
 	option = {
 		name = gre.1.a
+	}
+	option = {
+		name = gre.1.b
+		country_event = {
+			id = gre.19
+		}
 	}
 }
 
@@ -60,6 +74,11 @@ country_event = {
 
 	trigger = {
 		is_subject = no
+		tag = GRE
+	}
+
+	mean_time_to_happen = {
+		days = 84
 	}
 
 	option = {
@@ -99,3 +118,1076 @@ country_event = {
 		}
 	}
 }
+
+#elections
+country_event = {
+	id = gre.4 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.4 FROM = [From.GetName]" }
+	title = gre.4.t
+	desc = gre.4.d
+	picture = GFX_report_event_GRE_crowd2
+
+	trigger = {
+		tag = GRE
+		date > 1936.2.28
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.4.a
+		complete_national_focus = GRE_eek
+		set_country_flag = GRE_path_eek
+		hidden_effect = {
+			set_politics = {
+				ruling_party = market_liberal
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+	option = {
+		name = gre.4.b
+		complete_national_focus = GRE_liberals
+		set_country_flag = GRE_path_lpf
+		hidden_effect = {
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+	option = {
+		name = gre.4.c
+		complete_national_focus = GRE_populists
+		set_country_flag = GRE_path_lpf
+		hidden_effect = {
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+	option = {
+		name = gre.4.e
+		complete_national_focus = GRE_freethinker
+		set_country_flag = GRE_path_lpf
+		hidden_effect = {
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+	option = {
+		name = gre.4.f
+		set_country_flag = GRE_path_socialists
+		hidden_effect = {
+			set_politics = {
+				ruling_party = collectivist	
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			country_event = {
+				id = gresoc.4
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gre.5 #THE INCIDENT
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.5 FROM = [From.GetName]" }
+	title = gre.5.t
+	desc = gre.5.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.9.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.10
+		}
+		set_country_flag = GRE_incident
+	}
+}
+
+country_event = {
+	id = gre.6 #KING RETURNS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.6.t
+	desc = gre.6.d
+	picture = GFX_report_event_GRE_athens
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.6.a
+		add_political_power = 50
+		add_stability 0.03
+		add_ideas = GRE_george_is_bacc
+		set_cosmetic_tag = GRE_kingdom
+	}
+}
+
+country_event = {
+	id = gre.7 #FREE GUNS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.7.t
+	desc = gre.7.d
+	picture = GFX_report_event_generic_diplomacy3
+
+	trigger = {
+		tag = GRE
+		date > 1936.6.10
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.7.a
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 7
+		}
+		tooltip = add_5_to_var_tt
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 200
+			producer = TUR
+		}
+		add_political_power = -10
+	}
+	option = {
+		name = gre.7.b
+	}
+}
+
+country_event = {
+	id = gre.8 #NATIONALIST BULLSHIT ON WALLS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.8.t
+	desc = gre.8.d
+	picture = GFX_report_event_GRE_protest
+
+	trigger = {
+		tag = GRE
+		date > 1936.3.15
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.8.a
+		add_political_power = -20
+	}
+	option = {
+		name = gre.8.b
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 7
+		}
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = gre.9 #INTERNATIONAL SUPPORT
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.9.t
+	desc = gre.9.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.9.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = FRA
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = ITA
+		}
+	}
+}
+
+country_event = {
+	id = gre.10 #GERMANY_BAD
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.10 FROM = [From.GetName]" }
+	title = gre.10.t
+	desc = gre.10.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.10.a
+		TUR = {
+			add_political_power = -50
+		}
+		GER = {
+			add_stability = -0.03
+		}
+	}
+}
+
+country_event = {
+	id = gre.11 #EXECUTION
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.11 FROM = [From.GetName]" }
+	title = gre.11.t
+	desc = gre.11.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.11.a
+		TUR = {
+			add_manpower = -1
+		}
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = gre.12 #MILITIA QUESTION
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.11 FROM = [From.GetName]" }
+	title = gre.12.t
+	desc = gre.12.d
+	picture = GFX_greekevent_golden_dawn
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.12.a #FULL INTEGRATION
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 17
+		}
+		tooltip = add_15_to_var_tt
+		add_manpower = 10000
+		add_stability = -0.03
+	}
+	option = {
+		name = gre.12.b #SUPPORT
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 7
+		}
+		add_political_power = -15
+		tooltip = add_5_to_var_tt
+	}
+}
+
+country_event = {
+	id = gre.13 #ANTI JEW MOMENT
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.13 FROM = [From.GetName]" }
+	title = gre.13.t
+	desc = gre.13.d
+	picture = GFX_report_event_generic_big_city
+
+	trigger = {
+		tag = GRE
+		date > 1937.1.5
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.13.a
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 7
+		}
+		tooltip = add_5_to_var_tt
+		if = {
+			limit = {
+				check_variable = { golden_dawn_influence < 101 }
+			}
+			country_event = {
+				id = GRE.15
+			}
+		}
+	}
+	option = {
+		name = gre.13.b
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = -7
+		}
+		tooltip = remove_5_from_var_tt
+		if = {
+			limit = {
+				check_variable = { golden_dawn_influence < 101 }
+			}
+			state_event = {
+				id = GRE.15
+			}
+		}
+	}
+}
+
+country_event = {
+	id = gre.14 #ZEUS Is BACC
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.14 FROM = [From.GetName]" }
+	title = gre.14.t
+	desc = gre.14.d
+	picture = GFX_report_event_GRE_hellenism
+
+	trigger = {
+		tag = GRE
+		date > 1936.8.29
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.14.a
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 7
+		}
+		add_stability = -0.2
+		add_political_power = 40
+	}
+	option = {
+		name = gre.14.b
+		add_stability = 0.2
+	}
+}
+
+country_event = {
+	id = gre.15 #GOLDEN DAWN TAKEOWER
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.15 FROM = [From.GetName]" }
+	title = gre.15.t
+	desc = gre.15.d
+	picture = GFX_greekevent_golden_dawn
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.15.a
+		set_country_flag = GRE_golden_dawn_off
+		remove_ideas = GRE_golden_dawn
+		set_politics = {
+			ruling_party = valkist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		country_event = {
+    		id = gre.23
+    	    days = 3
+		}
+	}
+}
+
+country_event = {
+	id = gre.16 #ENTENTE SUPPORT
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.16 FROM = [From.GetName]" }
+	title = gre.16.t
+	desc = gre.16.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.16.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 400
+			producer = ITA
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 400
+			producer = FRA
+		}
+	}
+}
+
+country_event = {
+	id = gre.23 #SPARTA DED? IT WAS NUMBER 17 BUT IT ALWAYS CRASHED BECAUSE OF IT I DON'T KNOW WHY
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.23 FROM = [From.GetName]" }
+	title = gre.23.t
+	desc = gre.23.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #SPARTA
+		name = gre.23.a
+		complete_national_focus = GRE_golden_dawn_focus
+	}
+		option = { #EGDY BS
+		name = gre.23.b
+		set_politics = {
+			ruling_party = national_populists
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+	}
+}
+
+country_event = {
+	id = gre.18 #TRIP TO HYPERBOREA
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.11 FROM = [From.GetName]" }
+	title = gre.18.t
+	desc = gre.18.d
+	picture = GFX_report_event_GRE_hellenism
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.18.a
+		add_state_core = 911
+		add_state_core = 101
+		add_research_slot = 2
+	}
+}
+
+country_event = { #WHAT PATH SHOULD I PICK?
+	id = gre.19
+	title = gre.19.t
+	desc = gre.19.d
+	
+	is_triggered_only = yes
+
+	option = {
+		name = gre.19.a
+	}
+}
+
+country_event = {
+	id = gre.20 #RESISTANCE IN SMYRNA
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.20.t
+	desc = gre.20.d
+	picture = GFX_report_event_GRE_army
+
+	trigger = {
+		tag = GRE
+		date > 1936.11.7
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.20.a
+		add_to_variable = {
+			var = golden_dawn_influence
+			value = 17
+		}
+		tooltip = add_15_to_var_tt
+	}
+	option = {
+		name = gre.20.b
+	}
+}
+
+country_event = {
+	id = gre.21 #FALL
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.21.t
+	desc = gre.21.d
+	picture = GFX_report_event_GRE_army
+
+	trigger = {
+		tag = .
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.21.a
+		load_focus_tree = aughhhhhhhugugugugugugugug
+		add_ideas = GRE_fallen_state
+	}
+}
+
+country_event = {
+	id = gre.22 #COUP
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.9 FROM = [From.GetName]" }
+	title = gre.22.t
+	desc = gre.22.d
+	picture = GFX_report_event_GRE_army
+
+	trigger = {
+		tag = .
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = gre.22.a
+		load_focus_tree = aughhhhhhhugugugugugugugug
+		add_ideas = GRE_chaos_in_state
+		remove_ideas = GRE_scorched_earth
+		remove_ideas = GRE_total_war
+	}
+}
+
+####################################################################################
+####################################################################################
+##################################### CRISIS #######################################
+####################################################################################
+####################################################################################
+
+country_event = {
+	id = crisis.1 #ABOLISHMENT OF ISC 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crisis.1 FROM = [From.GetName]" }
+	title = crisis.1.t
+	desc = crisis.1.d
+	picture = GFX_report_event_GRE_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GRE
+		date > 1936.5.30
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = crisis.1.a
+		GRE = {
+				transfer_state = 341
+		}
+		TUR = {
+			transfer_state = 347
+			transfer_state = 776
+			transfer_state = 340
+		}
+		341 = {
+			set_demilitarized_zone = yes
+		}
+		347 = {
+			set_demilitarized_zone = yes
+		}
+		776 = {
+			set_demilitarized_zone = yes
+		}
+		340 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
+country_event = {
+	id = crisis.2 #START OF THE CRISIS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crisis.2 FROM = [From.GetName]" }
+	title = crisis.2.t
+	desc = crisis.2.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GRE
+		date > 1936.6.20
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = crisis.2.a
+		complete_national_focus = GRE_smyrna_crisis
+		341 = {
+			set_demilitarized_zone = no
+		}
+		347 = {
+			set_demilitarized_zone = no
+		}
+		776 = {
+			set_demilitarized_zone = no
+		}
+		340 = {
+			set_demilitarized_zone = no
+		}
+	}
+}
+
+#######
+
+country_event = {
+	id = crisis.3 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event crisis.3 FROM = [From.GetName]" }
+	title = crisis.3.t
+	desc = crisis.3.d
+	picture = GFX_report_event_GRE_riot
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GRE
+		date > 1937.2.27 #WAR BEGINS!
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = crisis.3.a
+		TUR = {
+			declare_war_on = {
+                target = GRE
+                type = annex_everything
+            }
+		}
+		set_country_flag = GRE_warwithturkey
+		remove_ideas = GRE_golden_dawn
+		activate_mission = GRE_greek_turkish_war_timer
+	}
+}
+
+
+######## NEEDS TO BE FIXED ############
+
+country_event = {
+	id = grepeace.1 #RIP OTTOMAN EMPIRE - LIBERALS, POPULISTS, FREETHINKERS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.peace1 FROM = [From.GetName]" }
+	title = grepeace.1.t
+	desc = grepeace.1.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GRE
+		GRE = {
+			has_country_flag = GRE_warwithturkey 
+		    has_country_flag = GRE_path_lpf
+			has_war_with = TUR
+			is_puppet = no
+		}
+		TUR = {
+			surrender_progress > 0.5
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = grepeace.1.a
+		white_peace = TUR
+		set_country_flag = GRE_LIBCONFRE_victory
+		remove_country_flag = GRE_warwithturkey
+		hidden_effect = {
+			GRE = {
+				set_rule = { allow_join_faction = yes }
+				transfer_state = 776
+				transfer_state = 340
+				transfer_state = 347
+				transfer_state = 1034
+				white_peace = TUR
+			}
+			TUR = {
+				set_politics = {
+					set_rule = { allow_join_faction = yes }
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = TUR_junta_long
+					name = TUR_junta
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = grepeace.2 #RIP OTTOMAN EMPIRE - EEK
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gre.peace2 FROM = [From.GetName]" }
+	title = grepeace.2.t
+	desc = grepeace.2.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GRE
+		GRE = {
+			has_country_flag = GRE_warwithturkey 
+		    has_country_flag = GRE_path_eek
+			has_war_with = TUR
+			is_puppet = no
+		}
+		TUR = {
+			surrender_progress > 0.9
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		set_rule = { allow_join_faction = yes }
+		name = grepeace.2.a
+		remove_country_flag = GRE_warwithturkey
+		set_country_flag = GRE_EEK_victory
+		GRE = {
+			annex_country = TUR
+		}
+	}
+}
+
+country_event = {
+	id = grepeace.3 #RIP OTTOMAN EMPIRE - SOC
+	immediate = { log = "[GetDateText]: [Root.GetName]: event grepeace.3 FROM = [From.GetName]" }
+	title = grepeace.3.t
+	desc = grepeace.3.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GRE
+		GRE = {
+			has_country_flag = GRE_warwithturkey 
+		    has_country_flag = GRE_path_socialists
+			has_war_with = TUR
+			is_puppet = no
+		}
+		TUR = {
+			surrender_progress > 0.7
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = grepeace.3.a
+		set_country_flag = GRE_SOC_victory
+		white_peace = TUR
+		puppet = TUR
+		set_rule = { allow_join_faction = yes }
+		TUR = {
+			set_rule = { allow_join_faction = yes }
+			set_politics = {
+				ruling_party = collectivist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+				long_name = TUR_collectivist_long
+				name = TUR_collectivist
+			}
+			load_focus_tree = turkey_rip
+		}
+	}
+}
+
+country_event = { #TURKEY WINS
+	id = grepeace.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event grepeace.4 FROM = [From.GetName]" }
+	title = grepeace.4.t
+	desc = grepeace.4.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = GRE
+		GRE = {
+			has_country_flag = GRE_warwithturkey 
+			has_war_with = TUR
+			is_puppet = no
+		}
+		OR = {
+			TUR = {
+				controls_state = 340
+			}
+			GRE = {
+				surrender_progress > 0.4
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 0
+	}
+
+	option = {
+		name = grepeace.4.a
+        white_peace = TUR
+		set_rule = { allow_join_faction = yes }
+		TUR = {
+			set_rule = { allow_join_faction = yes }
+			transfer_state = 341
+			transfer_state = 342
+			transfer_state = 187
+			transfer_state = 339
+			transfer_state = 763
+		}
+		remove_country_flag = GRE_warwithturkey
+	}
+}
+
+country_event = { #WAR IS STUCK AND TURKEY WINS
+	id = grepeace.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event grepeace.4 FROM = [From.GetName]" }
+	title = grepeace.5.t
+	desc = grepeace.5.d
+	picture = GFX_report_event_GRE_crowd2
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NIGERIABALLSHD
+	}
+
+	option = {
+		name = grepeace.5.a
+		set_rule = { allow_join_faction = yes }
+		TUR = {
+			transfer_state = 339
+			transfer_state = 341
+			transfer_state = 342
+			set_rule = { allow_join_faction = yes }
+		}
+		white_peace = TUR
+		remove_country_flag = GRE_warwithturkey
+	}
+}
+
+##################
+
+country_event = {
+	id = gresoc.1 #HIPPITY HOPPITY ALBANIA IS NOW MY PROPERTY HAHAHA
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gresoc.1 FROM = [From.GetName]" }
+	title = gresoc.1.t
+	desc = gresoc.1.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gresoc.1.a #yes
+	}
+
+	option = {
+		name = gresoc.1.b #no
+		create_wargoal = {
+			type = annex_everything
+			target = ALB
+		}
+		ai_chance = {
+            base = 0
+        }
+	}
+}
+
+country_event = {
+	id = gresoc.2 #ITALIAN ISLANDS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gresoc.2 FROM = [From.GetName]" }
+	title = gresoc.2.t
+	desc = gresoc.2.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gresoc.2.a #yes
+		ai_chance = {
+            base = 70
+        }
+	}
+
+	option = {
+		name = gresoc.2.b #no
+		GRE = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+			}
+		}
+		ai_chance = {
+            base = 30
+			modifier = {
+				factor = -20
+				ITA = {
+					surrender_progress > 0.2
+				}
+			}
+			modifier = {
+				factor = -1000
+				ITA = {
+					surrender_progress > 0.5
+				}
+			}
+        }
+	}
+}
+
+country_event = {
+	id = gresoc.3 #ITALIAN ISLANDS
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gresoc.3 FROM = [From.GetName]" }
+	title = gresoc.3.t
+	desc = gresoc.3.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gresoc.3.a #yes
+		ai_chance = {
+            base = 70
+        }
+	}
+
+	option = {
+		name = gresoc.3.b #no
+		GRE = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+			}
+		}
+		ai_chance = {
+            base = 30
+			modifier = {
+				factor = -10
+				ENG = {
+					surrender_progress > 0.2
+				}
+			}
+			modifier = {
+				factor = -30
+				ENG = {
+					surrender_progress > 0.5
+				}
+			}
+        }
+	}
+}
+
+country_event = {
+	id = gresoc.4 #ENPOWER A SOCIALIST WING
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gresoc.4 FROM = [From.GetName]" }
+	title = gresoc.4.t
+	desc = gresoc.4.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = gresoc.4.a #LIBERAL SOCIALISTS
+		complete_national_focus = GRE_liberal_socialism
+		hidden_effect = {
+			set_politics = {
+				ruling_party = libertarian_socialist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+		}
+	}
+
+	option = {
+		name = gresoc.4.b #HARDLINERS
+		complete_national_focus = GRE_hardliners
+	}
+}
+
+######## EEK ########
+country_event = {
+	id = greeek.1 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event greeek.1 FROM = [From.GetName]" }
+	title = greeek.1.t
+	desc = greeek.1.d
+	picture = GFX_report_event_GRE_crowd2
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = greeek.1.a 
+	}
+}
+

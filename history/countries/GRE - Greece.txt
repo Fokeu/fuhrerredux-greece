@@ -1,6 +1,14 @@
 capital = 47
 
-oob = "GRE"
+oob = "GRE_1936"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "GRE_1936_naval_mtg"
+	else = {
+		set_naval_oob = "GRE_1936_naval_legacy"
+	}
+}
 
 set_research_slots = 3
 set_stability = 0.35
@@ -17,6 +25,7 @@ add_ideas = {
 	GRE_anathema
 	GRE_venizelist_officers
 	GEN_entente_member
+	GRE_golden_dawn
 }
 
 set_technology = {
@@ -27,42 +36,25 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	trench_warfare = 1
+	early_fighter = 1
+	early_bomber = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		iw_small_airframe = 1
-		aa_lmg = 1
-		engines_1 = 1
-		early_bombs = 1
-	}
-	else = {
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-		}
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
 	}
 }
-
-if = {
-  limit = { has_dlc = "No Step Back" }
-  set_technology = {
-    gwtank_chassis = 1
-  }
-	else = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "GRE_1936_naval_mtg"
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -73,23 +65,12 @@ if = {
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
+		basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
 		pre_dreadnoughts = 1
 		mtg_transport = 1
-	}
-
-	else = {
-		set_naval_oob = "GRE_1936_naval_legacy"
-		set_technology = {
-			early_submarine = 1
-			early_destroyer = 1
-			early_light_cruiser = 1
-			early_heavy_cruiser = 1
-			early_battleship = 1
-			transport = 1
-		}
 	}
 }
 
@@ -102,17 +83,17 @@ set_politics = {
 }
 
 set_popularities = {
-  vanguardist = 0
-  collectivist = 3
-  libertarian_socialist = 5
-  social_democrat = 4
-  social_liberal = 37
-  market_liberal = 22
-  social_conservative = 19
-  authoritarian_democrat = 2
-  paternal_autocrat = 3
-  national_populist = 5
-  valkist = 0
+	vanguardist = 0 #SOME SHIT
+	collectivist = 9 #Socialist Labour Party of Greece
+	libertarian_socialist = 10 #Socialist Labour Party of Greece
+	social_democrat = 1  #SOME SHIT
+	social_liberal = 20 #liberal party
+	market_liberal = 15 #EEK
+	social_conservative = 20 #People's Party
+	authoritarian_democrat = 0 #SOME SHIT
+	paternal_autocrat = 11 #FREETHINKERS
+	national_populist = 7 #GOLDEN DAWN
+	valkist = 7 #GOLDEN DAWN
 }
 
 set_stability = 0.9
@@ -272,9 +253,16 @@ if = {
 	}
 }
 
+set_rule = { allow_join_faction = no }
 
 
 
+recruit_character = GRE_Alexandros_Papanastasiou #LIBERALS AND START
+recruit_character = GRE_Nikos_Zachariadis #SOCIALISTS
+recruit_character = GRE_Konstantinos_Tsaldaris #CONSERVATIVES
+recruit_character = GRE_Panagiotis_Kanellopoulos #EEK
+recruit_character = GRE_Ioannis_Michail_Metaxas #FREETHINKER
+#
 recruit_character = GRE_Eleftherios_Kyriakou_Venizelos
 recruit_character = GRE_Themistoklis_Sofoulis
 recruit_character = GRE_Sofoklis_Venizelos
@@ -282,10 +270,8 @@ recruit_character = GRE_Georgios_Kondylis
 recruit_character = GRE_Ioannis_Theotokis
 recruit_character = GRE_Georgios_Kafantaris
 recruit_character = GRE_Georgios_Papandreou
-recruit_character = GRE_Panagiotis_Kanellopoulos
 recruit_character = GRE_Sotirios_Gotzamanis
 recruit_character = GRE_Alexandros_Othonaios
-recruit_character = GRE_Ioannis_Michail_Metaxas
 recruit_character = GRE_Alexandros_Koryzis
 recruit_character = GRE_Georgios_Kosmidis
 recruit_character = GRE_Georgios_Poulos
@@ -300,7 +286,6 @@ recruit_character = GRE_Ioannis_Rallis
 recruit_character = GRE_Dimitris_Glinos
 recruit_character = GRE_Stylianos_Gonatas
 recruit_character = GRE_Filippos_Dragoumis
-recruit_character = GRE_Nikos_Ploumpidis
 recruit_character = GRE_Leonidas_Iasonidis
 recruit_character = GRE_Ioannis_Kyrozis
 recruit_character = GRE_Ioannis_Sofianopoulos
@@ -313,7 +298,6 @@ recruit_character = GRE_Nikos_Zachariadis
 recruit_character = GRE_Dimitris_Giotopoulos
 recruit_character = GRE_Andreas_Michalakopoulos
 recruit_character = GRE_Dimitrios_Maximos
-recruit_character = GRE_Alexandros_Papanastasiou
 recruit_character = GRE_Konstantinos_Logothetopoulos
 recruit_character = GRE_Anastasios_Tavoularis
 recruit_character = GRE_Dimitrios_Delivanis
@@ -360,6 +344,7 @@ recruit_character = GRE_Sokratis_Louka_Dimaratos
 recruit_character = GRE_Georgios_Stanotas
 recruit_character = GRE_Sotirios_Moutousis
 recruit_character = GRE_Theodoros_Lymperakis
+recruit_character = GRE_Ioannis_Toumpas
 recruit_character = GRE_Epameinondas_Kavvadias
 recruit_character = GRE_Petros_Voulgaris
 recruit_character = GRE_Dimitrios_Oikonomou
@@ -384,5 +369,4 @@ recruit_character = GRE_Alexandros_Pilatos_Sakellariou
 recruit_character = GRE_Grigorios_Mezeviris
 recruit_character = GRE_Stylianos_Lykoudis
 recruit_character = GRE_Dimitrios_Gounaris
-recruit_character = GRE_Konstantinos_Tsaldaris
 recruit_character = GRE_Konstantinos_Karamanlis

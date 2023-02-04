@@ -7,13 +7,13 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = ISC
 		buildings = {
 			infrastructure = 3
 
 		}
+		add_core_of = ISC
 		add_core_of = TUR
-		set_demilitarized_zone = yes
 		victory_points = {
 			11811 1
 		}

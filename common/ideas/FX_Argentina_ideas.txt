@@ -61,7 +61,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = eng_guided_by_britain
+			picture = generic_goods_red_bonus
 			modifier = {
 				supply_consumption_factor = -0.1
 				consumer_goods_factor = 0.10
@@ -355,7 +355,7 @@ ideas = {
 			original_tag = "ARG"
 			}
 
-			picture = tfv_can_conscription_crisis
+			picture = idea_big_entente_idea
 			modifier = {
 				resistance_activity = -0.1
 				decryption_factor = 0.05
@@ -751,7 +751,16 @@ ideas = {
 		fabricaciones_militares = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fabricaciones_militares"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				infantry_equipment_producer_offense_1
@@ -784,7 +793,16 @@ ideas = {
 		hispano_argentina = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hispano_argentina"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				motorised_equipment_producer_offense_1
@@ -818,7 +836,16 @@ ideas = {
 		seccion_industrial_amasadoras_mecanicas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea seccion_industrial_amasadoras_mecanicas"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				small_tank_producer_offense_1
@@ -852,7 +879,16 @@ ideas = {
 		afne = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea afne"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				cruiser_producer_offense_0
@@ -864,7 +900,16 @@ ideas = {
 		astarsa = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea astarsa"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				small_ship_producer_mass_1
@@ -876,7 +921,16 @@ ideas = {
 		astilleros_alianza = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea astilleros_alianza"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				small_ship_producer_offense_0
@@ -885,10 +939,20 @@ ideas = {
 				naval_equipment = 0.1
 			}
 		}
+		designer = yes
 		fabrica_militar_aviones = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea fabrica_militar_aviones"}
 			allowed = {
-				tag = ARG
+				OR = {
+					tag = ARG
+					tag = FOP
+				}
+			}
+			available = {
+				if = {
+					limit = { tag = FOP }
+					NOT = { country_exists = ARG }
+				}
 			}
 			traits = {
 				fighter_producer_mass_1

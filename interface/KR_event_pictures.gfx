@@ -3487,6 +3487,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Europe/Italy/italy_crowd.png"
 	}
 	spriteType = {
+		name = "GFX_report_event_ITA_pope"
+		texturefile = "gfx/event_pictures/Europe/Italy/report_event_ITA_pope.png"
+	}
+	spriteType = {
 		name = "GFX_report_event_ITA_protest"
 		texturefile = "gfx/event_pictures/Europe/Italy/italy_protest.png"
 	}
@@ -3509,10 +3513,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_ITA_venice"
 		texturefile = "gfx/event_pictures/Europe/Italy/report_event_ITA_venice.png"
-	}
-	spriteType = {
-		name = "GFX_report_event_ITA_pope"
-		texturefile = "gfx/event_pictures/Europe/Italy/report_event_ITA_pope.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_ITA_pope_death"

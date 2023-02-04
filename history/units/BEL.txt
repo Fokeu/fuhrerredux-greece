@@ -47,7 +47,7 @@ division_template = {
 }
 division_template = {
 	name = "Division Coloniale"			# Colonial militia, lower experience, equipment
-	division_names_group = BEL_MLT_01
+	division_names_group = BEL_GAR_01
 
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -157,7 +157,18 @@ units = {
 	}
 }
 
-
+air_wings = {
+	### Aéronautique Militaire Belge -- Brussels (Nivelle)
+	6 = {
+		# 2e Régiment d'Aéronautique 
+		# Consisted of 50 operational Gladiator Is, Hurricanes, CR.42s in 1940
+		# Only had Fairey Fox recon/l bombers that were also used as fighters in 1936, along with trainers
+		fighter_equipment_0 =  {
+			owner = "BEL" 
+			amount = 20
+		}
+	}
+}
 
 ### Starting Production ###
 instant_effect = {
@@ -173,6 +184,15 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
+			creator = "BEL"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
 			creator = "BEL"
 		}
 		requested_factories = 1

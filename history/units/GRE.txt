@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
-	division_names_group = GRE_INF_01
 	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
 	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
 	# Note: sources have all Greek regular infantry as mountain-trained
@@ -18,7 +17,6 @@
 }
 division_template = {
 	name = "Tetrágono Pezikoú" 				# Square Infantry Division
-	division_names_group = GRE_MTN_01
 	# Prior to 1940 mobilization = 1st, 2nd, 8th
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -37,7 +35,6 @@ division_template = {
 }
 division_template = {
 	name = "Merarchía Ippikoú" 			# Cavalry Division
-	division_names_group = GRE_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -56,7 +53,7 @@ units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
 		name = "V Merarchía Pezikoú"
-		location = 12058
+		location = 11842
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -90,7 +87,7 @@ units = {
 	}
 	division = {
 		name = "III Merarchía Pezikoú"
-		location = 4193
+		location = 6895
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -126,7 +123,7 @@ units = {
 	# C Sóma Stratoú
 	division = {
 		name = "XI Merarchía Pezikoú"
-		location = 11818
+		location = 4112
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -198,7 +195,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "GRE"
 		}
 		requested_factories = 1

@@ -525,11 +525,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 215
-			}
-		}
+		highlight_states = { state = 215 }
 
 		allowed = {
 			original_tag = FIN
@@ -577,11 +573,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 213
-			}
-		}
+		highlight_states = { state = 213 }
 
 		allowed = {
 			original_tag = FIN
@@ -630,11 +622,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 208
-			}
-		}
+		highlight_states = { state = 208 }
 
 		allowed = {
 			original_tag = FIN
@@ -681,11 +669,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 195 
-			}
-		}
+		highlight_states = { state = 195 }
 
 		allowed = {
 			original_tag = FIN
@@ -733,11 +717,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = {
-			highlight_state_targets = {
-				state = 910
-			}
-		}
+		highlight_states = { state = 910 }
 
 		allowed = {
 			original_tag = FIN
@@ -784,11 +764,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 909 
-			}
-		}
+		highlight_states = { state = 909 }
 
 		allowed = {
 			original_tag = FIN
@@ -835,11 +811,7 @@ FIN_foreign_policy = {
 
 		icon = infiltrate_state
 		
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 13
-			}
-		}
+		highlight_states = { state = 13 }
 
 		allowed = {
 			original_tag = FIN
@@ -982,11 +954,7 @@ FIN_aland_game = {
 
 		icon = generic_nationalism
 		
-		highlight_states = {
-			highlight_state_targets = {
-				state = 145
-			}
-		}
+		highlight_states = { state = 145 }
 
 		allowed = {
 			original_tag = FIN
@@ -1021,11 +989,7 @@ FIN_aland_game = {
 
 		icon = generic_nationalism
 		
-		highlight_states = {
-			highlight_state_targets = {
-				state = 145
-			}
-		}
+		highlight_states = { state = 145 }
 
 		allowed = {
 			original_tag = FIN

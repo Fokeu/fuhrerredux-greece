@@ -79,6 +79,110 @@ country_event = { # Fate of Cambodia
   }
 }
 
+country_event = { # Fate of China
+  id = annex.4002
+  title = annexation_CHI_CONQ
+  desc = annexation_CHI_CONQ_DESC
+  picture = GFX_report_event_czech_soldiers_01
+  is_triggered_only = yes
+
+  option = { # Puppet KMT
+    name = annex.4002.a
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = no
+      NOT = {
+        tag = JAP
+        country_exists = CHI
+      }
+    }
+    
+    set_temp_variable = { tag_to_release = CHI }
+    release_chinese_government = yes
+  }
+
+  option = { # Puppet MAN
+    name = annex.4002.b
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = no
+      tag = JAP
+      NOT = { country_exists = MAN }
+    }
+    
+    set_temp_variable = { tag_to_release = MAN }
+    release_chinese_government = yes
+  }
+
+  option = { # Transfer
+    name = annex.4002.c
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = no
+      tag = JAP
+      country_exists = MAN
+      is_ally_with = MAN
+    }
+
+    set_temp_variable = { tag_to_release = MAN }
+    transfer_chinese_territories = yes
+  }
+
+  option = { # Integrate
+    name = annex.4002.d
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = yes
+    }
+    set_country_flag = CHI_CONQ
+  }
+
+  option = { # Reorganized Government
+    name = annex.4002.e
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = no
+      NOT = { is_ally_with = MAN }
+      NOT = { is_ally_with = ZHI }
+      NOT = { is_ally_with = CHI }
+    }
+
+    set_temp_variable = { tag_to_release = KMT }
+    transfer_chinese_territories = yes
+    hidden_effect = {
+      KMT = {
+        set_politics = {
+          ruling_party = authoritarian_democrat
+          elections_allowed = no
+        }
+        increase_ruling_party_popularity_by_10 = yes
+      }
+    }
+  }
+
+  option = { # Occupy
+    name = annexation_occupy
+    trigger = {
+      is_chinese_tag = no
+    }
+    ai_chance = {
+      base = 0
+    }
+    occupy_medium_country = yes
+    set_country_flag = CHI_CONQ
+  }
+}
+
 country_event = { # Fate of Indochina
   id = annex.4003
   title = annexation_ICR_CONQ
@@ -247,13 +351,11 @@ country_event = { # Fate of Insulindia
     trigger = {
       tag = PHI
       has_completed_focus = PHI_on_our_own
-      has_government = valkist
     }
 
     ROOT = {
       add_state_claim = 333
       add_state_claim = 334
-      add_state_claim = 335
       add_state_claim = 340
       add_state_claim = 667
       add_state_claim = 785
@@ -461,7 +563,6 @@ country_event = { # Fate of Malaya
     trigger = {
       tag = PHI
       has_completed_focus = PHI_on_our_own
-      has_government = valkist
     }
     ROOT = {
       add_state_claim = 336
@@ -504,15 +605,6 @@ country_event = { # Fate of Manchuria
       is_chinese_tag = no
     }
     set_temp_variable = { tag_to_release = MAN }
-    every_owned_state = {
-      limit = {
-        is_han_chinese_region = yes
-      }
-      var:tag_to_release = {
-        remove_state_claim = PREV 
-        remove_state_core = PREV
-      }
-    }
     release_targeted_tag = yes
   }
 
@@ -569,12 +661,13 @@ country_event = { # Fate of Mongolia
 
   immediate = {
     hidden_effect = {
-      determine_ally_china = yes 
       add_to_temp_array = { core_removal_array = MON }
       remove_all_cores_and_claims_of_tags = yes
       MON = {
         add_state_core = 329
         add_state_core = 330
+        add_state_core = 611
+        add_state_core = 612
         add_state_core = 801
         add_state_core = 935
         add_state_core = 936
@@ -589,22 +682,6 @@ country_event = { # Fate of Mongolia
     name = annex.4011.a
     ai_chance = {
       base = 100
-    }
-    set_temp_variable = { chahar_release_tag = event_target:china_ally_target }
-    if = {
-      limit = {
-        any_country = {
-          tag = v:chahar_release_tag
-          has_full_control_of_state = 608
-        }
-      }
-      every_owned_state = {
-        limit = {
-          is_controlled_chinese_region = yes
-        }
-        transfer_state_to = event_target:china_ally_target
-        add_core_of = event_target:china_ally_target
-      }
     }
     set_temp_variable = { tag_to_release = MON }
     release_targeted_tag = yes
@@ -683,6 +760,7 @@ country_event = { # Fate of Philippines
           promote_leader = yes
           country_leader = {
             ideology = authoritarian_democrat_subtype
+            traits = { }
           }
         }
       }
@@ -763,40 +841,36 @@ country_event = { # Fate of Sabah
     set_country_flag = SABAH_CONQ
   }
 }
+
 country_event = { # Fate of Sichuan
   id = annex.4014
   title = annexation_SCH_CONQ
   desc = annexation_SCH_CONQ_DESC
   picture = GFX_report_event_czech_soldiers_01
   is_triggered_only = yes
+
   immediate = {
     hidden_effect = {
-      determine_ally_china = yes 
+      add_to_temp_array = { core_removal_array = SCH }
+      remove_all_cores_and_claims_of_tags = yes
+      SCH = {
+        add_state_core = 601
+        add_state_core = 605
+        drop_cosmetic_tag = yes
+      }
     }
   }
-  option = { # Give to Allies
+
+  option = { # Puppet
     name = annex.4014.a
     ai_chance = {
       base = 100
     }
     trigger = {
       is_chinese_tag = no
-      has_event_target = china_ally_target
     }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_core_of = SCH 
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-      event_target:china_ally_target = {
-        add_state_core = PREV 
-      }
-		}
+    set_temp_variable = { tag_to_release = SCH }
+    release_targeted_tag = yes
   }
 
   option = { # Integrate
@@ -819,9 +893,6 @@ country_event = { # Fate of Sichuan
 
   option = { # Occupy
     name = annexation_occupy
-    trigger = {
-      is_chinese_tag = no
-    }
     ai_chance = {
       base = 0
     }
@@ -839,7 +910,16 @@ country_event = { # Fate of Shanxxi
 
   immediate = {
     hidden_effect = {
-      determine_ally_china = yes 
+      add_to_temp_array = { core_removal_array = SHX }
+      remove_all_cores_and_claims_of_tags = yes
+      SHX = {
+        add_state_core = 615
+        add_state_core = 621
+        add_state_core = 622
+        add_state_core = 982
+        add_state_core = 983
+        drop_cosmetic_tag = yes
+      }
     }
   }
 
@@ -850,22 +930,9 @@ country_event = { # Fate of Shanxxi
     }
     trigger = {
       is_chinese_tag = no
-      has_event_target = china_ally_target
     }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_core_of = SHX 
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-      event_target:china_ally_target = {
-        add_state_core = PREV 
-      }
-		}
+    set_temp_variable = { tag_to_release = SHX }
+    release_targeted_tag = yes
   }
 
   option = { # Integrate
@@ -891,9 +958,6 @@ country_event = { # Fate of Shanxxi
 
   option = { # Occupy
     name = annexation_occupy
-    trigger = {
-      is_chinese_tag = no 
-    }
     ai_chance = {
       base = 0
     }
@@ -901,6 +965,7 @@ country_event = { # Fate of Shanxxi
     set_country_flag = SHX_CONQ
   }
 }
+
 country_event = { # Fate of Siam
   id = annex.4016
   title = annexation_SIA_CONQ
@@ -959,7 +1024,7 @@ country_event = { # Fate of Siam
 country_event = { # Fate of Sinkiang
   id = annex.4017
   title = annexation_SIK_CONQ
-  desc = annexation_SIK_CONQ_DESC
+  desc = annexation_SHX_CONQ_DESC
   picture = GFX_report_event_czech_soldiers_01
   is_triggered_only = yes
 
@@ -971,11 +1036,10 @@ country_event = { # Fate of Sinkiang
         add_state_core = 287
         add_state_core = 617
         add_state_core = 618
-        add_state_core = 619
+        add_state_core = 618
         add_state_core = 975
         drop_cosmetic_tag = yes
       }
-      determine_ally_china = yes 
     }
   }
 
@@ -990,30 +1054,7 @@ country_event = { # Fate of Sinkiang
     set_temp_variable = { tag_to_release = SIK }
     release_targeted_tag = yes
   }
-  option = { # Give to Allies
-    name = annex.4017.b
-    ai_chance = {
-      base = 100
-    }
-    trigger = {
-      is_chinese_tag = no
-      has_event_target = china_ally_target
-    }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_core_of = SIK
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-      event_target:china_ally_target = {
-        add_state_core = PREV 
-      }
-		}
-  }
+
   option = { # Integrate
     name = annex.4017.b
     ai_chance = {
@@ -1230,6 +1271,26 @@ country_event = { # Fate of Vietnam
     release_targeted_tag = yes
   }
 
+  option = { # Integrate
+    name = annex.4021.b
+    ai_chance = {
+      base = 100
+    }
+    trigger = {
+      is_chinese_tag = yes
+    }
+    hidden_effect = {
+      add_to_temp_array = { core_removal_array = VIN }
+      remove_all_cores_and_claims_of_tags = yes
+    }
+    ROOT = {
+      add_state_core = 286
+      add_state_core = 671
+      add_state_core = 958
+      add_state_core = 961
+    }
+  }
+
   option = { # Occupy
     name = annexation_occupy
     ai_chance = {
@@ -1249,7 +1310,14 @@ country_event = { # Fate of Yunnan
 
   immediate = {
     hidden_effect = {
-      determine_ally_china = yes 
+      add_to_temp_array = { core_removal_array = YUN }
+      remove_all_cores_and_claims_of_tags = yes
+      YUN = {
+        add_state_core = 325
+        add_state_core = 603
+        add_state_core = 1008
+        drop_cosmetic_tag = yes
+      }
     }
   }
 
@@ -1260,22 +1328,9 @@ country_event = { # Fate of Yunnan
     }
     trigger = {
       is_chinese_tag = no
-      has_event_target = china_ally_target
     }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_core_of = YUN
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-      event_target:china_ally_target = {
-        add_state_core = PREV 
-      }
-		}
+    set_temp_variable = { tag_to_release = YUN }
+    release_targeted_tag = yes
   }
 
   option = { # Integrate
@@ -1310,16 +1365,25 @@ country_event = { # Fate of Yunnan
   }
 }
 
-country_event = { # Fate of China
+country_event = { # Fate of Zhili
   id = annex.4022
-  title = annexation_CHI_CONQ
-  desc = annexation_CHI_CONQ_DESC
+  title = annexation_ZHI_CONQ
+  desc = annexation_ZHI_CONQ_DESC
   picture = GFX_report_event_czech_soldiers_01
   is_triggered_only = yes
 
   immediate = {
     hidden_effect = {
-      determine_chinese_releaser = yes 
+      add_to_temp_array = { core_removal_array = ZHI }
+      remove_all_cores_and_claims_of_tags = yes
+      ZHI = {
+        add_state_core = 597
+        add_state_core = 598
+        add_state_core = 606
+        add_state_core = 607
+        add_state_core = 1020
+        drop_cosmetic_tag = yes
+      }
     }
   }
 
@@ -1330,51 +1394,32 @@ country_event = { # Fate of China
     }
     trigger = {
       is_chinese_tag = no
-      has_event_target = china_release_target
     }
-    set_temp_variable = { tag_to_release = event_target:china_release_target }
-    every_owned_state = {
-      limit = {
-        is_controlled_chinese_region = yes
-      }
-      var:tag_to_release = {
-        add_state_claim = prev 
-      }
-    }
-    every_owned_state = {
-      limit = {
-        is_controlled_chinese_region = yes
-        AND = {
-          NOT = {
-            is_claimed_by = ROOT
-            is_core_of = ROOT 
-          }
-        }
-      }
-      var:tag_to_release = {
-        add_state_core = prev 
-      }
-    }
-    release_chinese_government = yes
+    set_temp_variable = { tag_to_release = ZHI }
+    release_targeted_tag = yes
   }
-  option = { #Integrate to Allies
+
+  option = { # Integrate
     name = annex.4022.b
-    trigger = {
-      is_chinese_tag = no
-      has_event_target = china_ally_target
+    ai_chance = {
+      base = 100
     }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_not_claim_or_core_of_ROOT = yes
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-		}
+    trigger = {
+      is_chinese_tag = yes
+    }
+    hidden_effect = {
+      add_to_temp_array = { core_removal_array = ZHI }
+      remove_all_cores_and_claims_of_tags = yes
+    }
+    ROOT = {
+      add_state_core = 597
+      add_state_core = 598
+      add_state_core = 606
+      add_state_core = 607
+      add_state_core = 1020
+    }
   }
+
   option = { # Occupy
     name = annexation_occupy
     ai_chance = {
@@ -1384,7 +1429,7 @@ country_event = { # Fate of China
       is_chinese_tag = no
     }
     occupy_medium_country = yes
-    set_country_flag = CHI_CONQ
+    set_country_flag = ZHI_CONQ
   }
 }
 
@@ -1517,76 +1562,5 @@ country_event = { # The Fate of Sulawesi
     }
     set_country_flag = MOLUCCAS_CONQ
     occupy_small_country = yes
-  }
-}
-
-country_event = { # Fate of Ma Clique
-  id = annex.4025
-  title = annexation_XSM_CONQ
-  desc = annexation_XSM_CONQ_DESC
-  picture = GFX_report_event_czech_soldiers_01
-  is_triggered_only = yes
-
-  immediate = {
-    hidden_effect = {
-      determine_ally_china = yes 
-    }
-  }
-  option = { # Give to allies
-    name = annex.4025.a
-    ai_chance = {
-      base = 100
-    }
-    trigger = {
-      is_chinese_tag = no
-      has_event_target = china_ally_target
-    }
-    every_owned_state = {
-			limit = {
-				is_controlled_chinese_region = yes
-				is_core_of = XSM 
-				if = {
-					limit = { ROOT = { tag = JAP } }
-					NOT = { has_variable = ambition_area_@ROOT }
-				}
-			}
-			transfer_state_to = event_target:china_ally_target
-      event_target:china_ally_target = {
-        add_state_core = PREV 
-      }
-		}
-  }
-
-  option = { # Integrate
-    name = annex.4025.b
-    ai_chance = {
-      base = 100
-    }
-    trigger = {
-      is_chinese_tag = yes
-    }
-    hidden_effect = {
-      add_to_temp_array = { core_removal_array = XSM }
-      remove_all_cores_and_claims_of_tags = yes
-    }
-    ROOT = {
-      add_state_core = 283
-      add_state_core = 604
-      add_state_core = 616
-      add_state_core = 939
-      add_state_core = 982
-    }
-  }
-
-  option = { # Occupy
-    name = annexation_occupy
-    ai_chance = {
-      base = 0
-    }
-    trigger = {
-      is_chinese_tag = no
-    }
-    occupy_medium_country = yes
-    set_country_flag = XSM_CONQ
   }
 }

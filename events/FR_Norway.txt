@@ -376,7 +376,6 @@ country_event = {
 		remove_ideas_with_trait = head_of_government
 		hidden_effect = {
 			add_stability = 0.03
-			set_country_flag = NOR_ap_victory_flag
 			set_country_flag = NOR_democracy_survives_flag
 			add_country_leader_role = {
         character = NOR_Martin_Tranmæl
@@ -1681,10 +1680,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					ISR = { exists = yes }
-					ISR = { has_war_with = NOR }
+					PAL = { exists = yes }
+					PAL = { has_war_with = NOR }
 				}
-				white_peace = ISR
+				white_peace = PAL
 			}
 		}
 		NOR = {

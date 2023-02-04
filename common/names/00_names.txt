@@ -1432,29 +1432,7 @@ ARB = {
 	}
 	callsigns = { }
 }
-TRT = {
-	male = {
-		names = {  
-			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
-			Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver 
-			Fahri Fevzi Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev
-			Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi
-			Mahmut Mehmet Mithat Muhtar Murat Musa Mustafa 
-			Namik Nazim Nurettin Nuri Numan Omar Osman 
-			Pertev Rauf Receb Reshad Refet Rifat Riza 
-			Sabaheddin Said Selim Shevket Shukru Suleyman 
-			Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
-		 }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { 
-		Altay Karabekir Cakmak Gürman Orbay Subasi Erkilet Koval Omurtak Özsü Atli Gökberk
-	
-	}
-	callsigns = { }
-}
+
 TRU = {
 	male = {
 		names = {  
@@ -2222,16 +2200,6 @@ SIA = {
 	 }
 	callsigns = { }
 }
-SCH = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
 CHI = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
@@ -2575,20 +2543,6 @@ MZB = {
 	}
 	surnames = {
 	  	"dos Santos" Tiago "N'zita" Vinama Chingunji Chilingutila Chitunda Chidondo "de Carvalho" Mingas Neto "da Cruz" Alves Machel
-	 }
-	callsigns = { }
-}
-RHO = {
-	male = {
-		names = { 
-			Desmond Abel Kadungure Sekuru Robert Lobengula Joshua Dumiso Leopold Joseph Gabriel Mqabuko Nyongolo Thomas Letswansto Ndabaningi
-		   }
-	}
-	female = {
-		names = { }
-	}
-	surnames = {
-	  	Tutu Muzorewa Nkomo Mapondera Kaguvi Khumalo Dabengwa Msika Takawira Masuku Sithole Tekere Nkala Nyagumbo
 	 }
 	callsigns = { }
 }

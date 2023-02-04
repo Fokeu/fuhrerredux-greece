@@ -116,4 +116,3 @@ SAF_Fate_of_Africa = {
 
         	cost = 50
 	}
-}

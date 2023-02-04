@@ -1,5 +1,13 @@
 capital = 303
 
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "PRU_naval_mtg"
+	else = {
+		set_naval_oob = "PRU_naval_legacy"
+	}
+}
+
 oob = "PRU"
 set_research_slots = 3
 add_ideas = {
@@ -17,44 +25,40 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+	
 	tech_mountaineers = 1
 	fuel_silos = 1
 	basic_train = 1
 }
-
 if = {
-	limit = { has_dlc = "By Blood Alone" }
-	set_air_oob = "PRU_air_bba"
-	set_technology = {
-		iw_small_airframe = 1
-		aa_lmg = 1
-		engines_1 = 1
-		early_bombs = 1
-	}
-	else = {
-		set_air_oob = "PRU_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
+  limit = {
+    NOT = { has_dlc = "No Step Back" }
+  }
+  set_technology = {
+    gwtank = 1
+  }
 }
-
 if = {
   limit = { has_dlc = "No Step Back" }
   set_technology = {
     gwtank_chassis = 1
   }
-	else = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
 }
 
 if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
 	limit = { has_dlc = "Man the Guns" }
-	set_naval_oob = "PRU_naval_mtg"
 	set_technology = {
 		basic_naval_mines = 1
 		early_ship_hull_light = 1
@@ -65,16 +69,7 @@ if = {
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
 	}
-	else = {
-		set_naval_oob = "PRU_naval_legacy"
-		set_technology = {
-			early_submarine = 1
-			early_destroyer = 1
-			early_light_cruiser = 1
-		}
-	}
 }
-
 set_convoys = 5
 set_stability = 0.65
 set_war_support = 0.31
@@ -103,30 +98,6 @@ set_popularities = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
-	create_equipment_variant = {
-		name = "R1 Class"
-		type = submarine_1
-		parent_version = 1
-		name_group = PRU_SS_HISTORICAL
-		upgrades = {
-			ship_reliability_upgrade = 2
-			sub_engine_upgrade = 2
-			sub_stealth_upgrade = 2
-			sub_torpedo_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "Almirante Villar Class"
-		type = destroyer_1
-		parent_version = 0
-		name_group = PRU_DD_HISTORICAL
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 3
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 1
-		}
-	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -135,14 +106,12 @@ if = {
 		name = "R1 Class"				
 		type = ship_hull_submarine_1
 		parent_version = 0
-		name_group = PRU_SS_HISTORICAL
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = empty
 		}
 	}
-
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Almirante Villar Class"				

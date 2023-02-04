@@ -37,7 +37,7 @@ ideas = {
 			original_tag = "PRU"
 			}
 
-			picture = japanese_aid_cut
+			picture = generic_disjointed_gov
 			modifier = {
 				political_power_gain = -0.25
 			}

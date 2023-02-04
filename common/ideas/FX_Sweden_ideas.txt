@@ -3,7 +3,9 @@
 ######################
 
 ideas = {
-  country = {
+
+    country = {
+
 		SWE_unbroken_neutrality_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_unbroken_neutrality_idea"}
 			allowed = { original_tag = SWE }
@@ -393,7 +395,7 @@ ideas = {
 		SWE_solitify_control_baltic_sea_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_solitify_control_baltic_sea_idea"}
 			allowed = { original_tag = SWE }
-			picture = generic_coastal_defense_ships
+			picture = idea_generic_navy
 			modifier = {
 				navy_max_range_factor = 0.10
 				navy_capital_ship_attack_factor = 0.05
@@ -403,7 +405,7 @@ ideas = {
 		SWE_solitify_control_under_baltic_sea_idea = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWE_solitify_control_under_baltic_sea_idea"}
 			allowed = { original_tag = SWE }
-			picture = generic_coastal_defense_ships
+			picture = idea_generic_navy
 			modifier = {
 				navy_submarine_detection_factor = 0.10
 				navy_submarine_attack_factor = 0.10
@@ -995,7 +997,10 @@ ideas = {
 		lkab = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lkab"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1045,7 +1050,10 @@ ideas = {
 		husqvarna_vapenfabriks = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea husqvarna_vapenfabriks"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1092,7 +1100,10 @@ ideas = {
 		asea = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea asea"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1116,7 +1127,10 @@ ideas = {
 		tidaholms_bruk = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea tidaholms_bruk"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1132,7 +1146,10 @@ ideas = {
 		hagglunds = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hagglunds"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1153,7 +1170,10 @@ ideas = {
 		gotaverken = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea gotaverken"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1177,7 +1197,10 @@ ideas = {
 		lindholmen = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea lindholmen"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {
@@ -1204,7 +1227,10 @@ ideas = {
 		thulinverken = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea thulinverken"}
 			allowed = {
-				tag = SWE
+				OR = {
+					original_tag = SWE
+					original_tag = SCA
+				}
 			}
 			visible	= {
 				OR = {

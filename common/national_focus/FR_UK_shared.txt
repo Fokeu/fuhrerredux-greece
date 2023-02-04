@@ -30,7 +30,6 @@
 		
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ENG_black_wed"
-		add_political_power = 150
 		}
 	}
 	
@@ -7347,7 +7346,7 @@
 	
 	shared_focus = {
 		id = ENG_london_conf
-		icon = GFX_goal_ENG_naval_conference
+		icon = GFX_goal_EGY_sultan_fleet
 		available = {
 			OR = {
 				AND = {
@@ -8530,7 +8529,7 @@
 	
 	shared_focus = {
 		id = ENG_est_iedc
-		icon = GFX_goal_CAN_iedc
+		icon = GFX_goal_generic_construct_civilian
 		available = {
 		}
 		
@@ -8742,7 +8741,7 @@
 	
 	shared_focus = {
 		id = ENG_create_isaac
-		icon = GFX_goal_CAN_isac
+		icon = GFX_goal_continuous_research
 		available = {
 		}
 		

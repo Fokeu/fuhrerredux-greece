@@ -420,7 +420,7 @@ country_event = { # Fate of Rust Belt
   }
 
   option = { # Puppet
-    name = annex.1005.a
+    name = annex.1005
     ai_chance = {
       base = 0
     }
@@ -458,7 +458,7 @@ country_event = { # Fate of Oregon
   }
 
   option = { # Puppet
-    name = annex.1006.a
+    name = annex.1006
     ai_chance = {
       base = 100
     }
@@ -601,7 +601,7 @@ country_event = { # Fate of Cuba
       remove_all_cores_and_claims_of_tags = yes
       CUB = {
         add_state_core = 315
-        add_state_claim = 947
+        add_state_core = 947
         drop_cosmetic_tag = yes
       }
     }
@@ -628,7 +628,7 @@ country_event = { # Fate of Cuba
 
 country_event = { # Fate of Dominican Republic
   id = annex.1011
-  title = annexation_DOM_CONQ
+  title = annexation_DOM
   desc = annexation_DOM_CONQ_DESC
   picture = GFX_report_event_czech_soldiers_01
   is_triggered_only = yes
@@ -1206,36 +1206,6 @@ country_event = { # Fate of Brazil
 
   immediate = {
     hidden_effect = {
-      add_to_temp_array = { core_removal_array = BRA }
-      add_to_temp_array = { core_removal_array = BPS }
-      add_to_temp_array = { core_removal_array = UBR }
-      remove_all_cores_and_claims_of_tags = yes
-      if = {
-        limit = {
-          ROOT = {
-            has_socialist_government = yes
-          }
-        }
-        UBR = {
-          add_core_to_brazillian_states = yes
-        }
-      }
-      else_if = {
-        limit = {
-          ROOT = {
-            has_dictatorship_government = yes
-          }
-        }
-        BPS = {
-          add_core_to_brazillian_states = yes
-        }
-      }
-      else = {
-        BRA = {
-          add_core_to_brazillian_states = yes
-        }
-      }
-
       BRA = {
         drop_cosmetic_tag = yes
       }
@@ -1247,25 +1217,7 @@ country_event = { # Fate of Brazil
     ai_chance = {
       base = 100
     }
-    if = {
-      limit = {
-        ROOT = {
-          has_socialist_government = yes
-        }
-      }
-      set_temp_variable = { tag_to_release = UBR }
-    }
-    else_if = {
-      limit = {
-        ROOT = {
-          has_dictatorship_government = yes
-        }
-      }
-      set_temp_variable = { tag_to_release = BPS }
-    }
-    else = {
-      set_temp_variable = { tag_to_release = BRA }
-    }
+    set_temp_variable = { tag_to_release = BRA }
     release_targeted_tag = yes
   }
 

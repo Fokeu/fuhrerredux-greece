@@ -9,7 +9,9 @@ state={
 		buildings = {
 			infrastructure = 3
 			air_base = 1
+
 		}
+
 	}
 
 	provinces={

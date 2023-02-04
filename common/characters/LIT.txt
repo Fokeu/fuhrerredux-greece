@@ -1,12 +1,4 @@
 characters = {
-	LIT_Vytautas_II = {
-		name = "Vytautas II"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/LIT/Portrait_LIT_Vytautas_II.png"
-			}
-		}
-	}
 	LIT_Stanisław_Narutowicz = {
 		name = "Stanisław Narutowicz"
 		portraits = {
@@ -43,8 +35,8 @@ characters = {
 			skill = 3
 			attack_skill = 4
 			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 }

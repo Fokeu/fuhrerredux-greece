@@ -1,9 +1,5 @@
 leader_traits = {
 
-  american_dressler = {
-    random = no
-  }
-
   enlightened_sovereign = {
     random = no
     stability_factor = 0.1
@@ -33,26 +29,35 @@ leader_traits = {
     political_power_gain = 0.15
   }
 
-  PHI_the_surgeon = {
-		random = no
-		army_org_factor = 0.1
-		army_morale_factor = 0.1
-	}
+  #GREECE
 
-  PHI_the_union_man = {
+  father_of_freedom = {
     random = no
-    production_factory_max_efficiency_factor = 0.05
+
+    political_power_gain = 0.10
   }
 
-  PHI_father_of_the_filipino_language = {
+  saviour_of_the_people = {
     random = no
-    political_power_gain = 0.15
+
+    monthly_population = 0.1
   }
-	
-  exiled_pope = { # Julius IV
-		random = no
-		cavalry_attack_factor = 0.1
-		army_org_factor = 0.03
-		max_command_power_mult = 0.25
-	}
+
+  defender_of_freedom_of_religion = {
+    random = no
+
+    opinion_gain_monthly_factor = 0.2
+  }
+
+  our_leader_and_saviour = {
+    random = no
+
+    conscription_factor = 0.2
+  }
+
+  protector_of_the_poor = {
+    random = no
+
+    monthly_population = 0.03
+  }
 }

@@ -66,6 +66,8 @@ units = { ##First Unit # Central Force
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
+}
+units = { ##Second Unit # Far West Force
 	division = { 
 		division_name = {
 			is_name_ordered = yes
@@ -116,6 +118,9 @@ units = { ##First Unit # Central Force
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
+}
+
+units = { ##Third # Eastern Force
 	division = { 
 		division_name = {
 			is_name_ordered = yes

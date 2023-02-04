@@ -384,4 +384,64 @@ spriteTypes = {
 		name = "GFX_idea_zavod_Krasny_Putilovets"
 		texturefile = "gfx/interface/ideas/SOV/companies/zavod_Krasny_Putilovets.png"
 	}
+	spriteType = {
+		name = "GFX_idea_ISC_the_patriarchate"
+		texturefile = "gfx/interface/ideas/ideas/ISC_the_patriarchate.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ISC_free_zone"
+		texturefile = "gfx/interface/ideas/ideas/ISC_free_zone.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_hellenoturkism"
+		texturefile = "gfx/interface/ideas/ideas/GRE_hellenoturkism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_george"
+		texturefile = "gfx/interface/ideas/ideas/GRE_george.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_golden_dawn"
+		texturefile = "gfx/interface/ideas/ideas/GRE_golden_dawn.png"
+	}
+	spriteType = {
+		name = "GFX_idea_GRE_leonidas_legacy"
+		texturefile = "gfx/interface/ideas/ideas/GRE_leonidas_legacy.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_onward"
+		texturefile = "gfx/interface/ideas/ideas/GRE_onward.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_pavingtheway"
+		texturefile = "gfx/interface/ideas/ideas/GRE_pavingtheway.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_rebuilding"
+		texturefile = "gfx/interface/ideas/ideas/GRE_rebuilding.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_future"
+		texturefile = "gfx/interface/ideas/ideas/GRE_future.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_law"
+		texturefile = "gfx/interface/ideas/ideas/GRE_law.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_gov"
+		texturefile = "gfx/interface/ideas/ideas/GRE_gov.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_factory"
+		texturefile = "gfx/interface/ideas/ideas/GRE_factory.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_soldiers"
+		texturefile = "gfx/interface/ideas/ideas/GRE_soldiers.png"
+	}
+    spriteType = {
+		name = "GFX_idea_GRE_thirdgeneration"
+		texturefile = "gfx/interface/ideas/ideas/GRE_thirdgeneration.png"
+	}
 }

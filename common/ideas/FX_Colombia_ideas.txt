@@ -214,7 +214,7 @@ ideas = {
 			original_tag = "COL"
 			}
 
-			picture = vittoria_mutilata
+			picture = generic_morale_boost
 			modifier = {
 				army_morale_factor = 0.05
 				planning_speed = 0.05

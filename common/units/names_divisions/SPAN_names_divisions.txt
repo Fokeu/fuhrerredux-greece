@@ -38,7 +38,7 @@ SPAN_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { COS DOM ECU GUA HON MEX NIC PAN PAR PRU URG VEN CHL }
+	for_countries = { COS DOM ECU GUA HON MEX NIC PAN PAR PRU URG VEN }
 
 	can_use = { always = yes }
 
@@ -522,7 +522,7 @@ SPAN_MAR_01 =
 	}
 }
 
-SPAN_MTN_01 = 
+SPAN_MNT_01 = 
 {
 	name = "Mountain Division"
 
@@ -554,7 +554,7 @@ SPAN_MTN_01 =
 	}
 }
 
-SPAN_MTN_02 = 
+SPAN_MNT_02 = 
 {
 	name = "Mountain Infantry"
 

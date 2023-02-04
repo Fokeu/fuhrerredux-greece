@@ -44,3 +44,10 @@ SpriteTypes = {
 	
 }
 
+#Gui 
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_golden_dawn_picture"
+		texturefile = "gfx/interface/decisions/golden_dawn_picture.png"
+	}
+}

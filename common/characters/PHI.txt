@@ -1,15 +1,4 @@
 characters = {
-  PHI_Armed_Forces_Command = {
-    name = "Armed Forces Command"
-    portraits = {
-      civilian = {
-        large = "gfx/leaders/PHI/Portrait_PHI_Armed_Forces_Command.png"
-      }
-    }
-    country_leader = {
-      ideology = paternal_autocrat_subtype
-    }
-  }
 	PHI_Luis_Taruc = {
 		name = "Luis Taruc"
 		portraits = {
@@ -29,12 +18,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Luis_Taruc_hog_col_hired }
 			}
 			idea_token = PHI_Luis_Taruc_hog_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Luis_Taruc_hog_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Luis_Taruc_hog_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Luis_Taruc_hog_col_hired }
+			on_remove = { clr_country_flag = PHI_Luis_Taruc_hog_col_hired }
 			traits = {
 				collectivist
 				hog_flamboyant_tough_guy
@@ -60,12 +45,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Pedro_Abad_Santos_hog_van_hired }
 			}
 			idea_token = PHI_Pedro_Abad_Santos_hog_van
-			on_add = {
-				ROOT = { set_country_flag = PHI_Pedro_Abad_Santos_hog_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Pedro_Abad_Santos_hog_van_hired }
-			}
+			on_add = { set_country_flag = PHI_Pedro_Abad_Santos_hog_van_hired }
+			on_remove = { clr_country_flag = PHI_Pedro_Abad_Santos_hog_van_hired }
 			traits = {
 				vanguardist
 				hog_red_chairmen
@@ -82,7 +63,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = libertarian_socialist_subtype
-			traits = { PHI_the_union_man }
+			traits = { }
 		}
 		advisor = {
 			cost = 150
@@ -91,12 +72,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Crisanto_Evangelista_hog_lib_hired }
 			}
 			idea_token = PHI_Crisanto_Evangelista_hog_lib
-			on_add = {
-				ROOT = { set_country_flag = PHI_Crisanto_Evangelista_hog_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Crisanto_Evangelista_hog_lib_hired }
-			}
+			on_add = { set_country_flag = PHI_Crisanto_Evangelista_hog_lib_hired }
+			on_remove = { clr_country_flag = PHI_Crisanto_Evangelista_hog_lib_hired }
 			traits = {
 				libertarian_socialist
 				hog_ambitious_union_boss
@@ -122,12 +99,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Lope_K_Santos_hog_sde_hired }
 			}
 			idea_token = PHI_Lope_K_Santos_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Lope_K_Santos_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Lope_K_Santos_hog_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Lope_K_Santos_hog_sde_hired }
+			on_remove = { clr_country_flag = PHI_Lope_K_Santos_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_privileged_socialist
@@ -153,12 +126,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Elpidio_Quirino_hog_sli_hired }
 			}
 			idea_token = PHI_Elpidio_Quirino_hog_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Elpidio_Quirino_hog_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Elpidio_Quirino_hog_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Elpidio_Quirino_hog_sli_hired }
+			on_remove = { clr_country_flag = PHI_Elpidio_Quirino_hog_sli_hired }
 			traits = {
 				social_liberal
 				hog_pragmatic_statesman
@@ -171,12 +140,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Elpidio_Quirino_for_sli_hired }
 			}
 			idea_token = PHI_Elpidio_Quirino_for_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Elpidio_Quirino_for_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Elpidio_Quirino_for_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Elpidio_Quirino_for_sli_hired }
+			on_remove = { clr_country_flag = PHI_Elpidio_Quirino_for_sli_hired }
 			traits = {
 				social_liberal
 				for_biased_intellectual
@@ -203,12 +168,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Manuel_Roxas_hog_mli_hired }
 			}
 			idea_token = PHI_Manuel_Roxas_hog_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Manuel_Roxas_hog_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Manuel_Roxas_hog_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Manuel_Roxas_hog_mli_hired }
+			on_remove = { clr_country_flag = PHI_Manuel_Roxas_hog_mli_hired }
 			traits = {
 				market_liberal
 				hog_corporate_suit
@@ -235,12 +196,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Manuel_Luis_Quezon_hog_sco_hired }
 			}
 			idea_token = PHI_Manuel_Luis_Quezon_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Manuel_Luis_Quezon_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Manuel_Luis_Quezon_hog_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Manuel_Luis_Quezon_hog_sco_hired }
+			on_remove = { clr_country_flag = PHI_Manuel_Luis_Quezon_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_silent_workhorse
@@ -262,12 +219,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Camilio_Osias_hog_sco_hired }
 			}
 			idea_token = PHI_Camilio_Osias_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Camilio_Osias_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Camilio_Osias_hog_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Camilio_Osias_hog_sco_hired }
+			on_remove = { clr_country_flag = PHI_Camilio_Osias_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_accomplished_diplomat
@@ -289,12 +242,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_P_Laurel_hog_ade_hired }
 			}
 			idea_token = PHI_Jose_P_Laurel_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_P_Laurel_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_P_Laurel_hog_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_P_Laurel_hog_ade_hired }
+			on_remove = { clr_country_flag = PHI_Jose_P_Laurel_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_silent_workhorse
@@ -338,12 +287,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Basilio_J_Valdez_hog_pau_hired }
 			}
 			idea_token = PHI_Basilio_J_Valdez_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = PHI_Basilio_J_Valdez_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Basilio_J_Valdez_hog_pau_hired }
-			}
+			on_add = { set_country_flag = PHI_Basilio_J_Valdez_hog_pau_hired }
+			on_remove = { clr_country_flag = PHI_Basilio_J_Valdez_hog_pau_hired }
 			traits = {
 				paternal_autocrat
 				hog_reformist_soldier
@@ -356,12 +301,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Basilio_J_Valdez_sec_sco_hired }
 			}
 			idea_token = PHI_Basilio_J_Valdez_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Basilio_J_Valdez_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Basilio_J_Valdez_sec_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Basilio_J_Valdez_sec_sco_hired }
+			on_remove = { clr_country_flag = PHI_Basilio_J_Valdez_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_driven_recruiter
@@ -369,7 +310,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = PHI_Basilio_J_Valdez_cos_pau
 			traits = {
 				cos_school_of_commando_operations
@@ -377,7 +318,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = PHI_Basilio_J_Valdez_carm_pau
 			traits = {
 				carm_decisive_battle_doctrine
@@ -409,12 +350,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
 			}
 			idea_token = PHI_Emilio_Aguinaldo_hog_npo
-			on_add = {
-				ROOT = { set_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
-			}
+			on_add = { set_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
+			on_remove = { clr_country_flag = PHI_Emilio_Aguinaldo_hog_npo_hired }
 			traits = {
 				national_populist
 				hog_old_general
@@ -427,12 +364,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Emilio_Aguinaldo_sec_npo_hired }
 			}
 			idea_token = PHI_Emilio_Aguinaldo_sec_npo
-			on_add = {
-				ROOT = { set_country_flag = PHI_Emilio_Aguinaldo_sec_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Emilio_Aguinaldo_sec_npo_hired }
-			}
+			on_add = { set_country_flag = PHI_Emilio_Aguinaldo_sec_npo_hired }
+			on_remove = { clr_country_flag = PHI_Emilio_Aguinaldo_sec_npo_hired }
 			traits = {
 				national_populist
 				sec_prince_of_terror
@@ -458,12 +391,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Benigno_Ramos_hog_val_hired }
 			}
 			idea_token = PHI_Benigno_Ramos_hog_val
-			on_add = {
-				ROOT = { set_country_flag = PHI_Benigno_Ramos_hog_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Benigno_Ramos_hog_val_hired }
-			}
+			on_add = { set_country_flag = PHI_Benigno_Ramos_hog_val_hired }
+			on_remove = { clr_country_flag = PHI_Benigno_Ramos_hog_val_hired }
 			traits = {
 				valkist
 				hog_determined_populist
@@ -501,12 +430,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Vicente_P_Lim_for_pau_hired }
 			}
 			idea_token = PHI_Vicente_P_Lim_for_pau
-			on_add = {
-				ROOT = { set_country_flag = PHI_Vicente_P_Lim_for_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Vicente_P_Lim_for_pau_hired }
-			}
+			on_add = { set_country_flag = PHI_Vicente_P_Lim_for_pau_hired }
+			on_remove = { clr_country_flag = PHI_Vicente_P_Lim_for_pau_hired }
 			traits = {
 				paternal_autocrat
 				for_general_staffer
@@ -514,7 +439,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = PHI_Vicente_P_Lim_cos_pau
 			traits = {
 				cos_school_of_manoeuvre
@@ -522,7 +447,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = PHI_Vicente_P_Lim_carm_pau
 			traits = {
 				carm_armoured_spearhead_doctrine
@@ -573,7 +498,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = PHI_Paulino_Santos_cos
 			traits = {
 				cos_school_of_defence
@@ -627,12 +552,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Rafael_Jalandoni_sec_hired }
 			}
 			idea_token = PHI_Rafael_Jalandoni_sec
-			on_add = {
-				ROOT = { set_country_flag = PHI_Rafael_Jalandoni_sec_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Rafael_Jalandoni_sec_hired }
-			}
+			on_add = { set_country_flag = PHI_Rafael_Jalandoni_sec_hired }
+			on_remove = { clr_country_flag = PHI_Rafael_Jalandoni_sec_hired }
 			traits = {
 				sec_compassionate_gentleman
 			}
@@ -755,7 +676,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = PHI_Santiago_Nuval_cnav
 			traits = {
 				cnav_base_control_doctrine
@@ -782,7 +703,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = PHI_Eustacio_Orobia_cnav
 			traits = {
 				cnav_power_projection_doctrine
@@ -811,7 +732,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = PHI_Jose_V_Andrada_cnav
 			traits = {
 				cnav_open_seas_doctrine
@@ -833,12 +754,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Juan_Sumulong_hog_sde_hired }
 			}
 			idea_token = PHI_Juan_Sumulong_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Juan_Sumulong_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Juan_Sumulong_hog_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Juan_Sumulong_hog_sde_hired }
+			on_remove = { clr_country_flag = PHI_Juan_Sumulong_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_happy_amateur
@@ -860,12 +777,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Juan_Feleo_hog_sde_hired }
 			}
 			idea_token = PHI_Juan_Feleo_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Juan_Feleo_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Juan_Feleo_hog_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Juan_Feleo_hog_sde_hired }
+			on_remove = { clr_country_flag = PHI_Juan_Feleo_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_naive_optimist
@@ -887,12 +800,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_J_Antonio_Araneta_hog_mli_hired }
 			}
 			idea_token = PHI_J_Antonio_Araneta_hog_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_J_Antonio_Araneta_hog_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_J_Antonio_Araneta_hog_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_J_Antonio_Araneta_hog_mli_hired }
+			on_remove = { clr_country_flag = PHI_J_Antonio_Araneta_hog_mli_hired }
 			traits = {
 				market_liberal
 				hog_charismatic_charmer
@@ -914,12 +823,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Sergio_P_Osmena_hog_sco_hired }
 			}
 			idea_token = PHI_Sergio_P_Osmena_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Sergio_P_Osmena_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Sergio_P_Osmena_hog_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Sergio_P_Osmena_hog_sco_hired }
+			on_remove = { clr_country_flag = PHI_Sergio_P_Osmena_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_smiling_oilman
@@ -932,12 +837,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Sergio_P_Osmena_for_sco_hired }
 			}
 			idea_token = PHI_Sergio_P_Osmena_for_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Sergio_P_Osmena_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Sergio_P_Osmena_for_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Sergio_P_Osmena_for_sco_hired }
+			on_remove = { clr_country_flag = PHI_Sergio_P_Osmena_for_sco_hired }
 			traits = {
 				social_conservative
 				for_relations_expert
@@ -959,12 +860,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Eulogio_Rodriguez_Sr_hog_sco_hired }
 			}
 			idea_token = PHI_Eulogio_Rodriguez_Sr_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Eulogio_Rodriguez_Sr_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Eulogio_Rodriguez_Sr_hog_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Eulogio_Rodriguez_Sr_hog_sco_hired }
+			on_remove = { clr_country_flag = PHI_Eulogio_Rodriguez_Sr_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_political_protege
@@ -986,12 +883,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Gregorio_Aglipay_hog_sco_hired }
 			}
 			idea_token = PHI_Gregorio_Aglipay_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Gregorio_Aglipay_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Gregorio_Aglipay_hog_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Gregorio_Aglipay_hog_sco_hired }
+			on_remove = { clr_country_flag = PHI_Gregorio_Aglipay_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_spiritual_leader
@@ -1013,12 +906,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Benigno_Aquino_Sr_hog_ade_hired }
 			}
 			idea_token = PHI_Benigno_Aquino_Sr_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Benigno_Aquino_Sr_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Benigno_Aquino_Sr_hog_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Benigno_Aquino_Sr_hog_ade_hired }
+			on_remove = { clr_country_flag = PHI_Benigno_Aquino_Sr_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_backroom_backstabber
@@ -1031,12 +920,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Benigno_Aquino_Sr_eco_sco_hired }
 			}
 			idea_token = PHI_Benigno_Aquino_Sr_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Benigno_Aquino_Sr_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Benigno_Aquino_Sr_eco_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Benigno_Aquino_Sr_eco_sco_hired }
+			on_remove = { clr_country_flag = PHI_Benigno_Aquino_Sr_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_corrupt_kleptocrat
@@ -1049,12 +934,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Benigno_Aquino_Sr_sec_ade_hired }
 			}
 			idea_token = PHI_Benigno_Aquino_Sr_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Benigno_Aquino_Sr_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Benigno_Aquino_Sr_sec_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Benigno_Aquino_Sr_sec_ade_hired }
+			on_remove = { clr_country_flag = PHI_Benigno_Aquino_Sr_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_compassionate_gentleman
@@ -1078,12 +959,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Casto_Alejandrino_for_col_hired }
 			}
 			idea_token = PHI_Casto_Alejandrino_for_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Casto_Alejandrino_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Casto_Alejandrino_for_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Casto_Alejandrino_for_col_hired }
+			on_remove = { clr_country_flag = PHI_Casto_Alejandrino_for_col_hired }
 			traits = {
 				collectivist
 				for_ideological_crusader
@@ -1104,12 +981,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Rafael_Liwanag_for_sde_hired }
 			}
 			idea_token = PHI_Rafael_Liwanag_for_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Rafael_Liwanag_for_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Rafael_Liwanag_for_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Rafael_Liwanag_for_sde_hired }
+			on_remove = { clr_country_flag = PHI_Rafael_Liwanag_for_sde_hired }
 			traits = {
 				social_democrat
 				for_moderate_among_radicals
@@ -1130,12 +1003,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Joaquin_Elizalde_for_sli_hired }
 			}
 			idea_token = PHI_Joaquin_Elizalde_for_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Joaquin_Elizalde_for_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Joaquin_Elizalde_for_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Joaquin_Elizalde_for_sli_hired }
+			on_remove = { clr_country_flag = PHI_Joaquin_Elizalde_for_sli_hired }
 			traits = {
 				social_liberal
 				for_biased_intellectual
@@ -1156,12 +1025,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Quentin_Paredes_for_mli_hired }
 			}
 			idea_token = PHI_Quentin_Paredes_for_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Quentin_Paredes_for_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Quentin_Paredes_for_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Quentin_Paredes_for_mli_hired }
+			on_remove = { clr_country_flag = PHI_Quentin_Paredes_for_mli_hired }
 			traits = {
 				market_liberal
 				for_apologetic_clerk
@@ -1182,12 +1047,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Manuel_Quadrino_for_sco_hired }
 			}
 			idea_token = PHI_Manuel_Quadrino_for_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Manuel_Quadrino_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Manuel_Quadrino_for_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Manuel_Quadrino_for_sco_hired }
+			on_remove = { clr_country_flag = PHI_Manuel_Quadrino_for_sco_hired }
 			traits = {
 				social_conservative
 				for_general_staffer
@@ -1208,12 +1069,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Ferdinand_E_Marcos_for_ade_hired }
 			}
 			idea_token = PHI_Ferdinand_E_Marcos_for_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Ferdinand_E_Marcos_for_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Ferdinand_E_Marcos_for_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Ferdinand_E_Marcos_for_ade_hired }
+			on_remove = { clr_country_flag = PHI_Ferdinand_E_Marcos_for_ade_hired }
 			traits = {
 				authoritarian_democrat
 				for_iron_fisted_brute
@@ -1224,7 +1081,7 @@ characters = {
 		name = "Claro M. Recto"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PHI/Portrait_PHI_Claro_M_Recto.png"
+				large = "gfx/interface/ministers/PHI/Portrait_PHI_Claro_M_Recto.png"
 				small = "gfx/interface/ministers/PHI/PHI_Claro_M_Recto.png"
 			}
 		}
@@ -1235,12 +1092,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Claro_M_Recto_hog_sde_hired }
 			}
 			idea_token = PHI_Claro_M_Recto_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Claro_M_Recto_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Claro_M_Recto_hog_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Claro_M_Recto_hog_sde_hired }
+			on_remove = { clr_country_flag = PHI_Claro_M_Recto_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_silent_workhorse
@@ -1253,12 +1106,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Claro_M_Recto_for_ade_hired }
 			}
 			idea_token = PHI_Claro_M_Recto_for_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Claro_M_Recto_for_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Claro_M_Recto_for_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Claro_M_Recto_for_ade_hired }
+			on_remove = { clr_country_flag = PHI_Claro_M_Recto_for_ade_hired }
 			traits = {
 				authoritarian_democrat
 				for_great_compromiser
@@ -1279,12 +1128,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jorge_Vargas_for_val_hired }
 			}
 			idea_token = PHI_Jorge_Vargas_for_val
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jorge_Vargas_for_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jorge_Vargas_for_val_hired }
-			}
+			on_add = { set_country_flag = PHI_Jorge_Vargas_for_val_hired }
+			on_remove = { clr_country_flag = PHI_Jorge_Vargas_for_val_hired }
 			traits = {
 				valkist
 				for_apologetic_clerk
@@ -1305,12 +1150,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Herminegildo_Cruz_eco_col_hired }
 			}
 			idea_token = PHI_Herminegildo_Cruz_eco_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Herminegildo_Cruz_eco_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Herminegildo_Cruz_eco_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Herminegildo_Cruz_eco_col_hired }
+			on_remove = { clr_country_flag = PHI_Herminegildo_Cruz_eco_col_hired }
 			traits = {
 				collectivist
 				eco_planned_economy_proponent
@@ -1331,12 +1172,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Carlos_P_Garcia_eco_sde_hired }
 			}
 			idea_token = PHI_Carlos_P_Garcia_eco_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Carlos_P_Garcia_eco_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Carlos_P_Garcia_eco_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Carlos_P_Garcia_eco_sde_hired }
+			on_remove = { clr_country_flag = PHI_Carlos_P_Garcia_eco_sde_hired }
 			traits = {
 				social_democrat
 				eco_balanced_budget_economy
@@ -1357,12 +1194,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Diosdado_P_Macapagal_eco_sde_hired }
 			}
 			idea_token = PHI_Diosdado_P_Macapagal_eco_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Diosdado_P_Macapagal_eco_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Diosdado_P_Macapagal_eco_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Diosdado_P_Macapagal_eco_sde_hired }
+			on_remove = { clr_country_flag = PHI_Diosdado_P_Macapagal_eco_sde_hired }
 			traits = {
 				social_democrat
 				eco_administrative_genius
@@ -1383,12 +1216,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Antonio_de_las_Alas_eco_sli_hired }
 			}
 			idea_token = PHI_Antonio_de_las_Alas_eco_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Antonio_de_las_Alas_eco_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Antonio_de_las_Alas_eco_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Antonio_de_las_Alas_eco_sli_hired }
+			on_remove = { clr_country_flag = PHI_Antonio_de_las_Alas_eco_sli_hired }
 			traits = {
 				social_liberal
 				eco_steel_magnate
@@ -1409,12 +1238,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Ramon_Quisumbing_eco_mli_hired }
 			}
 			idea_token = PHI_Ramon_Quisumbing_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Ramon_Quisumbing_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Ramon_Quisumbing_eco_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Ramon_Quisumbing_eco_mli_hired }
+			on_remove = { clr_country_flag = PHI_Ramon_Quisumbing_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_reformer
@@ -1435,12 +1260,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Ramon_Magsaysay_eco_mli_hired }
 			}
 			idea_token = PHI_Ramon_Magsaysay_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Ramon_Magsaysay_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Ramon_Magsaysay_eco_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Ramon_Magsaysay_eco_mli_hired }
+			on_remove = { clr_country_flag = PHI_Ramon_Magsaysay_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_construction_magnate
@@ -1461,12 +1282,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Mariano_Garchitorena_eco_mli_hired }
 			}
 			idea_token = PHI_Mariano_Garchitorena_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Mariano_Garchitorena_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Mariano_Garchitorena_eco_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Mariano_Garchitorena_eco_mli_hired }
+			on_remove = { clr_country_flag = PHI_Mariano_Garchitorena_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_national_liberal
@@ -1482,35 +1299,13 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = head_of_government
-			available = {
-				hidden_trigger = { has_country_flag = PHI_Andres_Soriano_hog_npo_hired }
-			}
-			idea_token = PHI_Andres_Soriano_hog_npo
-			on_add = {
-				ROOT = { set_country_flag = PHI_Andres_Soriano_hog_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Andres_Soriano_hog_npo_hired }
-			}
-			traits = {
-				national_populist
-				hog_corporate_suit
-			}
-		}
-		advisor = {
-			cost = 150
 			slot = economy_minister
 			available = {
 				hidden_trigger = { has_country_flag = PHI_Andres_Soriano_eco_sco_hired }
 			}
 			idea_token = PHI_Andres_Soriano_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Andres_Soriano_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Andres_Soriano_eco_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Andres_Soriano_eco_sco_hired }
+			on_remove = { clr_country_flag = PHI_Andres_Soriano_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_balanced_budget_economy
@@ -1531,12 +1326,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_G_David_eco_sco_hired }
 			}
 			idea_token = PHI_Jose_G_David_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_G_David_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_G_David_eco_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_G_David_eco_sco_hired }
+			on_remove = { clr_country_flag = PHI_Jose_G_David_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_bank_president
@@ -1557,12 +1348,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Serafin_Fausto_eco_ade_hired }
 			}
 			idea_token = PHI_Serafin_Fausto_eco_ade
-			on_add = {
-				ROOT = { set_country_flag = PHI_Serafin_Fausto_eco_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Serafin_Fausto_eco_ade_hired }
-			}
+			on_add = { set_country_flag = PHI_Serafin_Fausto_eco_ade_hired }
+			on_remove = { clr_country_flag = PHI_Serafin_Fausto_eco_ade_hired }
 			traits = {
 				authoritarian_democrat
 				eco_administrative_genius
@@ -1586,12 +1373,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Ramon_A_Alcaraz_eco_pau_hired }
 			}
 			idea_token = PHI_Ramon_A_Alcaraz_eco_pau
-			on_add = {
-				ROOT = { set_country_flag = PHI_Ramon_A_Alcaraz_eco_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Ramon_A_Alcaraz_eco_pau_hired }
-			}
+			on_add = { set_country_flag = PHI_Ramon_A_Alcaraz_eco_pau_hired }
+			on_remove = { clr_country_flag = PHI_Ramon_A_Alcaraz_eco_pau_hired }
 			traits = {
 				paternal_autocrat
 				eco_construction_magnate
@@ -1599,7 +1382,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = PHI_Ramon_A_Alcaraz_cnav_pau
 			traits = {
 				cnav_decisive_battle_doctrine
@@ -1620,12 +1403,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Rafael_Alunan_eco_val_hired }
 			}
 			idea_token = PHI_Rafael_Alunan_eco_val
-			on_add = {
-				ROOT = { set_country_flag = PHI_Rafael_Alunan_eco_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Rafael_Alunan_eco_val_hired }
-			}
+			on_add = { set_country_flag = PHI_Rafael_Alunan_eco_val_hired }
+			on_remove = { clr_country_flag = PHI_Rafael_Alunan_eco_val_hired }
 			traits = {
 				valkist
 				eco_reformer
@@ -1646,15 +1425,11 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Guillermo_Capadocia_for_col_hired }
 			}
 			idea_token = PHI_Guillermo_Capadocia_for_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Guillermo_Capadocia_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Guillermo_Capadocia_for_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Guillermo_Capadocia_for_col_hired }
+			on_remove = { clr_country_flag = PHI_Guillermo_Capadocia_for_col_hired }
 			traits = {
 				collectivist
-				for_apologetic_clerk
+				for_everything
 			}
 		}
 		advisor = {
@@ -1664,12 +1439,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Guillermo_Capadocia_sec_col_hired }
 			}
 			idea_token = PHI_Guillermo_Capadocia_sec_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Guillermo_Capadocia_sec_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Guillermo_Capadocia_sec_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Guillermo_Capadocia_sec_col_hired }
+			on_remove = { clr_country_flag = PHI_Guillermo_Capadocia_sec_col_hired }
 			traits = {
 				collectivist
 				sec_health_and_safety
@@ -1690,12 +1461,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Mariano_Balgos_sec_lib_hired }
 			}
 			idea_token = PHI_Mariano_Balgos_sec_lib
-			on_add = {
-				ROOT = { set_country_flag = PHI_Mariano_Balgos_sec_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Mariano_Balgos_sec_lib_hired }
-			}
+			on_add = { set_country_flag = PHI_Mariano_Balgos_sec_lib_hired }
+			on_remove = { clr_country_flag = PHI_Mariano_Balgos_sec_lib_hired }
 			traits = {
 				libertarian_socialist
 				sec_prince_of_terror
@@ -1716,12 +1483,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_M_Crisol_sec_sde_hired }
 			}
 			idea_token = PHI_Jose_M_Crisol_sec_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_M_Crisol_sec_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_M_Crisol_sec_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_M_Crisol_sec_sde_hired }
+			on_remove = { clr_country_flag = PHI_Jose_M_Crisol_sec_sde_hired }
 			traits = {
 				social_democrat
 				sec_man_of_the_people
@@ -1742,12 +1505,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Pardo_de_Tavera_sec_sde_hired }
 			}
 			idea_token = PHI_Pardo_de_Tavera_sec_sde
-			on_add = {
-				ROOT = { set_country_flag = PHI_Pardo_de_Tavera_sec_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Pardo_de_Tavera_sec_sde_hired }
-			}
+			on_add = { set_country_flag = PHI_Pardo_de_Tavera_sec_sde_hired }
+			on_remove = { clr_country_flag = PHI_Pardo_de_Tavera_sec_sde_hired }
 			traits = {
 				social_democrat
 				sec_compassionate_gentleman
@@ -1768,12 +1527,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Alberto_Ramos_sec_sli_hired }
 			}
 			idea_token = PHI_Alberto_Ramos_sec_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Alberto_Ramos_sec_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Alberto_Ramos_sec_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Alberto_Ramos_sec_sli_hired }
+			on_remove = { clr_country_flag = PHI_Alberto_Ramos_sec_sli_hired }
 			traits = {
 				social_liberal
 				sec_crime_fighter
@@ -1794,12 +1549,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Leoncio_S_Tan_sec_sli_hired }
 			}
 			idea_token = PHI_Leoncio_S_Tan_sec_sli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Leoncio_S_Tan_sec_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Leoncio_S_Tan_sec_sli_hired }
-			}
+			on_add = { set_country_flag = PHI_Leoncio_S_Tan_sec_sli_hired }
+			on_remove = { clr_country_flag = PHI_Leoncio_S_Tan_sec_sli_hired }
 			traits = {
 				social_liberal
 				sec_silent_lawyer
@@ -1820,12 +1571,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Roman_Apolinario_sec_mli_hired }
 			}
 			idea_token = PHI_Roman_Apolinario_sec_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Roman_Apolinario_sec_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Roman_Apolinario_sec_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Roman_Apolinario_sec_mli_hired }
+			on_remove = { clr_country_flag = PHI_Roman_Apolinario_sec_mli_hired }
 			traits = {
 				market_liberal
 				sec_media_magnate
@@ -1846,12 +1593,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Teofisto_Sison_sec_sco_hired }
 			}
 			idea_token = PHI_Teofisto_Sison_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Teofisto_Sison_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Teofisto_Sison_sec_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Teofisto_Sison_sec_sco_hired }
+			on_remove = { clr_country_flag = PHI_Teofisto_Sison_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_efficient_sociopath
@@ -1872,12 +1615,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Tirano_Craveza_sec_sco_hired }
 			}
 			idea_token = PHI_Tirano_Craveza_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Tirano_Craveza_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Tirano_Craveza_sec_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Tirano_Craveza_sec_sco_hired }
+			on_remove = { clr_country_flag = PHI_Tirano_Craveza_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_crooked_kleptocrat
@@ -1898,12 +1637,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_Yulo_sec_sco_hired }
 			}
 			idea_token = PHI_Jose_Yulo_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_Yulo_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_Yulo_sec_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_Yulo_sec_sco_hired }
+			on_remove = { clr_country_flag = PHI_Jose_Yulo_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_man_of_the_people
@@ -1924,12 +1659,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_G_Lukban_sec_val_hired }
 			}
 			idea_token = PHI_Jose_G_Lukban_sec_val
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_G_Lukban_sec_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_G_Lukban_sec_val_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_G_Lukban_sec_val_hired }
+			on_remove = { clr_country_flag = PHI_Jose_G_Lukban_sec_val_hired }
 			traits = {
 				valkist
 				sec_secret_police_chief
@@ -1945,7 +1676,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = PHI_Augusto_Jurado_cos
 			traits = {
 				cos_school_of_fire_support
@@ -1961,7 +1692,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = PHI_Quirinto_P_Evangelista_cos
 			traits = {
 				cos_school_of_psychology
@@ -1977,7 +1708,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = PHI_Benito_N_Ebuen_carm
 			traits = {
 				carm_static_defence_doctrine
@@ -1993,7 +1724,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = PHI_Heraclio_Alano_carm
 			traits = {
 				carm_guns_and_butter_doctrine
@@ -2009,7 +1740,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = PHI_Mateo_M_Capinpin_carm
 			traits = {
 				carm_doctrine_of_autonomy
@@ -2025,7 +1756,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Joe_Rogers_cair
 			traits = {
 				cair_air_superiority_doctrine
@@ -2041,7 +1772,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Basilio_Fernando_cair
 			traits = {
 				cair_naval_aviation_doctrine
@@ -2057,7 +1788,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Edwin_Andrews_cair
 			traits = {
 				cair_battlefield_support_doctrine
@@ -2073,7 +1804,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Pelagio_Cruz_cair
 			traits = {
 				cair_carpet_bombing_doctrine
@@ -2089,7 +1820,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Victor_H_Dizon_cair
 			traits = {
 				cair_vertical_envelopment_doctrine
@@ -2105,7 +1836,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = PHI_Felix_Pestana_cair
 			traits = {
 				cair_the_red_baron
@@ -2126,12 +1857,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jesus_Lava_for_col_hired }
 			}
 			idea_token = PHI_Jesus_Lava_for_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jesus_Lava_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jesus_Lava_for_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Jesus_Lava_for_col_hired }
+			on_remove = { clr_country_flag = PHI_Jesus_Lava_for_col_hired }
 			traits = {
 				collectivist
 				for_ideological_crusader
@@ -2144,12 +1871,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jesus_Lava_sec_col_hired }
 			}
 			idea_token = PHI_Jesus_Lava_sec_col
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jesus_Lava_sec_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jesus_Lava_sec_col_hired }
-			}
+			on_add = { set_country_flag = PHI_Jesus_Lava_sec_col_hired }
+			on_remove = { clr_country_flag = PHI_Jesus_Lava_sec_col_hired }
 			traits = {
 				collectivist
 				sec_prince_of_terror
@@ -2170,12 +1893,8 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_Zulueta_sec_mli_hired }
 			}
 			idea_token = PHI_Jose_Zulueta_sec_mli
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_Zulueta_sec_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_Zulueta_sec_mli_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_Zulueta_sec_mli_hired }
+			on_remove = { clr_country_flag = PHI_Jose_Zulueta_sec_mli_hired }
 			traits = {
 				market_liberal
 				sec_secret_police_chief
@@ -2196,41 +1915,11 @@ characters = {
 				hidden_trigger = { has_country_flag = PHI_Jose_Avelino_eco_sco_hired }
 			}
 			idea_token = PHI_Jose_Avelino_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = PHI_Jose_Avelino_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Jose_Avelino_eco_sco_hired }
-			}
+			on_add = { set_country_flag = PHI_Jose_Avelino_eco_sco_hired }
+			on_remove = { clr_country_flag = PHI_Jose_Avelino_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_balanced_budget_economy
-			}
-		}
-	}
-	PHI_Enrique_Zobel_de_Ayala = {
-		name = "Enrique Zóbel de Ayala"
-		portraits = {
-			civilian = {
-				small = "gfx/interface/ministers/PHI/PHI_Enrique_Zobel_de_Ayala.png"
-			}
-		}
-		advisor = {
-			cost = 150
-			slot = economy_minister
-			available = {
-				hidden_trigger = { has_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
-			}
-			idea_token = PHI_Enrique_Zobel_de_Ayala_eco_npo
-			on_add = {
-				ROOT = { set_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = PHI_Enrique_Zobel_de_Ayala_eco_npo_hired }
-			}
-			traits = {
-				national_populist
-				eco_industrialiser
 			}
 		}
 	}

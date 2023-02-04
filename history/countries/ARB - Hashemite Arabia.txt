@@ -10,15 +10,17 @@ set_technology = {
 }
 
 if = {
+  limit = {
+    NOT = { has_dlc = "No Step Back" }
+  }
+  set_technology = {
+    gwtank = 1
+  }
+}
+if = {
   limit = { has_dlc = "No Step Back" }
   set_technology = {
     gwtank_chassis = 1
-  }
-
-  else = {
-    set_technology = {
-      gwtank = 1
-    }
   }
 }
 
@@ -104,6 +106,9 @@ recruit_character = ARB_Salem_Al_Mubarak_Al_Sabah
 recruit_character = ARB_Jamil_al_Madafi
 recruit_character = ARB_Nada_bin_Nuhair
 recruit_character = ARB_Calouste_Gulbenkian
+recruit_character = ARB_Ronald_Forbes_Adam
+recruit_character = ARB_Clement_Armitage
+recruit_character = ARB_Herbert_Lumsdon
 recruit_character = ARB_Nuri_al_Said
 recruit_character = ARB_Francis_Humphrys
 recruit_character = ARB_John_Cadman

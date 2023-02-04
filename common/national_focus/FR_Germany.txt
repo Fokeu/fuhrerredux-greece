@@ -337,10 +337,6 @@ focus_tree = {
 			add_war_support = 0.1
 			add_ideas = ger_germanic_conquer
 			country_event = ger.11
-      add_named_threat = {
-        threat = 40
-        name = GER_pangerman
-      }
 		}
 	}
 	
@@ -582,13 +578,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_anti_british"
 			set_country_flag = GER_anti_brit
-			ENG = {
-        add_opinion_modifier = {
-          target = ROOT
-          modifier = ITA_outraged
-        }
-      }
-			add_political_power = 100
 		}
 	}
 	
@@ -1009,7 +998,6 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_british_alliance"
-			add_political_power = 100
 			set_country_flag = GER_pro_british
 		}
 	}
@@ -3116,7 +3104,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_scandinavia_focus
-		icon = GFX_goal_GER_scandinavia_claims
+		icon = GFX_goal_NOR_nordic_council
 		x = 3
 		y = 14
 		cost = 5
@@ -4399,34 +4387,22 @@ focus_tree = {
 					has_country_flag = GER_east_is_first # Custom Rule
 				}
 			}
-			modifier = {
-				factor = 10
-				BLR = {
-					is_ai = no
-				}
-			}
 		}
 		
-		mutually_exclusive = {
-			focus = GER_ukraine_front
-		}
 		available = {
-			country_exists = BLR			
+			BLR = {
+				exists = yes
+			}			
 		}
 		
 		bypass = { 
-			OR = {
-				BLR = {
+			BLR = {
+				OR = {
 					exists = no
 					has_war_with = GER
 					is_in_faction_with = GER
+					is_in_faction_with = SOV
 					is_puppet_of = GER
-				}
-				custom_trigger_tooltip = {
-					tooltip = GER_accepted_belarusian_claims
-					BLR = {
-						has_country_flag = BLR_konigsberg_gut
-					}
 				}
 			}
 		}
@@ -4436,16 +4412,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = GER_recognize_belarusian_claims
 			log = "[GetDateText]: [Root.GetName]: Focus GER_belarus_front"
 			BLR = {
 				country_event = ger.243
-			}
-			UKR = {
-				add_opinion_modifier = {
-					modifier = ITA_outraged
-					target = ROOT
-				}
 			}
 		}
 	}
@@ -4482,7 +4451,9 @@ focus_tree = {
 		}
 		
 		available = {
-			country_exists = UKR		
+			UKR = {
+				exists = yes
+			}			
 		}
 		
 		bypass = { 
@@ -4497,10 +4468,6 @@ focus_tree = {
 			}
 		}
 		
-		mutually_exclusive = {
-			focus = GER_belarus_front
-		}
-
 		prerequisite = {
 			focus = GER_east_friends
 		}
@@ -6132,11 +6099,7 @@ focus_tree = {
 		x = -5
 		y = 7
 		cost = 5
-		available = {
-			hidden_trigger = {
-				always = no 
-			}
-		}
+		available = { always = no }
 		bypass = { has_country_flag = GER_hitlers_right }
 		prerequisite = {
 			focus = GER_direction_of_the_economy
@@ -7390,11 +7353,7 @@ focus_tree = {
 		y = 7
 		cost = 5
 		
-		available = { 
-			hidden_trigger = {
-				always = no
-			}
-		}
+		available = { always = no }
 		
 		bypass = { has_country_flag = GER_strasser_right }
 		
@@ -9093,21 +9052,11 @@ focus_tree = {
 		}
 		
 		prerequisite = { focus = GER_air_bases }
-		mutually_exclusive = { focus = GER_goring_plan }
+		mutually_exclusive = {	focus = GER_goring_plan }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_richtofen_plan"
 			set_country_flag = GER_picked_richthofen
-			if = {
-				limit = { has_dlc_bba = yes }
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe_1
-					variant_name = "Bf 109 D"
-					amount = 300
-				}
-				else = {
-					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 300 }
-				}
-			}
+			add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 300 }
 		}
 	}
 	focus = {
@@ -9132,25 +9081,13 @@ focus_tree = {
 				has_war_with = ENG
 			}
 		}
-		available = {
-			NOT = { has_completed_focus = GER_kill_Goring }
-		}
+		
 		prerequisite = { focus = GER_air_bases }
 		mutually_exclusive = {	focus = GER_richtofen_plan }
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GER_goring_plan"
 			set_country_flag = GER_picked_goring
-			if = {
-				limit = { has_dlc_bba = yes }
-				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_1
-					variant_name = "He 111"
-					amount = 300
-				}
-				else = {
-					add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 300 }
-				}
-			}
+			add_equipment_to_stockpile = { type = tac_bomber_equipment_1 amount = 300 }
 		}
 	}
 

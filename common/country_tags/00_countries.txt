@@ -31,6 +31,7 @@ HES = "countries/WestEuropean.txt" # Hessen
 BAW = "countries/WestEuropean.txt" # Baden-Wurtemberg
 BAY = "countries/WestEuropean.txt" # Bayern
 SIL = "countries/WestEuropean.txt" # Silesia
+PRU = "countries/WestEuropean.txt" # Prussia
 BRI = "countries/WestEuropean.txt" # Britanny
 OCC = "countries/WestEuropean.txt" # Occitania
 NRM = "countries/WestEuropean.txt" # Normandy
@@ -94,6 +95,7 @@ LMK = "countries/EastEuropean.txt" # Lemko
 GRL = "countries/EastEuropean.txt" # Goralenland
 SLV = "countries/EastEuropean.txt" # Slovenia
 ZSR = "countries/EastEuropean.txt" # Zapadoslavian Socialist Republic
+ISC = "countries/The Straits.txt" # International Straits Commistion\
 
 ### North America
 USA = "countries/WestEuropean.txt" # United States
@@ -178,7 +180,6 @@ TRU = "countries/MiddleEastern.txt" # Trucial States
 RAS = "countries/MiddleEastern.txt" # Rashidi Arabia
 
 ### Asia
-PRC = "countries/Asian.txt" # Communist China
 PHI = "countries/Asian.txt" # Philippines
 SIA = "countries/Asian.txt" # Siam
 JAP = "countries/Asian.txt" # Japan
@@ -235,6 +236,7 @@ BNG = "countries/Indian.txt" # Bengal
 
 ### Commonwealth
 ENG = "countries/Commonwealth.txt" # United Kingdom
+ENP = "countries/Commonwealth.txt" # English Puppet
 EGL = "countries/Commonwealth.txt" # England
 UOB = "countries/Commonwealth.txt" # Union of Britain
 AST = "countries/Commonwealth.txt" # Australia
@@ -247,7 +249,6 @@ ZAF = "countries/Commonwealth.txt" # Zuid
 BEA = "countries/Commonwealth.txt" # British East Indies
 
 ### Africa
-DAH = "countries/African.txt" # Dahomey
 ANG = "countries/African.txt" # Angola
 MZB = "countries/African.txt" # Mozambique
 COG = "countries/African.txt" # Congo
@@ -270,6 +271,7 @@ BRD = "countries/African.txt" # Burundi
 TZN = "countries/African.txt" # Tanzania
 ZAM = "countries/African.txt" # Zambia
 GAB = "countries/African.txt" # Gabon
+RCG = "countries/African.txt" # Republic of Congo
 EQG = "countries/African.txt" # Equatorial Guinea
 CMR = "countries/African.txt" # Cameroon
 CAR = "countries/African.txt" # Central African Republic

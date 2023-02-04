@@ -115,6 +115,10 @@ spriteTypes = {
 		#name = "GFX_ENG_lnt"
 		#texturefile = "gfx/interface/goals/ENG_lnt.png"
 	#}
+	SpriteType = {
+		name = "GFX_goal_HOL_black_monday"
+		texturefile = "gfx/interface/goals/goal_HOL_black_monday.png"
+	}
 	#SpriteType = {
 		#name = "GFX_ENG_navpact"
 		#texturefile = "gfx/interface/goals/ENG_navpact.png"
@@ -292,6 +296,14 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_collie_industry.png"
 	}
 	SpriteType = {
+		name = "GFX_goal_hungary_handshake"
+		texturefile= "gfx/interface/goals/goal_hungary_handshake.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hungary_sweep"
+		texturefile= "gfx/interface/goals/goal_hungary_sweep.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_kill_bose"
 		texturefile= "gfx/interface/goals/goal_kill_bose.png"
 	}
@@ -312,8 +324,36 @@ spriteTypes = {
 		texturefile= "gfx/interface/goals/goal_valkist_thing.png"
 	}
 	SpriteType = {
+		name = "GFX_Germanic_Hungaro_Deal"
+		texturefile= "gfx/interface/goals/Germanic_Hungaro_Deal.png"
+	}
+	SpriteType = {
 		name = "GFX_goal_awya"
 		texturefile= "gfx/interface/goals/goal_awya.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_deal"
+		texturefile= "gfx/interface/goals/goal_hun_deal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_france_deal"
+		texturefile= "gfx/interface/goals/goal_hun_france_deal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_france_money"
+		texturefile= "gfx/interface/goals/goal_hun_france_money.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_germany_deal"
+		texturefile= "gfx/interface/goals/goal_hun_germany_deal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_uk_deal"
+		texturefile= "gfx/interface/goals/goal_hun_uk_deal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_hun_officers"
+		texturefile= "gfx/interface/goals/goal_hun_officers.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_hun_tanks"
@@ -620,6 +660,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_flag_bolivia_collie"
 		texturefile= "gfx/interface/goals/goal_flag_bolivia_collie.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_uruguay_war"
+		texturefile= "gfx/interface/goals/goal_uruguay_war.png"
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_attack_chile"
@@ -1824,7 +1868,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_goal_operation_rivalry"
-	texturefile = "gfx/interface/goals/JAP_attack_france.png"
+	texturefile = "gfx/interface/goals/OpRivalry.png"
 	}
 	SpriteType = {
 	name = "GFX_goal_revitalization_by_force"
@@ -1855,12 +1899,8 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/Menace_Across_The_Sea.png"
 	}
 	SpriteType = {
-	name = "GFX_goal_operation_eagle_hunter"
-	texturefile = "gfx/interface/goals/JAP_attack_usa.png"
-	}
-	SpriteType = {
 	name = "GFX_goal_operation_kingslayer"
-	texturefile = "gfx/interface/goals/JAP_attack_britain.png"
+	texturefile = "gfx/interface/goals/big_ben_strike_focus.png"
 	}
 	SpriteType = {
 	name = "GFX_goal_SOV_labour_voucher_focus"
@@ -2075,5 +2115,720 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_Red_Star_Torch_White"
 		texturefile = "gfx/interface/goals/Red_Star_Torch_White.png"
+	}
+	#Greece
+	SpriteType = {
+		name = "GFX_goal_GRE_elections"
+		texturefile = "gfx/interface/goals/GRE_elections.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_freethinker"
+		texturefile = "gfx/interface/goals/GRE_freethinker.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_third_generation"
+		texturefile = "gfx/interface/goals/GRE_third_generation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_nominorities"
+		texturefile = "gfx/interface/goals/GRE_nominorities.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_nocolonialism"
+		texturefile = "gfx/interface/goals/GRE_nocolonialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_personality_cult"
+		texturefile = "gfx/interface/goals/GRE_personality_cult.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_novotelol"
+		texturefile = "gfx/interface/goals/GRE_novotelol.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_social_control"
+		texturefile = "gfx/interface/goals/GRE_social_control.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_incident"
+		texturefile = "gfx/interface/goals/GRE_incident.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_promise"
+		texturefile = "gfx/interface/goals/GRE_promise.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_meeting" #
+		texturefile = "gfx/interface/goals/GRE_meeting.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_corporatism" 
+		texturefile = "gfx/interface/goals/GRE_corporatism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ded"
+		texturefile = "gfx/interface/goals/GRE_ded.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_direct_rule"
+		texturefile = "gfx/interface/goals/GRE_direct_rule.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_education_reform"
+		texturefile = "gfx/interface/goals/GRE_education_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_enforce_religion"
+		texturefile = "gfx/interface/goals/GRE_enforce_religion.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_speech"
+		texturefile = "gfx/interface/goals/GRE_speech.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_gigachadjesus"
+		texturefile = "gfx/interface/goals/GRE_gigachadjesus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rip_albanians"
+		texturefile = "gfx/interface/goals/GRE_rip_albanians.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_economic_protection"
+		texturefile = "gfx/interface/goals/GRE_economic_protection.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_call_generals"
+		texturefile = "gfx/interface/goals/GRE_call_generals.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_safer_society"
+		texturefile = "gfx/interface/goals/GRE_safer_society.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_charisma"
+		texturefile = "gfx/interface/goals/GRE_charisma.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_healthcare"
+		texturefile = "gfx/interface/goals/GRE_healthcare.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ideal_figurehead"
+		texturefile = "gfx/interface/goals/GRE_ideal_figurehead.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_church_n_nation"
+		texturefile = "gfx/interface/goals/GRE_church_n_nation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_law_for_criminals"
+		texturefile = "gfx/interface/goals/GRE_law_for_criminals.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_agrarian_focus"
+		texturefile = "gfx/interface/goals/GRE_agrarian_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_christian_schoolds"
+		texturefile = "gfx/interface/goals/GRE_christian_schoolds.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_taking_resources"
+		texturefile = "gfx/interface/goals/GRE_taking_resources.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rebuilding_for_tommorow"
+		texturefile = "gfx/interface/goals/GRE_rebuilding_for_tommorow.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_konserwy"
+		texturefile = "gfx/interface/goals/GRE_konserwy.png"
+	}
+	############
+	SpriteType = {
+		name = "GFX_goal_GRE_liberals"
+		texturefile = "gfx/interface/goals/GRE_liberals.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_patriotism"
+		texturefile = "gfx/interface/goals/GRE_patriotism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_administration"
+		texturefile = "gfx/interface/goals/GRE_administration.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_resolve_minority_issue"
+		texturefile = "gfx/interface/goals/GRE_resolve_minority_issue.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_bureaucratic_decentralization"
+		texturefile = "gfx/interface/goals/GRE_bureaucratic_decentralization.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_neuter_military"
+		texturefile = "gfx/interface/goals/GRE_neuter_military.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_revive_dsb"
+		texturefile = "gfx/interface/goals/GRE_revive_dsb.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_state_tour"
+		texturefile = "gfx/interface/goals/GRE_state_tour.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_mixed_economy"
+		texturefile = "gfx/interface/goals/GRE_mixed_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_power_of_church"
+		texturefile = "gfx/interface/goals/GRE_power_of_church.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_affordable_housing"
+		texturefile = "gfx/interface/goals/GRE_affordable_housing.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_send_the_farmers"
+		texturefile = "gfx/interface/goals/GRE_send_the_farmers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_public_uni_grants"
+		texturefile = "gfx/interface/goals/GRE_public_uni_grants.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_anti_bolshevism"
+		texturefile = "gfx/interface/goals/GRE_anti_bolshevism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hellas_of_future"
+		texturefile = "gfx/interface/goals/GRE_hellas_of_future.png"
+	}
+	#########
+	SpriteType = {
+		name = "GFX_goal_GRE_eek"
+		texturefile = "gfx/interface/goals/GRE_eek.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_decentralization"
+		texturefile = "gfx/interface/goals/GRE_decentralization.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_privatisation"
+		texturefile = "gfx/interface/goals/GRE_privatisation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_school_building"
+		texturefile = "gfx/interface/goals/GRE_school_building.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_equality"
+		texturefile = "gfx/interface/goals/GRE_equality.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_parliament"
+		texturefile = "gfx/interface/goals/GRE_parliament.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_investors"
+		texturefile = "gfx/interface/goals/GRE_investors.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_turkophobia"
+		texturefile = "gfx/interface/goals/GRE_turkophobia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_secularization"
+		texturefile = "gfx/interface/goals/GRE_secularization.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_conscription_slavery"
+		texturefile = "gfx/interface/goals/GRE_conscription_slavery.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_industrial_development"
+		texturefile = "gfx/interface/goals/GRE_industrial_development.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_redraw_internal_borders"
+		texturefile = "gfx/interface/goals/GRE_redraw_internal_borders.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_promote_trade"
+		texturefile = "gfx/interface/goals/GRE_promote_trade.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_greece_reborn"
+		texturefile = "gfx/interface/goals/GRE_greece_reborn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_liberals"
+		texturefile = "gfx/interface/goals/GRE_liberals.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_progressive_agenda"
+		texturefile = "gfx/interface/goals/GRE_progressive_agenda.png"
+	}
+	##############
+	SpriteType = {
+		name = "GFX_goal_GRE_liberal_socialism"
+		texturefile = "gfx/interface/goals/GRE_liberal_socialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hardliners"
+		texturefile = "gfx/interface/goals/GRE_hardliners.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_total_secularization"
+		texturefile = "gfx/interface/goals/GRE_total_secularization.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_safeguard_democracy"
+		texturefile = "gfx/interface/goals/GRE_safeguard_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_healthcare_for_everyone"
+		texturefile = "gfx/interface/goals/GRE_healthcare_for_everyone.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rights_of_woman"
+		texturefile = "gfx/interface/goals/GRE_rights_of_woman.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_mass_urbanisation"
+		texturefile = "gfx/interface/goals/GRE_mass_urbanisation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_demonize_capitalists"
+		texturefile = "gfx/interface/goals/GRE_demonize_capitalists.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_state_atheism"
+		texturefile = "gfx/interface/goals/GRE_state_atheism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_worker_councills"
+		texturefile = "gfx/interface/goals/GRE_worker_councills.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_denounce_radicalism"
+		texturefile = "gfx/interface/goals/GRE_denounce_radicalism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_destroy_the_nationalism"
+		texturefile = "gfx/interface/goals/GRE_destroy_the_nationalism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rights_of_workers"
+		texturefile = "gfx/interface/goals/GRE_rights_of_workers.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_protect_the_poor"
+		texturefile = "gfx/interface/goals/GRE_protect_the_poor.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_propaganda_machine"
+		texturefile = "gfx/interface/goals/GRE_propaganda_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ideals_of_marx"
+		texturefile = "gfx/interface/goals/GRE_ideals_of_marx.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_cosmopolitanism"
+		texturefile = "gfx/interface/goals/GRE_cosmopolitanism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_decentralizationn"
+		texturefile = "gfx/interface/goals/GRE_decentralizationn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_country_of_steel"
+		texturefile = "gfx/interface/goals/GRE_country_of_steel.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_education_reformm"
+		texturefile = "gfx/interface/goals/GRE_education_reformm.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_for_greece"
+		texturefile = "gfx/interface/goals/GRE_for_greece.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_collectivisation"
+		texturefile = "gfx/interface/goals/GRE_collectivisation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_spread_patriotism"
+		texturefile = "gfx/interface/goals/GRE_spread_patriotism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_paving_the_way_to_socialism"
+		texturefile = "gfx/interface/goals/GRE_paving_the_way_to_socialism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_onwards"
+		texturefile = "gfx/interface/goals/GRE_onwards.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_smyrna_crisis"
+		texturefile = "gfx/interface/goals/GRE_smyrna_crisis.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_request_support"
+		texturefile = "gfx/interface/goals/GRE_request_support.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_logistics"
+		texturefile = "gfx/interface/goals/GRE_logistics.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_militia_problem"
+		texturefile = "gfx/interface/goals/GRE_militia_problem.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_propaganda_warfare"
+		texturefile = "gfx/interface/goals/GRE_propaganda_warfare.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_fortify_smyrna"
+		texturefile = "gfx/interface/goals/GRE_fortify_smyrna.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_counterespionage"
+		texturefile = "gfx/interface/goals/GRE_counterespionage.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_show_of_force"
+		texturefile = "gfx/interface/goals/GRE_show_of_force.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_reveal_the_connections"
+		texturefile = "gfx/interface/goals/GRE_reveal_the_connections.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_unavoidable"
+		texturefile = "gfx/interface/goals/GRE_unavoidable.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_fortify_horn"
+		texturefile = "gfx/interface/goals/GRE_fortify_horn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_industrial_convert"
+		texturefile = "gfx/interface/goals/GRE_industrial_convert.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_an_example"
+		texturefile = "gfx/interface/goals/GRE_an_example.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_greco_turkish_war"
+		texturefile = "gfx/interface/goals/GRE_greco_turkish_war.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hellenoturkish"
+		texturefile = "gfx/interface/goals/GRE_hellenoturkish.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_resolve_disputes"
+		texturefile = "gfx/interface/goals/GRE_resolve_disputes.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ripbozo_nationalism"
+		texturefile = "gfx/interface/goals/GRE_ripbozo_nationalism.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_manifest_destiny"
+		texturefile = "gfx/interface/goals/GRE_manifest_destiny.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_back_to_constantinople"
+		texturefile = "gfx/interface/goals/GRE_back_to_constantinople.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rewrite_history"
+		texturefile = "gfx/interface/goals/GRE_rewrite_history.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_write_constitution"
+		texturefile = "gfx/interface/goals/GRE_write_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_free_the_people"
+		texturefile = "gfx/interface/goals/GRE_free_the_people.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_religious_freedoms"
+		texturefile = "gfx/interface/goals/GRE_religious_freedoms.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_united_forever"
+		texturefile = "gfx/interface/goals/GRE_united_forever.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GRE_proclaim_republic"
+		texturefile = "gfx/interface/goals/GRE_proclaim_republic.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_military_support"
+		texturefile = "gfx/interface/goals/GRE_military_support.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_rapid_reconstruction"
+		texturefile = "gfx/interface/goals/GRE_rapid_reconstruction.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_life_support_economy"
+		texturefile = "gfx/interface/goals/GRE_life_support_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_albania_exile"
+		texturefile = "gfx/interface/goals/GRE_albania_exile.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_blame_italians"
+		texturefile = "gfx/interface/goals/GRE_blame_italians.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_spark_chaos"
+		texturefile = "gfx/interface/goals/GRE_spark_chaos.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_sabotage_italians"
+		texturefile = "gfx/interface/goals/GRE_sabotage_italians.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_special_operation"
+		texturefile = "gfx/interface/goals/GRE_special_operation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_free_south_slavs"
+		texturefile = "gfx/interface/goals/GRE_free_south_slavs.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_demand_islands"
+		texturefile = "gfx/interface/goals/GRE_demand_islands.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_open_borders"
+		texturefile = "gfx/interface/goals/GRE_open_borders.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_war_industry"
+		texturefile = "gfx/interface/goals/GRE_war_industry.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_free_cyprus"
+		texturefile = "gfx/interface/goals/GRE_free_cyprus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_crush_crown"
+		texturefile = "gfx/interface/goals/GRE_crush_crown.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_use_resources"
+		texturefile = "gfx/interface/goals/GRE_use_resources.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_stand_strong"
+		texturefile = "gfx/interface/goals/GRE_stand_strong.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_integration"
+		texturefile = "gfx/interface/goals/GRE_integration.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_cooperation"
+		texturefile = "gfx/interface/goals/GRE_cooperation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_dissolve_parliament1"
+		texturefile = "gfx/interface/goals/generic_dissolve_parliament1.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_food_processing"
+		texturefile = "gfx/interface/goals/generic_food_processing.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_takeover_industries"
+		texturefile = "gfx/interface/goals/generic_takeover_industries.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_heavy_armour_german"
+		texturefile = "gfx/interface/goals/generic_heavy_armour_german.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_pyrkal"
+		texturefile = "gfx/interface/goals/GRE_pyrkal.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_smyrna_aid"
+		texturefile = "gfx/interface/goals/GRE_smyrna_aid.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_pay_off_dept"
+		texturefile = "gfx/interface/goals/GRE_pay_off_dept.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_emergency_procedures"
+		texturefile = "gfx/interface/goals/GRE_emergency_procedures.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_eee"
+		texturefile = "gfx/interface/goals/GRE_eee.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_convert_or_suffer"
+		texturefile = "gfx/interface/goals/GRE_convert_or_suffer.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_old_ways"
+		texturefile = "gfx/interface/goals/GRE_old_ways.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_burn_jews"
+		texturefile = "gfx/interface/goals/GRE_burn_jews.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ghetto"
+		texturefile = "gfx/interface/goals/GRE_ghetto.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_blame_entente"
+		texturefile = "gfx/interface/goals/GRE_blame_entente.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_nothing_against_state"
+		texturefile = "gfx/interface/goals/GRE_nothing_against_state.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_lawful_territory"
+		texturefile = "gfx/interface/goals/GRE_lawful_territory.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_imperium_romanum"
+		texturefile = "gfx/interface/goals/GRE_imperium_romanum.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GRE_turkish_plot"
+		texturefile = "gfx/interface/goals/GRE_turkish_plot.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_the_final_solution"
+		texturefile = "gfx/interface/goals/GRE_the_final_solution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_take_what_is_ours"
+		texturefile = "gfx/interface/goals/GRE_take_what_is_ours.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hunt_the_leaders"
+		texturefile = "gfx/interface/goals/GRE_hunt_the_leaders.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_total_war"
+		texturefile = "gfx/interface/goals/GRE_total_war.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_scorched_earth"
+		texturefile = "gfx/interface/goals/GRE_scorched_earth.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_colonization_of_anatolia"
+		texturefile = "gfx/interface/goals/GRE_colonization_of_anatolia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_confiscation"
+		texturefile = "gfx/interface/goals/GRE_confiscation.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_parousia"
+		texturefile = "gfx/interface/goals/GRE_parousia.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_amnestic_agents"
+		texturefile = "gfx/interface/goals/GRE_amnestic_agents.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_to_ashes"
+		texturefile = "gfx/interface/goals/GRE_to_ashes.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_purity_laws"
+		texturefile = "gfx/interface/goals/GRE_purity_laws.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_remain_calm"
+		texturefile = "gfx/interface/goals/GRE_remain_calm.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_GRE_golden_dawn"
+		texturefile = "gfx/interface/goals/GRE_golden_dawn.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_agoge"
+		texturefile = "gfx/interface/goals/GRE_agoge.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_spartan_constitution"
+		texturefile = "gfx/interface/goals/GRE_spartan_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_spartiate"
+		texturefile = "gfx/interface/goals/GRE_spartiate.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_perioikoi"
+		texturefile = "gfx/interface/goals/GRE_perioikoi.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_helots"
+		texturefile = "gfx/interface/goals/GRE_helots.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_neodamode"
+		texturefile = "gfx/interface/goals/GRE_neodamode.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_burn_down_churches"
+		texturefile = "gfx/interface/goals/GRE_burn_down_churches.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hephaestus"
+		texturefile = "gfx/interface/goals/GRE_hephaestus.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_ares"
+		texturefile = "gfx/interface/goals/GRE_ares.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_hyperborea"
+		texturefile = "gfx/interface/goals/GRE_hyperborea.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_infant_selection"
+		texturefile = "gfx/interface/goals/GRE_infant_selection.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_honour_ancestors"
+		texturefile = "gfx/interface/goals/GRE_honour_ancestors.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_free_art"
+		texturefile = "gfx/interface/goals/GRE_free_art.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_molon_labe"
+		texturefile = "gfx/interface/goals/GRE_molon_labe.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_GRE_legacy_leonidas"
+		texturefile = "gfx/interface/goals/GRE_legacy_leonidas.png"
 	}
 }

@@ -385,7 +385,6 @@ HOL_FRA_puppet = {
 KOR_FRA_puppet = {
 	color = rgb { 34 126 142 }
  	color_ui = rgb { 34 126 142 }
-}
 TZN_puppet = {
 	color = rgb { 152 130 160 }
  	color_ui = rgb { 152 130 160 }
@@ -398,7 +397,7 @@ ETH_puppet = {
 	color = rgb { 152 130 160 }
  	color_ui = rgb { 152 130 100 }
 }
-CZE_zapadoslavia = {
+CZE_zapadoslavia = { 133 125 203 }
 	color = rgb { 53 137 155 }
 	color_ui = rgb { 146  80  140 }
 }
@@ -518,10 +517,6 @@ ITA_puppet_communist = {
 	color = rgb { 140 15 15 }
 	color_ui = rgb {140 15 15 }
 }
-ITA_PAP = {
-	color = rgb { 255 255 183 }
-	color_ui = rgb { 255 255 183 }
-}
 ITA_puppet = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }
@@ -562,19 +557,11 @@ PHI_CONFED = {
 	color = rgb { 204 81 39 }
 	color_ui = rgb { 204 81 39 }
 }
-PHI_HOLY = {
-	color = rgb { 242 242 142 }
-	color_ui = rgb { 242 242 142 }
+PHI_CONFED = {
+	color = rgb { 204 81 39 }
+	color_ui = rgb { 204 81 39 }
 }
-NFA_USA = {
-	color = rgb { 44 106 193 }
-	color_ui = rgb { 44 106 193 }
-}
-NFQ_USA = {
-	color = rgb { 44 106 193 }
-	color_ui = rgb { 44 106 193 }
-}
-BLR_LITVINISM = {
-	color = rgb { 154 69 116 }
-	color_ui = rgb { 154 69 116 }
+GRE_unification = {
+	color = rgb { 147 82 173 }
+	color_ui = rgb { 147 82 173 }
 }

@@ -110,12 +110,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
 			}
 			idea_token = UKR_Dmitri_Dontsov_hog_npo
-			on_add = {
-				ROOT = { set_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
-			}
+			on_add = { set_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
+			on_remove = { clr_country_flag = UKR_Dmitri_Dontsov_hog_npo_hired }
 			traits = {
 				national_populist
 				hog_flamboyant_tough_guy
@@ -202,7 +198,7 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
-				trickster
+				rickster
 				trait_engineer
 			}
 			skill = 3
@@ -349,12 +345,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Oleksander_Shumsky_hog_van_hired }
 			}
 			idea_token = UKR_Oleksander_Shumsky_hog_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Oleksander_Shumsky_hog_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Oleksander_Shumsky_hog_van_hired }
-			}
+			on_add = { set_country_flag = UKR_Oleksander_Shumsky_hog_van_hired }
+			on_remove = { clr_country_flag = UKR_Oleksander_Shumsky_hog_van_hired }
 			traits = {
 				vanguardist
 				hog_red_chairmen
@@ -375,12 +367,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vladimir_Vynnychenko_hog_sco_hired }
 			}
 			idea_token = UKR_Vladimir_Vynnychenko_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vladimir_Vynnychenko_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vladimir_Vynnychenko_hog_sco_hired }
-			}
+			on_add = { set_country_flag = UKR_Vladimir_Vynnychenko_hog_sco_hired }
+			on_remove = { clr_country_flag = UKR_Vladimir_Vynnychenko_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_silent_workhorse
@@ -401,12 +389,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Andrey_Livytskyi_hog_sde_hired }
 			}
 			idea_token = UKR_Andrey_Livytskyi_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = UKR_Andrey_Livytskyi_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Andrey_Livytskyi_hog_sde_hired }
-			}
+			on_add = { set_country_flag = UKR_Andrey_Livytskyi_hog_sde_hired }
+			on_remove = { clr_country_flag = UKR_Andrey_Livytskyi_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_charismatic_charmer
@@ -427,12 +411,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Boris_Martos_hog_ade_hired }
 			}
 			idea_token = UKR_Boris_Martos_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Boris_Martos_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Boris_Martos_hog_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Boris_Martos_hog_ade_hired }
+			on_remove = { clr_country_flag = UKR_Boris_Martos_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_corporate_suit
@@ -453,12 +433,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Mikhail_Bulgakov_hog_ade_hired }
 			}
 			idea_token = UKR_Mikhail_Bulgakov_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Mikhail_Bulgakov_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikhail_Bulgakov_hog_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Mikhail_Bulgakov_hog_ade_hired }
+			on_remove = { clr_country_flag = UKR_Mikhail_Bulgakov_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_charismatic_charmer
@@ -479,12 +455,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Nikolai_Boretsky_hog_ade_hired }
 			}
 			idea_token = UKR_Nikolai_Boretsky_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Nikolai_Boretsky_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Nikolai_Boretsky_hog_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Nikolai_Boretsky_hog_ade_hired }
+			on_remove = { clr_country_flag = UKR_Nikolai_Boretsky_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_pragmatic_statesman
@@ -505,12 +477,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Patriarch_Mstyslav_hog_ade_hired }
 			}
 			idea_token = UKR_Patriarch_Mstyslav_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Patriarch_Mstyslav_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Patriarch_Mstyslav_hog_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Patriarch_Mstyslav_hog_ade_hired }
+			on_remove = { clr_country_flag = UKR_Patriarch_Mstyslav_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_flamboyant_tough_guy
@@ -531,12 +499,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vyacheslav_Prokopovich_hog_ade_hired }
 			}
 			idea_token = UKR_Vyacheslav_Prokopovich_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vyacheslav_Prokopovich_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vyacheslav_Prokopovich_hog_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Vyacheslav_Prokopovich_hog_ade_hired }
+			on_remove = { clr_country_flag = UKR_Vyacheslav_Prokopovich_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_naive_optimist
@@ -560,12 +524,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Pavlo_Skoropadsky_hog_pau_hired }
 			}
 			idea_token = UKR_Pavlo_Skoropadsky_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = UKR_Pavlo_Skoropadsky_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Pavlo_Skoropadsky_hog_pau_hired }
-			}
+			on_add = { set_country_flag = UKR_Pavlo_Skoropadsky_hog_pau_hired }
+			on_remove = { clr_country_flag = UKR_Pavlo_Skoropadsky_hog_pau_hired }
 			traits = {
 				paternal_autocrat
 				hog_happy_amateur
@@ -573,7 +533,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Pavlo_Skoropadsky_cos_pau
 			traits = {
 				cos_school_of_psychology
@@ -595,12 +555,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Stanislav_Kosior_for_van_hired }
 			}
 			idea_token = UKR_Stanislav_Kosior_for_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Stanislav_Kosior_for_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Stanislav_Kosior_for_van_hired }
-			}
+			on_add = { set_country_flag = UKR_Stanislav_Kosior_for_van_hired }
+			on_remove = { clr_country_flag = UKR_Stanislav_Kosior_for_van_hired }
 			traits = {
 				vanguardist
 				for_great_compromiser
@@ -621,12 +577,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vlas_Chubar_for_van_hired }
 			}
 			idea_token = UKR_Vlas_Chubar_for_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vlas_Chubar_for_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vlas_Chubar_for_van_hired }
-			}
+			on_add = { set_country_flag = UKR_Vlas_Chubar_for_van_hired }
+			on_remove = { clr_country_flag = UKR_Vlas_Chubar_for_van_hired }
 			traits = {
 				vanguardist
 				for_ideological_crusader
@@ -647,12 +599,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
 			}
 			idea_token = UKR_Grigori_Sokolnikov_for_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
+			on_remove = { clr_country_flag = UKR_Grigori_Sokolnikov_for_col_hired }
 			traits = {
 				collectivist
 				for_apologetic_clerk
@@ -673,12 +621,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Nikolai_Skrypnik_for_sde_hired }
 			}
 			idea_token = UKR_Nikolai_Skrypnik_for_sde
-			on_add = {
-				ROOT = { set_country_flag = UKR_Nikolai_Skrypnik_for_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Nikolai_Skrypnik_for_sde_hired }
-			}
+			on_add = { set_country_flag = UKR_Nikolai_Skrypnik_for_sde_hired }
+			on_remove = { clr_country_flag = UKR_Nikolai_Skrypnik_for_sde_hired }
 			traits = {
 				social_democrat
 				for_iron_fisted_brute
@@ -699,12 +643,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Alexander_Shulgin_for_sco_hired }
 			}
 			idea_token = UKR_Alexander_Shulgin_for_sco
-			on_add = {
-				ROOT = { set_country_flag = UKR_Alexander_Shulgin_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Alexander_Shulgin_for_sco_hired }
-			}
+			on_add = { set_country_flag = UKR_Alexander_Shulgin_for_sco_hired }
+			on_remove = { clr_country_flag = UKR_Alexander_Shulgin_for_sco_hired }
 			traits = {
 				social_conservative
 				for_great_compromiser
@@ -725,12 +665,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Konstantin_Prisovsky_for_pau_hired }
 			}
 			idea_token = UKR_Konstantin_Prisovsky_for_pau
-			on_add = {
-				ROOT = { set_country_flag = UKR_Konstantin_Prisovsky_for_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Konstantin_Prisovsky_for_pau_hired }
-			}
+			on_add = { set_country_flag = UKR_Konstantin_Prisovsky_for_pau_hired }
+			on_remove = { clr_country_flag = UKR_Konstantin_Prisovsky_for_pau_hired }
 			traits = {
 				paternal_autocrat
 				for_general_staffer
@@ -751,12 +687,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Yuri_Lipa_for_pau_hired }
 			}
 			idea_token = UKR_Yuri_Lipa_for_pau
-			on_add = {
-				ROOT = { set_country_flag = UKR_Yuri_Lipa_for_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Yuri_Lipa_for_pau_hired }
-			}
+			on_add = { set_country_flag = UKR_Yuri_Lipa_for_pau_hired }
+			on_remove = { clr_country_flag = UKR_Yuri_Lipa_for_pau_hired }
 			traits = {
 				paternal_autocrat
 				for_apologetic_clerk
@@ -777,12 +709,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Dmitri_Doroshenko_for_npo_hired }
 			}
 			idea_token = UKR_Dmitri_Doroshenko_for_npo
-			on_add = {
-				ROOT = { set_country_flag = UKR_Dmitri_Doroshenko_for_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Dmitri_Doroshenko_for_npo_hired }
-			}
+			on_add = { set_country_flag = UKR_Dmitri_Doroshenko_for_npo_hired }
+			on_remove = { clr_country_flag = UKR_Dmitri_Doroshenko_for_npo_hired }
 			traits = {
 				national_populist
 				for_biased_intellectual
@@ -803,12 +731,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Mikola_Lebed_for_npo_hired }
 			}
 			idea_token = UKR_Mikola_Lebed_for_npo
-			on_add = {
-				ROOT = { set_country_flag = UKR_Mikola_Lebed_for_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikola_Lebed_for_npo_hired }
-			}
+			on_add = { set_country_flag = UKR_Mikola_Lebed_for_npo_hired }
+			on_remove = { clr_country_flag = UKR_Mikola_Lebed_for_npo_hired }
 			traits = {
 				national_populist
 				for_the_cloak_n_dagger_schemer
@@ -829,12 +753,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Grigorij_Petrovsky_eco_col_hired }
 			}
 			idea_token = UKR_Grigorij_Petrovsky_eco_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Grigorij_Petrovsky_eco_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Grigorij_Petrovsky_eco_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Grigorij_Petrovsky_eco_col_hired }
+			on_remove = { clr_country_flag = UKR_Grigorij_Petrovsky_eco_col_hired }
 			traits = {
 				collectivist
 				eco_planned_economy_proponent
@@ -855,12 +775,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Panas_P_Lyubchenko_eco_col_hired }
 			}
 			idea_token = UKR_Panas_P_Lyubchenko_eco_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Panas_P_Lyubchenko_eco_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Panas_P_Lyubchenko_eco_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Panas_P_Lyubchenko_eco_col_hired }
+			on_remove = { clr_country_flag = UKR_Panas_P_Lyubchenko_eco_col_hired }
 			traits = {
 				collectivist
 				eco_industrialiser
@@ -881,12 +797,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Yuri_Kotsiubinsky_eco_col_hired }
 			}
 			idea_token = UKR_Yuri_Kotsiubinsky_eco_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Yuri_Kotsiubinsky_eco_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Yuri_Kotsiubinsky_eco_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Yuri_Kotsiubinsky_eco_col_hired }
+			on_remove = { clr_country_flag = UKR_Yuri_Kotsiubinsky_eco_col_hired }
 			traits = {
 				collectivist
 				eco_steel_magnate
@@ -907,12 +819,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Nikolai_Shrag_eco_sli_hired }
 			}
 			idea_token = UKR_Nikolai_Shrag_eco_sli
-			on_add = {
-				ROOT = { set_country_flag = UKR_Nikolai_Shrag_eco_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Nikolai_Shrag_eco_sli_hired }
-			}
+			on_add = { set_country_flag = UKR_Nikolai_Shrag_eco_sli_hired }
+			on_remove = { clr_country_flag = UKR_Nikolai_Shrag_eco_sli_hired }
 			traits = {
 				social_liberal
 				eco_balanced_budget_economy
@@ -933,12 +841,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vladimir_Tarnovsky_eco_sco_hired }
 			}
 			idea_token = UKR_Vladimir_Tarnovsky_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vladimir_Tarnovsky_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vladimir_Tarnovsky_eco_sco_hired }
-			}
+			on_add = { set_country_flag = UKR_Vladimir_Tarnovsky_eco_sco_hired }
+			on_remove = { clr_country_flag = UKR_Vladimir_Tarnovsky_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_administrative_genius
@@ -959,12 +863,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Kirill_Osmak_eco_ade_hired }
 			}
 			idea_token = UKR_Kirill_Osmak_eco_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Kirill_Osmak_eco_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Kirill_Osmak_eco_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Kirill_Osmak_eco_ade_hired }
+			on_remove = { clr_country_flag = UKR_Kirill_Osmak_eco_ade_hired }
 			traits = {
 				authoritarian_democrat
 				eco_resource_industrialist
@@ -985,12 +885,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Sergei_Ostapenko_eco_ade_hired }
 			}
 			idea_token = UKR_Sergei_Ostapenko_eco_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Sergei_Ostapenko_eco_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Sergei_Ostapenko_eco_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Sergei_Ostapenko_eco_ade_hired }
+			on_remove = { clr_country_flag = UKR_Sergei_Ostapenko_eco_ade_hired }
 			traits = {
 				authoritarian_democrat
 				eco_industrialiser
@@ -1011,12 +907,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Mikola_Stsiborsky_eco_pau_hired }
 			}
 			idea_token = UKR_Mikola_Stsiborsky_eco_pau
-			on_add = {
-				ROOT = { set_country_flag = UKR_Mikola_Stsiborsky_eco_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikola_Stsiborsky_eco_pau_hired }
-			}
+			on_add = { set_country_flag = UKR_Mikola_Stsiborsky_eco_pau_hired }
+			on_remove = { clr_country_flag = UKR_Mikola_Stsiborsky_eco_pau_hired }
 			traits = {
 				paternal_autocrat
 				eco_imbedded_unioneer
@@ -1037,12 +929,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Emanoil_Kviring_sec_van_hired }
 			}
 			idea_token = UKR_Emanoil_Kviring_sec_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Emanoil_Kviring_sec_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Emanoil_Kviring_sec_van_hired }
-			}
+			on_add = { set_country_flag = UKR_Emanoil_Kviring_sec_van_hired }
+			on_remove = { clr_country_flag = UKR_Emanoil_Kviring_sec_van_hired }
 			traits = {
 				vanguardist
 				sec_compassionate_gentleman
@@ -1063,12 +951,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Leonid_Melnikov_sec_van_hired }
 			}
 			idea_token = UKR_Leonid_Melnikov_sec_van
-			on_add = {
-				ROOT = { set_country_flag = UKR_Leonid_Melnikov_sec_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Leonid_Melnikov_sec_van_hired }
-			}
+			on_add = { set_country_flag = UKR_Leonid_Melnikov_sec_van_hired }
+			on_remove = { clr_country_flag = UKR_Leonid_Melnikov_sec_van_hired }
 			traits = {
 				vanguardist
 				sec_prince_of_terror
@@ -1089,12 +973,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Khrystian_G_Rakovsky_sec_col_hired }
 			}
 			idea_token = UKR_Khrystian_G_Rakovsky_sec_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Khrystian_G_Rakovsky_sec_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Khrystian_G_Rakovsky_sec_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Khrystian_G_Rakovsky_sec_col_hired }
+			on_remove = { clr_country_flag = UKR_Khrystian_G_Rakovsky_sec_col_hired }
 			traits = {
 				collectivist
 				sec_efficient_sociopath
@@ -1115,12 +995,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vladimir_Antonov_Ovseyenko_sec_col_hired }
 			}
 			idea_token = UKR_Vladimir_Antonov_Ovseyenko_sec_col
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vladimir_Antonov_Ovseyenko_sec_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vladimir_Antonov_Ovseyenko_sec_col_hired }
-			}
+			on_add = { set_country_flag = UKR_Vladimir_Antonov_Ovseyenko_sec_col_hired }
+			on_remove = { clr_country_flag = UKR_Vladimir_Antonov_Ovseyenko_sec_col_hired }
 			traits = {
 				collectivist
 				sec_media_magnate
@@ -1141,12 +1017,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Ivan_Feshenko_Chopovsky_sec_sli_hired }
 			}
 			idea_token = UKR_Ivan_Feshenko_Chopovsky_sec_sli
-			on_add = {
-				ROOT = { set_country_flag = UKR_Ivan_Feshenko_Chopovsky_sec_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Ivan_Feshenko_Chopovsky_sec_sli_hired }
-			}
+			on_add = { set_country_flag = UKR_Ivan_Feshenko_Chopovsky_sec_sli_hired }
+			on_remove = { clr_country_flag = UKR_Ivan_Feshenko_Chopovsky_sec_sli_hired }
 			traits = {
 				social_liberal
 				sec_compassionate_gentleman
@@ -1167,12 +1039,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Daniil_Skoropadsky_sec_ade_hired }
 			}
 			idea_token = UKR_Daniil_Skoropadsky_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Daniil_Skoropadsky_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Daniil_Skoropadsky_sec_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Daniil_Skoropadsky_sec_ade_hired }
+			on_remove = { clr_country_flag = UKR_Daniil_Skoropadsky_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_silent_lawyer
@@ -1193,12 +1061,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Igor_Kistyakovsky_sec_ade_hired }
 			}
 			idea_token = UKR_Igor_Kistyakovsky_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Igor_Kistyakovsky_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Igor_Kistyakovsky_sec_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Igor_Kistyakovsky_sec_ade_hired }
+			on_remove = { clr_country_flag = UKR_Igor_Kistyakovsky_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_secret_police_chief
@@ -1219,12 +1083,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vladimir_Chekhovsky_sec_ade_hired }
 			}
 			idea_token = UKR_Vladimir_Chekhovsky_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vladimir_Chekhovsky_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vladimir_Chekhovsky_sec_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Vladimir_Chekhovsky_sec_ade_hired }
+			on_remove = { clr_country_flag = UKR_Vladimir_Chekhovsky_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_compassionate_gentleman
@@ -1245,12 +1105,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Vladimir_Khitrovo_sec_ade_hired }
 			}
 			idea_token = UKR_Vladimir_Khitrovo_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = UKR_Vladimir_Khitrovo_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Vladimir_Khitrovo_sec_ade_hired }
-			}
+			on_add = { set_country_flag = UKR_Vladimir_Khitrovo_sec_ade_hired }
+			on_remove = { clr_country_flag = UKR_Vladimir_Khitrovo_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_efficient_sociopath
@@ -1271,12 +1127,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Sergei_Kubiyovich_sec_pau_hired }
 			}
 			idea_token = UKR_Sergei_Kubiyovich_sec_pau
-			on_add = {
-				ROOT = { set_country_flag = UKR_Sergei_Kubiyovich_sec_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Sergei_Kubiyovich_sec_pau_hired }
-			}
+			on_add = { set_country_flag = UKR_Sergei_Kubiyovich_sec_pau_hired }
+			on_remove = { clr_country_flag = UKR_Sergei_Kubiyovich_sec_pau_hired }
 			traits = {
 				paternal_autocrat
 				sec_secret_police_chief
@@ -1297,12 +1149,8 @@ characters = {
 				hidden_trigger = { has_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
 			}
 			idea_token = UKR_Mikhaylo_Kolodzinsky_sec_npo
-			on_add = {
-				ROOT = { set_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
-			}
+			on_add = { set_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
+			on_remove = { clr_country_flag = UKR_Mikhaylo_Kolodzinsky_sec_npo_hired }
 			traits = {
 				national_populist
 				sec_man_of_the_people
@@ -1318,7 +1166,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Vitaly_Primakov_cos
 			traits = {
 				cos_school_of_commando_operations
@@ -1334,7 +1182,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Emelian_Volokh_cos
 			traits = {
 				cos_school_of_mass_combat
@@ -1350,7 +1198,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Sydor_Kovpak_cos
 			traits = {
 				cos_school_of_fire_support
@@ -1366,7 +1214,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Mikhail_Omelianovych_Pavlenko_cos
 			traits = {
 				cos_school_of_psychology
@@ -1382,7 +1230,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = UKR_Vsevolod_Petrov_cos
 			traits = {
 				cos_school_of_fire_support
@@ -1398,7 +1246,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Yan_Gamarnik_carm
 			traits = {
 				carm_elastic_defence_doctrine
@@ -1414,7 +1262,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Veniamin_Ruvinski_carm
 			traits = {
 				carm_static_defence_doctrine
@@ -1430,7 +1278,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Vladimir_Salski_carm
 			traits = {
 				carm_decisive_battle_doctrine
@@ -1446,7 +1294,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Vladislav_Dashkevich_Gorbatsky_carm
 			traits = {
 				carm_armoured_spearhead_doctrine
@@ -1462,7 +1310,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Alexander_Dolgorukov_carm
 			traits = {
 				carm_guns_and_butter_doctrine
@@ -1478,7 +1326,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Pavlo_Shandruk_carm
 			traits = {
 				carm_commando_doctrine
@@ -1494,7 +1342,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Vladimir_Sinkler_carm
 			traits = {
 				carm_doctrine_of_autonomy
@@ -1510,7 +1358,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Taras_Bulba_Borovets_carm
 			traits = {
 				carm_armoured_spearhead_doctrine
@@ -1526,7 +1374,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Vladimir_Sikevich_carm
 			traits = {
 				carm_guns_and_butter_doctrine
@@ -1542,7 +1390,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = UKR_Roman_Shukhevich_carm
 			traits = {
 				carm_elastic_defence_doctrine
@@ -1558,7 +1406,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Ivan_Isakov_cnav
 			traits = {
 				cnav_open_seas_doctrine
@@ -1574,7 +1422,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Sergei_Gorshkov_cnav
 			traits = {
 				cnav_decisive_battle_doctrine
@@ -1590,7 +1438,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Vladimir_Pilipenko_cnav
 			traits = {
 				cnav_power_projection_doctrine
@@ -1606,7 +1454,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Andrey_Pokrovsky_cnav
 			traits = {
 				cnav_indirect_approach_doctrine
@@ -1622,7 +1470,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Nikolai_Maximov_cnav
 			traits = {
 				cnav_base_control_doctrine
@@ -1638,7 +1486,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = UKR_Vladimir_Savchenko_Belski_cnav
 			traits = {
 				cnav_decisive_battle_doctrine
@@ -1654,7 +1502,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = UKR_Grigori_Shtern_cair_van
 			traits = {
 				cair_air_superiority_doctrine
@@ -1670,7 +1518,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = UKR_Vyacheslav_Tkachev_cair
 			traits = {
 				cair_battlefield_support_doctrine

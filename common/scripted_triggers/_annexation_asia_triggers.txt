@@ -24,15 +24,12 @@ can_release_cambodia = {
   }
 }
 
-#Beijing - annexation_CHI_CONQ
+#Nanjing - annexation_CHI_CONQ
 can_release_china = {
   NOT = { is_claimed_by = ROOT }
-  state = 608 # Beijing
-  NOT = {
-    OR = {
-      country_exists = ROC 
-      country_exists = ZHI 
-    }
+  OR = {
+    state = 608 # Beijing
+    state = 895 # Nanjing
   }
   ROOT = {
     is_chinese_tag = no
@@ -117,7 +114,7 @@ can_release_malaya = {
 
 #Manchuria - annexation_MAN_CONQ
 can_release_manchuria = {
-  state = 328
+  state = 608
   NOT = { is_claimed_by = ROOT }
   ROOT = {
     NOT = {
@@ -228,7 +225,7 @@ can_release_tibet = {
   ROOT = {
     NOT = { 
       country_exists = TIB
-      has_country_flag = TIB_CONQ
+      has_country_flag = SIK_CONQ
     }
   }
 }
@@ -276,6 +273,16 @@ can_release_yunnan = {
   ROOT = {
     is_chinese_tag = no
     NOT = { has_country_flag = YUN_CONQ }
+  }
+}
+
+#Zhili - annexation_ZHI_CONQ
+can_release_zhili = {
+  state = 597
+  NOT = { is_claimed_by = ROOT }
+  ROOT = {
+    is_chinese_tag = no
+    NOT = { has_country_flag = ZHI_CONQ }
   }
 }
 

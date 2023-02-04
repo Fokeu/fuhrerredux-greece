@@ -21,14 +21,6 @@ ideas = {
         army_core_defence_factor = 0.075
       }
     }
-    HOL_dutch_resistance = {
-      allowed = { original_tag = HOL }
-      picture = chi_war_of_resistance2
-      modifier = {
-        political_power_cost = 0.15
-        stability_factor = -0.15
-      }
-    }
     HOL_revaunchist_state_1 = {
       allowed = { original_tag = HOL }
       picture = vittoria_mutilata
@@ -49,6 +41,8 @@ ideas = {
       picture = HOL_joint_economy
       modifier = {
         production_speed_buildings_factor = 0.025
+        industrial_capacity_factory = 0.025
+        industrial_capacity_dockyard = 0.025
       }
     }
     HOL_dutch_german_economic_cooperation_1 = {
@@ -61,6 +55,8 @@ ideas = {
       picture = HOL_joint_economy
       modifier = {
         production_speed_buildings_factor = 0.05
+        industrial_capacity_factory = 0.05
+        industrial_capacity_dockyard = 0.05
       }
     }
     HOL_unrecognized_government = {
@@ -135,7 +131,7 @@ ideas = {
     }
     HOL_general_staff = {
       allowed = { original_tag = HOL }
-      picture = advisors_dutch
+      picture = general_staff
       modifier = {
         max_planning = 0.15
         planning_speed = 0.15
@@ -149,7 +145,7 @@ ideas = {
           build_cost_ic = -0.15
           instant = yes
         }
-        motorized_equipment = {
+        motorized = {
           build_cost_ic = -0.15
           instant = yes
         }

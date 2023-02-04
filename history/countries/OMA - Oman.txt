@@ -1,6 +1,6 @@
 capital = 294
 
-oob = "OMA"
+oob = "OMA_1936"
 
 # Starting tech
 set_technology = {

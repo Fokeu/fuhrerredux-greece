@@ -1,0 +1,3880 @@
+#GREEK FOCUS TREE BY FOKEŁ 2022
+
+focus_tree = {
+	id = greece_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 69
+			tag = GRE
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1800 }
+
+################################################################################
+##############################Table of contents#################################
+#1. SMYRNA CRISIS
+#2. ELECTIONS
+#3. INDUSTRY
+#4. EEE
+
+	#SMYRNA CRISIS
+
+	focus = {
+		id = GRE_smyrna_crisis
+		icon = GFX_goal_GRE_smyrna_crisis
+		cost = 0
+		x = 13
+		y = 0
+		available = {
+			always = false
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_smyrna_crisis"
+			custom_effect_tooltip = GRE_tt_smyrna_crisis
+		}
+	}
+
+	focus = {
+		id = GRE_request_support
+		icon = GFX_goal_GRE_request_support
+		cost = 3
+		x = -3
+		y = 1
+		prerequisite = { focus = GRE_smyrna_crisis }
+		relative_position_id = GRE_smyrna_crisis
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_request_support"
+			hidden_effect = {
+				state_event = {
+					id = GRE.16
+					days = 15
+					trigger_for = controller
+				}
+			}
+			custom_effect_tooltip = GRE_tt_request_support
+		}
+	}
+
+	focus = {
+		id = GRE_logistics
+		icon = GFX_goal_GRE_logistics
+		cost = 3
+		x = -1
+		y = 1
+		prerequisite = { focus = GRE_smyrna_crisis }
+		relative_position_id = GRE_smyrna_crisis
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_logistics"
+			763 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			342 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			341 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_militia_problem
+		icon = GFX_goal_GRE_militia_problem
+		cost = 3
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_smyrna_crisis }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_militia_problem"
+			country_event = {
+				id = gre.12
+				days = 3
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_propaganda_warfare
+		icon = GFX_goal_GRE_propaganda_warfare
+		cost = 3
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_smyrna_crisis }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_propaganda_warfare"
+			add_political_power = 100
+		}
+	}
+
+############
+
+	focus = {
+		id = GRE_fortify_smyrna
+		icon = GFX_goal_GRE_fortify_smyrna
+		cost = 3
+		x = -3
+		y = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_request_support }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_fortify_smyrna"
+			763 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9921
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 928
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6992
+			}
+		}
+
+	}
+
+	focus = {
+		id = GRE_counterespionage
+		icon = GFX_goal_GRE_counterespionage
+		cost = 3
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_logistics }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_counterespionage"
+			add_decryption = {
+				target = TUR
+				amount = 5
+			}
+			upgrade_intelligence_agency = upgrade_army_department
+		}
+	}
+
+	focus = {
+		id = GRE_show_of_force
+		icon = GFX_goal_GRE_show_of_force
+		cost = 3
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_militia_problem }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_show_of_force"
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = GRE_reveal_the_connections
+		icon = GFX_goal_GRE_reveal_the_connections
+		cost = 3
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_propaganda_warfare }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_reveal_the_connections"
+			TUR = {
+				add_political_power = -50
+			}
+			GER = {
+				add_stability = -0.03
+			}
+		}
+	}
+
+#################
+
+	focus = {
+		id = GRE_unavoidable
+		icon = GFX_goal_GRE_unavoidable
+		cost = 3
+		x = -3
+		y = 3
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_fortify_smyrna }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_unavoidable"
+			add_war_support = 0.1
+			add_ideas = GRE_all_out
+		}
+	}
+
+	focus = {
+		id = GRE_fortify_horn
+		icon = GFX_goal_GRE_fortify_horn
+		cost = 3
+		x = -1
+		y = 3
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_counterespionage }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: GRE_fortify_horn"
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 9833
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 6895
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11842
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				province = 849
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				level = 1
+				instant_build = yes
+				province = 9833
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_industrial_convert
+		icon = GFX_goal_GRE_industrial_convert
+		cost = 3
+		x = 1
+		y = 3
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_show_of_force }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: GRE_industrial_conversion"
+			add_timed_idea = {
+				idea = GRE_emergency_conversion
+				days = 200
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_an_example
+		icon = GFX_goal_GRE_an_example
+		cost = 3
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 4000
+		}
+		prerequisite = { focus = GRE_reveal_the_connections }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_an_example"
+			country_event = {
+				id = gre.11
+				days = 2
+			}
+		}
+	}
+
+######################
+
+	focus = {
+		id = GRE_greco_turkish_war
+		icon = GFX_goal_GRE_greco_turkish_war
+		cost = 0
+		x = 0
+		y = 4
+		available = {
+			always = false
+		}
+		prerequisite = { focus = GRE_unavoidable }
+		prerequisite = { focus = GRE_fortify_horn }
+		prerequisite = { focus = GRE_industrial_convert }
+		prerequisite = { focus = GRE_an_example }
+		relative_position_id = GRE_smyrna_crisis
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_greco_turkish_war"
+			custom_effect_tooltip = GRE_tt_greco_turkish_war
+		}
+	}
+
+#EXPANSION - EEK
+
+focus = {
+	id = GRE_hellenoturkish
+	icon = GFX_goal_GRE_greece_reborn
+	cost = 0
+	x = 7
+	y = 1
+	available = {
+		has_country_flag = GRE_EEK_victory
+	}
+	prerequisite = { focus = GRE_greco_turkish_war }
+	relative_position_id = GRE_greco_turkish_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_hellenoturkish"
+		set_cosmetic_tag = GRE_unification
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_resolve_disputes
+	icon = GFX_goal_GRE_resolve_disputes
+	cost = 10
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_hellenoturkish }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_resolve_disputes"
+		add_stability = 0.05
+	}
+}
+
+focus = {
+	id = GRE_ripbozo_nationalism
+	icon = GFX_goal_GRE_ripbozo_nationalism
+	cost = 10
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_hellenoturkish }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_ripbozo_nationalism"
+		add_political_power = 75
+	}
+}
+
+focus = {
+	id = GRE_manifest_destiny
+	icon = GFX_goal_GRE_manifest_destiny
+	cost = 10
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_hellenoturkish }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_manifest_destiny"
+		add_ideas = GRE_third_rome
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_back_to_constantinople
+	icon = GFX_goal_GRE_back_to_constantinople
+	cost = 10
+	x = -2
+	y = 2
+	prerequisite = { focus = GRE_resolve_disputes }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_back_to_constantinople"
+		set_capital = {state = 341}
+		341 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_rewrite_history
+	icon = GFX_goal_GRE_rewrite_history
+	cost = 10
+	x = 0
+	y = 2
+	prerequisite = { focus = GRE_ripbozo_nationalism }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_rewrite_history"
+		country_event = {
+			id = greeek.1
+			days = 5
+		}
+	}
+}
+
+focus = {
+	id = GRE_write_constitution
+	icon = GFX_goal_GRE_write_constitution
+	cost = 10
+	x = 2
+	y = 2
+	prerequisite = { focus = GRE_manifest_destiny }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_write_constitution"
+		country_event = {
+			id = gre.15
+			days = 5
+		}
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_free_the_people
+	icon = GFX_goal_GRE_free_the_people
+	cost = 10
+	x = -1
+	y = 3
+	prerequisite = { focus = GRE_back_to_constantinople }
+	prerequisite = { focus = GRE_rewrite_history }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_free_the_people"
+		add_country_leader_trait = saviour_of_the_people
+	}
+}
+
+focus = {
+	id = GRE_religious_freedoms
+	icon = GFX_goal_GRE_religious_freedoms
+	cost = 10
+	x = 1
+	y = 3
+	prerequisite = { focus = GRE_rewrite_history }
+	prerequisite = { focus = GRE_write_constitution }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_religious_freedoms"
+		add_country_leader_trait = defender_of_freedom_of_religion
+	}
+}
+
+############
+
+focus = {
+	id = GRE_united_forever
+	icon = GFX_goal_GRE_united_forever
+	cost = 10
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_free_the_people }
+	prerequisite = { focus = GRE_religious_freedoms }
+	relative_position_id = GRE_hellenoturkish
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_united_forever"
+		add_state_core = 347	
+		add_state_core = 776
+		add_state_core = 340
+		add_state_core = 339
+		add_state_core = 1034
+		add_state_core = 343
+		add_state_core = 345
+		add_state_core = 1030
+		add_state_core = 346
+		add_state_core = 49
+		add_state_core = 777
+		add_state_core = 779
+		add_state_core = 356
+		add_state_core = 355
+		add_state_core = 780
+		add_state_core = 348
+		add_state_core = 349
+		add_state_core = 778
+		add_state_core = 781
+		add_state_core = 344
+		add_state_core = 350
+		add_state_core = 352
+		add_state_core = 353
+		add_state_core = 354
+		add_state_core = 902
+	}
+}
+
+#EXPANSION - LIBERALS, CONSERVATISTS AND FREETHINKERS
+
+focus = {
+	id = GRE_treaty_of_ankara
+	icon = GFX_goal_GRE_treaty_of_ankara
+	cost = 0
+	x = -7
+	y = 1
+	available = {
+		has_country_flag = GRE_LIBCONFRE_victory
+	}
+	prerequisite = { focus = GRE_greco_turkish_war }
+	relative_position_id = GRE_greco_turkish_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_treaty_of_ankara"
+	}
+}
+
+###########
+
+focus = {
+	id = GRE_demonize_empire
+	icon = GFX_goal_GRE_demonize_empire
+	cost = 10
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_treaty_of_ankara }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_demonize_empire"
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = GRE_backup_police
+	icon = GFX_goal_GRE_backup_police
+	cost = 10
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_treaty_of_ankara }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_backup_police"
+		add_stability = 0.05
+	}
+}
+
+focus = {
+	id = GRE_hunt_rebels
+	icon = GFX_goal_GRE_hunt_rebels
+	cost = 10
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_treaty_of_ankara }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_hunt_rebels"
+		add_manpower = -100
+	}
+}
+
+#################
+
+focus = {
+	id = GRE_resettlement
+	icon = GFX_goal_GRE_resettlement
+	cost = 10
+	x = -2
+	y = 2
+	prerequisite = { focus = GRE_demonize_empire }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_resettlement"
+		add_political_power = 100
+	}
+}
+
+focus = {
+	id = GRE_reconstruction_funding
+	icon = GFX_goal_GRE_reconstruction_funding
+	cost = 10
+	x = 0
+	y = 2
+	prerequisite = { focus = GRE_backup_police }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_reconstruction_funding"
+		add_timed_idea = {
+			idea = GRE_repair
+			days = 365
+		}
+	}
+}
+
+focus = {
+	id = GRE_calm_down
+	icon = GFX_goal_GRE_calm_down
+	cost = 10
+	x = 2
+	y = 2
+	prerequisite = { focus = GRE_hunt_rebels }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_calm_down"
+		1034 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		340 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		776 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		347 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		341 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_broken_glass
+	icon = GFX_goal_GRE_broken_glass
+	cost = 10
+	x = -1
+	y = 3
+	prerequisite = { focus = GRE_resettlement }
+	prerequisite = { focus = GRE_reconstruction_funding }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_broken_glass"
+		army_experience = 15
+	}
+}
+
+focus = {
+	id = GRE_collaboration
+	icon = GFX_goal_GRE_collaboration
+	cost = 10
+	x = 1
+	y = 3
+	prerequisite = { focus = GRE_reconstruction_funding }
+	prerequisite = { focus = GRE_calm_down }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_collaboration"
+		add_manpower = 15000
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_megali_idea
+	icon = GFX_goal_GRE_megali_idea
+	cost = 10
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_broken_glass }
+	prerequisite = { focus = GRE_collaboration }
+	relative_position_id = GRE_treaty_of_ankara
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_megali_idea"
+		add_state_core = 347
+		add_state_core = 776
+		add_state_core = 340
+		add_state_core = 1034
+		add_ideas = GRE_megali
+		#EXTRA DECISIONS
+	}
+}
+
+#EXPANSION - socialism
+
+focus = {
+	id = GRE_proclaim_republic
+	icon = GFX_goal_GRE_proclaim_republic
+	cost = 0
+	x = 0
+	y = 1
+	available = {
+		has_country_flag = GRE_SOC_victory
+	}
+	prerequisite = { focus = GRE_greco_turkish_war }
+	relative_position_id = GRE_greco_turkish_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_proclaim_republic"
+		create_faction = Athens_Pact
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_military_support
+	icon = GFX_goal_GRE_military_support
+	cost = 10
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_proclaim_republic }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_military_support"
+		TUR = {
+			add_stability = 0.2
+		}
+	}
+}
+
+focus = {
+	id = GRE_rapid_reconstruction
+	icon = GFX_goal_GRE_rapid_reconstruction
+	cost = 10
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_proclaim_republic }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_rapid_reconstruction"
+		TUR = {
+			add_ideas = GRE_repair
+		}
+	}
+}
+
+focus = {
+	id = GRE_life_support_economy
+	icon = GFX_goal_GRE_life_support_economy
+	cost = 10
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_proclaim_republic }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_life_support_economy"
+		49 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		343 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		1034 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		346 = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+########
+
+focus = {
+	id = GRE_albania_exile
+	icon = GFX_goal_GRE_albania_exile
+	cost = 10
+	x = 0
+	y = 2
+	bypass = {
+		ALB = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_life_support_economy }
+	prerequisite = { focus = GRE_rapid_reconstruction }
+	prerequisite = { focus = GRE_military_support }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_albania_exile"
+		custom_effect_tooltip = GRE_exile
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_blame_italians
+	icon = GFX_goal_GRE_blame_italians
+	cost = 10
+	x = -2
+	y = 3
+	bypass = {
+		ALB = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_albania_exile }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_blame_italians"
+		ITA = {
+			add_opinion_modifier = {
+				target = GRE
+				modifier = hostile_status
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_spark_chaos
+	icon = GFX_goal_GRE_spark_chaos
+	cost = 10
+	x = 0
+	y = 3
+	bypass = {
+		ALB = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_albania_exile }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_spark_chaos"
+		ALB = {
+			add_stability = -0.1
+		}
+	}
+}
+
+focus = {
+	id = GRE_sabotage_italians
+	icon = GFX_goal_GRE_sabotage_italians
+	cost = 10
+	x = 2
+	y = 3
+	bypass = {
+		ALB = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_albania_exile }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_sabotage_italians"
+		796 = {
+			damage_building = {
+				type = naval_base
+				damage = 5
+			}
+			add_resistance = 50
+		}
+	}
+}
+
+#######
+
+focus = {
+	id = GRE_special_operation
+	icon = GFX_goal_GRE_special_operation
+	cost = 10
+	x = 0
+	y = 4
+	bypass = {
+		ALB = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_blame_italians }
+	prerequisite = { focus = GRE_spark_chaos }
+	prerequisite = { focus = GRE_sabotage_italians }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_special_operation"
+		ALB = {
+			set_politics = {
+				ruling_party = collectivist
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			remove_ideas = ALB_liberation_movement
+		}
+		ITA = {
+			release_puppet = ALB
+			country_event = {
+				id = gresoc.1
+				days = 5
+			}
+			transfer_state = 796
+		}
+		puppet = ALB
+		add_manpower = -100
+	}
+}
+
+########
+
+focus = {
+	id = GRE_free_south_slavs #FOR GODS SAKE DO NOT FORGET TO ADD CUSTOM ANNEX EVENTS
+	icon = GFX_goal_GRE_free_south_slavs
+	cost = 10
+	x = -5
+	y = 5
+	bypass = {
+		SER = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_free_south_slavs"
+		create_wargoal = {
+			type = annex_everything
+			target = SER
+		}
+	}
+}
+
+focus = {
+	id = GRE_demand_islands
+	icon = GFX_goal_GRE_demand_islands
+	cost = 10
+	x = 5
+	y = 5
+	bypass = {
+		NOT = {
+			164 = { is_owned_by = ITA }
+		}
+	}
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_demand_islands"
+		ITA = {
+			country_event = {
+				id = gresoc.2
+				days = 5
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_open_borders
+	icon = GFX_goal_GRE_open_borders
+	cost = 10
+	x = -1
+	y = 5
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_military_support"
+		add_ideas = GRE_open_borders
+	}
+}
+
+focus = {
+	id = GRE_war_industry
+	icon = GFX_goal_GRE_war_industry
+	cost = 10
+	x = 1
+	y = 5
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_military_support"
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_free_cyprus
+	icon = GFX_goal_GRE_free_cyprus
+	cost = 10
+	x = 3
+	y = 5
+	bypass = {
+		NOT = {
+			183 = { is_owned_by = ENG }
+		}
+	}
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_military_support"
+		ENG = {
+			country_event = {
+				id = gresoc.3
+				days = 5
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_crush_crown 
+	icon = GFX_goal_GRE_crush_crown
+	cost = 10
+	x = -3
+	y = 5
+	bypass = {
+		BUL = {
+			exists = no
+		}
+	}
+	prerequisite = { focus = GRE_special_operation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_crush_crown"
+		create_wargoal = {
+			type = annex_everything
+			target = BUL
+		}
+	}
+}
+
+########
+
+focus = {
+	id = GRE_use_resources
+	icon = GFX_goal_GRE_use_resources
+	cost = 10
+	x = -1
+	y = 6
+	prerequisite = { focus = GRE_open_borders }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_use_resources"
+		swap_ideas = {
+			remove_idea = GRE_open_borders
+			add_idea = GRE_open_borders2
+		}
+	}
+}
+
+focus = {
+	id = GRE_stand_strong
+	icon = GFX_goal_GRE_stand_strong
+	cost = 10
+	x = 1
+	y = 6
+	prerequisite = { focus = GRE_war_industry }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_stand_strong"
+		add_ideas = GRE_stand_strong
+	}
+}
+
+#####
+
+focus = {
+	id = GRE_integration
+	icon = GFX_goal_GRE_integration
+	cost = 10
+	x = -1
+	y = 7
+	available = {
+		ALB = {
+			is_puppet_of = GRE
+		}
+		TUR = {
+			is_puppet_of = GRE
+		}
+		BUL = {
+			is_puppet_of = GRE
+		}
+		SER = {
+			is_puppet_of = GRE
+		}
+		has_completed_focus = GRE_paving_the_way_to_socialism
+	}
+	prerequisite = { focus = GRE_use_resources }
+	prerequisite = { focus = GRE_stand_strong }
+	mutually_exclusive = { focus = GRE_cooperation }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_integration"
+		annex_country = {
+			target = ALB
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = TUR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = BUL
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SER
+			transfer_troops = yes
+		}
+		ALB = {
+			every_core_state = { 
+				add_core_of = GRE
+			}
+		}
+		TUR = {
+			every_core_state = { 
+				add_core_of = GRE
+			}
+		}
+		BUL = {
+			every_core_state = { 
+				add_core_of = GRE
+			}
+		}
+		SER = {
+			every_core_state = { 
+				add_core_of = GRE
+			}
+		}
+		set_cosmetic_tag = GRE_integrated
+		set_capital = {state = 341}
+	}
+}
+
+focus = {
+	id = GRE_cooperation
+	icon = GFX_goal_GRE_cooperation
+	cost = 10
+	x = 1
+	y = 7
+	available = {
+		has_completed_focus = GRE_onwards
+		ALB = {
+			is_puppet_of = GRE
+		}
+		TUR = {
+			is_puppet_of = GRE
+		}
+	}
+	mutually_exclusive = { focus = GRE_integration }
+	prerequisite = { focus = GRE_use_resources }
+	prerequisite = { focus = GRE_stand_strong }
+	relative_position_id = GRE_proclaim_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_cooperation"
+		GRE = {
+			every_subject_country = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 5000
+				}
+			}
+		}
+	}
+}
+
+#ELECTIONS
+
+focus = {
+	id = GRE_elections
+	icon = GFX_goal_GRE_elections
+	available = {
+		always = false
+	}
+	cost = 3
+	x = 47
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_elections"
+		custom_effect_tooltip = GRE_tt_elections
+	}
+}
+
+#EEK
+
+focus = {
+	id = GRE_eek
+	icon = GFX_goal_GRE_eek
+	cost = 0
+	x = -18
+	y = 1
+	available = {
+		always = false
+	}
+	prerequisite = { focus = GRE_elections }
+	relative_position_id = GRE_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_eek"
+		remove_ideas = GRE_anathema
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_decentralization
+	icon = GFX_goal_GRE_decentralization
+	cost = 4
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_eek }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_decentralization"
+		add_ideas = GRE_decentralization
+	}
+}
+
+focus = {
+	id = GRE_progressive_agenda
+	icon = GFX_goal_GRE_progressive_agenda
+	cost = 4
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_eek }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_progressive_agenda"
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = GRE_privatisation
+	icon = GFX_goal_GRE_privatisation
+	cost = 4
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_eek }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_privatisation"
+		add_ideas = GRE_laissez_faire
+	}
+}
+
+########
+
+focus = {
+	id = GRE_school_building
+	icon = GFX_goal_GRE_school_building
+	cost = 4
+	x = -1
+	y = 2
+	prerequisite = { focus = GRE_progressive_agenda }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_school_building"
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = GRE_equality
+	icon = GFX_goal_GRE_equality
+	cost = 4
+	x = 1
+	y = 2
+	prerequisite = { focus = GRE_progressive_agenda }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_equality"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+			add_idea = GRE_equality_wholesome
+		}
+	}
+}
+
+############
+
+focus = {
+	id = GRE_parliament
+	icon = GFX_goal_GRE_parliament
+	cost = 4
+	x = -2
+	y = 3
+	prerequisite = { focus = GRE_decentralization }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_parliament"
+		add_country_leader_trait = father_of_freedom
+	}
+}
+
+focus = {
+	id = GRE_investors
+	icon = GFX_goal_GRE_investors
+	cost = 4
+	x = 0
+	y = 3
+	prerequisite = { focus = GRE_school_building }
+	prerequisite = { focus = GRE_equality }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_investors"
+		add_extra_state_shared_building_slots = 4
+		47 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		185 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_turkophobia
+	icon = GFX_goal_GRE_turkophobia
+	cost = 4
+	x = 2
+	y = 3
+	prerequisite = { focus = GRE_privatisation }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_turkophobia"
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+}
+
+############
+
+focus = {
+	id = GRE_secularization
+	icon = GFX_goal_GRE_secularization
+	cost = 4
+	x = -2
+	y = 4
+	prerequisite = { focus = GRE_parliament }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_secularization"
+		add_political_power = 100
+	}
+}
+
+focus = {
+	id = GRE_conscription_slavery
+	icon = GFX_goal_GRE_conscription_slavery
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_investors }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_conscription_slavery"
+		swap_ideas = {
+			remove_idea = limited_conscription
+			add_idea = volunteer_only
+		}
+	}
+}
+
+focus = {
+	id = GRE_industrial_development
+	icon = GFX_goal_GRE_industrial_development
+	cost = 4
+	x = 2
+	y = 4
+	prerequisite = { focus = GRE_turkophobia }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_industrial_development"
+		add_ideas = GRE_idp
+	}
+}
+
+############
+
+focus = {
+	id = GRE_redraw_internal_borders
+	icon = GFX_goal_GRE_redraw_internal_borders
+	cost = 4
+	x = -2
+	y = 5
+	prerequisite = { focus = GRE_secularization }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_redraw_internal_borders"
+		add_stability = 0.1
+	}
+}
+
+focus = {
+	id = GRE_promote_trade
+	icon = GFX_goal_GRE_promote_trade
+	cost = 4
+	x = 2
+	y = 5
+	prerequisite = { focus = GRE_industrial_development }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_building_construction = {
+			type = naval_base
+			level = 1
+			instant_build = yes
+			province = 4193
+		}
+		add_building_construction = {
+			type = naval_base
+			level = 1
+			instant_build = yes
+			province = 4109
+		}
+		swap_ideas = {
+			remove_idea = export_focus
+			add_idea = free_trade
+		}
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_greece_reborn
+	icon = GFX_goal_GRE_greece_reborn
+	cost = 4
+	x = 0
+	y = 6
+	prerequisite = { focus = GRE_promote_trade }
+	prerequisite = { focus = GRE_conscription_slavery }
+	prerequisite = { focus = GRE_redraw_internal_borders }
+	relative_position_id = GRE_eek
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_greece_reborn"
+		add_ideas = GRE_diplomatic_miracle
+	}
+}
+
+#LIBERALS
+
+focus = {
+	id = GRE_liberals
+	icon = GFX_goal_GRE_liberals
+	cost = 0
+	x = -11
+	y = 1
+	available = {
+		always = false
+	}
+	prerequisite = { focus = GRE_elections }
+	relative_position_id = GRE_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_liberals"
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_patriotism
+	icon = GFX_goal_GRE_patriotism
+	cost = 4
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_liberals}
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_patriotism"
+		add_manpower = 10000
+	}
+}
+
+focus = {
+	id = GRE_administration
+	icon = GFX_goal_GRE_administration
+	cost = 4
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_liberals}
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_administration"
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.07
+		}
+	}
+}
+
+focus = {
+	id = GRE_resolve_minority_issue
+	icon = GFX_goal_GRE_resolve_minority_issue
+	cost = 4
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_liberals}
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_resolve_minority_issue"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+			add_idea = GRE_acceptance
+		}
+	}
+}
+
+########
+
+focus = {
+	id = GRE_bureaucratic_decentralization
+	icon = GFX_goal_GRE_bureaucratic_decentralization
+	cost = 4
+	x = -1
+	y = 2
+	prerequisite = { focus = GRE_administration }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_bureaucratic_decentralization"
+		add_ideas = GRE_decentralization
+	}
+}
+
+focus = {
+	id = GRE_neuter_military
+	icon = GFX_goal_GRE_neuter_military
+	cost = 4
+	x = 1
+	y = 2
+	prerequisite = { focus = GRE_administration }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_neuter_military"
+		army_experience = 20
+	}
+}
+
+############
+
+focus = {
+	id = GRE_revive_dsb
+	icon = GFX_goal_GRE_revive_dsb
+	cost = 4
+	x = -2
+	y = 3
+	prerequisite = { focus = GRE_patriotism }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_revive_dsb"
+		add_stability = 0.05
+	}
+}
+
+focus = {
+	id = GRE_state_tour
+	icon = GFX_goal_GRE_state_tour
+	cost = 4
+	x = 0
+	y = 3
+	prerequisite = { focus = GRE_bureaucratic_decentralization }
+	prerequisite = { focus = GRE_neuter_military }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_state_tour"
+		remove_ideas = GRE_anathema
+	}
+}
+
+focus = {
+	id = GRE_mixed_economy
+	icon = GFX_goal_GRE_mixed_economy
+	cost = 4
+	x = 2
+	y = 3
+	prerequisite = { focus = GRE_resolve_minority_issue }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_mixed_economy"
+		add_ideas = GRE_mixed_economy
+	}
+}
+
+############
+
+focus = {
+	id = GRE_power_of_church
+	icon = GFX_goal_GRE_power_of_church
+	cost = 4
+	x = -2
+	y = 4
+	prerequisite = { focus = GRE_revive_dsb }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_power_of_church"
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = GRE_affordable_housing
+	icon = GFX_goal_GRE_affordable_housing
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_state_tour }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_affordable_housing"
+		add_extra_state_shared_building_slots = 8
+	}
+}
+
+focus = {
+	id = GRE_send_the_farmers
+	icon = GFX_goal_GRE_send_the_farmers
+	cost = 4
+	x = 2
+	y = 4
+	prerequisite = { focus = GRE_mixed_economy }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_send_the_farmers"
+		47 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		185 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		731 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+############
+
+focus = {
+	id = GRE_public_uni_grants
+	icon = GFX_goal_GRE_public_uni_grants
+	cost = 4
+	x = -2
+	y = 5
+	prerequisite = { focus = GRE_power_of_church }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_public_uni_grants"
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = GRE_anti_bolshevism
+	icon = GFX_goal_GRE_anti_bolshevism
+	cost = 4
+	x = 2
+	y = 5
+	prerequisite = { focus = GRE_send_the_farmers }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_anti_bolshevism"
+		add_popularity = {
+			ideology = vanguardist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = collectivist
+			popularity = -0.05
+		}
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_hellas_of_future
+	icon = GFX_goal_GRE_hellas_of_future
+	cost = 4
+	x = 0
+	y = 6
+	prerequisite = { focus = GRE_public_uni_grants }
+	prerequisite = { focus = GRE_anti_bolshevism }
+	prerequisite = { focus = GRE_affordable_housing }
+	relative_position_id = GRE_liberals
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_hellas_of_future"
+		add_ideas = GRE_hellas_of_the_future
+	}
+}
+
+#POPULISTS
+
+focus = {
+	id = GRE_populists
+	icon = GFX_goal_GRE_konserwy
+	cost = 0
+	x = -4
+	y = 1
+	available = {
+		always = false
+	}
+	prerequisite = { focus = GRE_elections }
+	relative_position_id = GRE_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_populists"
+		remove_ideas = GRE_anathema
+		hidden_effect = {
+			country_event = {
+				id = gre.6
+				days = 25
+			}
+		}
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_reverse_secularization
+	icon = GFX_goal_GRE_gigachadjesus
+	cost = 4
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_populists}
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_reverse_secularization"
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.05
+		}
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = GRE_continue_hellenization
+	icon = GFX_goal_GRE_rip_albanians
+	cost = 4
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_populists}
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_continue_hellenization"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+			add_idea = GRE_hellenization
+		}
+	}
+}
+
+focus = {
+	id = GRE_economic_protectionism
+	icon = GFX_goal_GRE_economic_protection
+	cost = 4
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_populists}
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_economic_protectionism"
+		add_ideas = GRE_economic_protectionism
+	}
+}
+
+########
+
+focus = {
+	id = GRE_contact_the_generals
+	icon = GFX_goal_GRE_call_generals
+	cost = 4
+	x = -1
+	y = 2
+	prerequisite = { focus = GRE_continue_hellenization	}
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_contact_the_generals"
+		army_experience = 15
+	}
+}
+
+focus = {
+	id = GRE_safer_and_secure_society
+	icon = GFX_goal_GRE_safer_society
+	cost = 4
+	x = 1
+	y = 2
+	prerequisite = { focus = GRE_continue_hellenization }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GRE_safer_and_secure_society"
+		add_stability = 0.07
+	}
+}
+
+############
+
+focus = {
+	id = GRE_use_the_charisma
+	icon = GFX_goal_GRE_charisma
+	cost = 4
+	x = -2
+	y = 3
+	prerequisite = { focus = GRE_reverse_secularization }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_use_the_charisma"
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.1
+		}
+		add_political_power = 50
+	}
+}
+
+focus = {
+	id = GRE_popular_healthcare
+	icon = GFX_goal_GRE_healthcare
+	cost = 4
+	x = 0
+	y = 3
+	prerequisite = { focus = GRE_contact_the_generals }
+	prerequisite = { focus = GRE_safer_and_secure_society}
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_popular_healthcare"
+		add_ideas = GRE_healthcare_reform
+	}
+}
+
+focus = {
+	id = GRE_ideal_figurehead
+	icon = GFX_goal_GRE_ideal_figurehead
+	cost = 4
+	x = 2
+	y = 3
+	prerequisite = { focus = GRE_economic_protectionism }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_ideal_figurehead"
+		add_offsite_building = { type = industrial_complex level = 3 }
+	}
+}
+
+############
+
+focus = {
+	id = GRE_church_and_nation
+	icon = GFX_goal_GRE_church_n_nation
+	cost = 4
+	x = -2
+	y = 4
+	prerequisite = { focus = GRE_use_the_charisma }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_church_and_nation"
+		add_ideas = GRE_state_religion
+	}
+}
+
+focus = {
+	id = GRE_law_for_criminals
+	icon = GFX_goal_GRE_law_for_criminals
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_popular_healthcare }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_law_for_criminals"
+		add_manpower = -50
+		add_stability = 0.1
+	}
+}
+
+focus = {
+	id = GRE_agrarian_focus
+	icon = GFX_goal_GRE_agrarian_focus
+	cost = 4
+	x = 2
+	y = 4
+	prerequisite = { focus = GRE_ideal_figurehead }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_agrarian_focus"
+		47 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		185 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		731 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+############
+
+focus = {
+	id = GRE_christian_school
+	icon = GFX_goal_GRE_christian_schoolds
+	cost = 4
+	x = -2
+	y = 5
+	prerequisite = { focus = GRE_church_and_nation }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_christian_school"
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = GRE_taking_what_land_gives
+	icon = GFX_goal_GRE_taking_resources
+	cost = 4
+	x = 2
+	y = 5
+	prerequisite = { focus = GRE_agrarian_focus }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_taking_what_land_gives"
+		add_resource = {
+			type = steel
+			amount = 7
+			state = 185
+		}
+		add_resource = {
+			type = chromium
+			amount = 10
+			state = 47
+		}
+		add_resource = {
+			type = chromium
+			amount = 9
+			state = 342
+		}
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_rebuilding_for_tommorow
+	icon = GFX_goal_GRE_rebuilding_for_tommorow
+	cost = 4
+	x = 0
+	y = 6
+	prerequisite = { focus = GRE_christian_school }
+	prerequisite = { focus = GRE_law_for_criminals }
+	prerequisite = { focus = GRE_taking_what_land_gives }
+	relative_position_id = GRE_populists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_rebuilding_for_tommorow"
+		add_ideas = GRE_rebuilding_for_tommorow
+	}
+}
+
+#FREETHINKER
+
+focus = {
+	id = GRE_freethinker
+	icon = GFX_goal_GRE_freethinker
+	cost = 0
+	x = 4
+	y = 1
+	prerequisite = { focus = GRE_elections }
+	relative_position_id = GRE_elections
+	available = {
+		always = false
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_freethinker"
+		remove_ideas = GRE_anathema
+		hidden_effect = {
+			country_event = {
+				id = gre.6
+				days = 25
+			}
+		}
+	}
+}
+
+###########
+
+focus = {
+	id = GRE_the_meeting
+	icon = GFX_goal_GRE_rebuilding_for_tommorow
+	cost = 4
+	x = -2
+	y = 1
+	prerequisite = { focus = GRE_freethinker }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_meeting"
+		add_stability = 0.1
+	}
+}
+
+focus = {
+	id = GRE_the_speech
+	icon = GFX_goal_GRE_speech
+	cost = 4
+	x = 0
+	y = 1
+	prerequisite = { focus = GRE_freethinker }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_speech"
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+	}
+}
+
+focus = {
+	id = GRE_the_promise
+	icon = GFX_goal_GRE_promise
+	cost = 4
+	x = 2
+	y = 1
+	prerequisite = { focus = GRE_freethinker }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_promise"
+		add_political_power = 50
+	}
+}
+
+############
+
+focus = {
+	id = GRE_the_incident
+	icon = GFX_goal_GRE_incident
+	cost = 4
+	x = 0
+	y = 2
+	prerequisite = { focus = GRE_the_meeting }
+	prerequisite = { focus = GRE_the_speech }
+	prerequisite = { focus = GRE_the_promise }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_incident"
+		add_manpower = -1
+		country_event = {
+			id = gre.5
+			days = 5
+		}
+	}
+}
+
+###########
+
+focus = {
+	id = GRE_social_control
+	icon = GFX_goal_GRE_social_control
+	cost = 4
+	x = -2
+	y = 3
+	available = {
+		has_country_flag = GRE_incident
+	}
+	prerequisite = { focus = GRE_the_incident }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_social_control"
+		add_stability = 0.1
+	}
+}
+
+focus = {
+	id = GRE_destroy_left_wing
+	icon = GFX_goal_GRE_ded
+	cost = 4
+	x = 0
+	y = 3
+	available = {
+		has_country_flag = GRE_incident
+	}
+	prerequisite = { focus = GRE_the_incident }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_destroy_left_wing"
+		set_party_name = {
+			ideology = vanguardist
+			long_name =  GRE_eliminated
+			name = GRE_eliminated
+		}
+		set_party_name = {
+			ideology = collectivist
+			long_name =  GRE_eliminated
+			name = GRE_eliminated
+		}
+		set_party_name = {
+			ideology = libertarian_socialist
+			long_name =  GRE_eliminated
+			name = GRE_eliminated
+		}
+		set_political_party = {
+			ideology = vanguardist
+			popularity = 0
+		}
+		set_political_party = {
+			ideology = collectivist
+			popularity = 0
+		}
+		set_political_party = {
+			ideology = libertarian_socialist
+			popularity = 0
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
+		add_manpower = -400
+	}
+}
+
+focus = {
+	id = GRE_corporatism
+	icon = GFX_goal_GRE_corporatism
+	cost = 4
+	x = 2
+	y = 3
+	available = {
+		has_country_flag = GRE_incident
+	}
+	prerequisite = { focus = GRE_the_incident }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_corporatism"
+		add_ideas = GRE_corporatismm
+	}
+}
+
+########
+
+focus = {
+	id = GRE_anti_colonialism
+	icon = GFX_goal_GRE_nocolonialism
+	cost = 4
+	x = -3
+	y = 4
+	prerequisite = { focus = GRE_social_control }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_anti_colonialism"
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		add_war_support = 0.1
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = ENG
+			modifier = GRE_anti_colonialismm
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = GRE_anti_colonialismm
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = GRE_anti_colonialismm
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = GRE_anti_colonialismm
+		}
+		add_opinion_modifier = {
+			target = BEL
+			modifier = GRE_anti_colonialismm
+		}
+	}
+}
+
+focus = {
+	id = GRE_personality_cult
+	icon = GFX_goal_GRE_personality_cult
+	cost = 4
+	x = -1
+	y = 4
+	prerequisite = { focus = GRE_social_control }
+	prerequisite = { focus = GRE_destroy_left_wing }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_personality_cult"
+		add_country_leader_trait = our_leader_and_saviour
+	}
+}
+
+focus = {
+	id = GRE_who_needs_democracy
+	icon = GFX_goal_GRE_novotelol
+	cost = 4
+	x = 1
+	y = 4
+	prerequisite = { focus = GRE_corporatism }
+	prerequisite = { focus = GRE_destroy_left_wing }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_who_needs_democracy"
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.07
+		}
+	}
+}
+
+focus = {
+	id = GRE_direct_rule
+	icon = GFX_goal_GRE_direct_rule
+	cost = 4
+	x = 3
+	y = 4
+	prerequisite = { focus = GRE_corporatism }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_direct_rule"
+		add_ideas = GRE_centralization
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_nationalism_in_schools
+	icon = GFX_goal_GRE_education_reform
+	cost = 4
+	x = -2
+	y = 5
+	prerequisite = { focus = GRE_anti_colonialism }
+	prerequisite = { focus = GRE_personality_cult }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		add_ideas = GRE_nationalism_schools
+	}
+}
+
+focus = {
+	id = GRE_religious_state
+	icon = GFX_goal_GRE_enforce_religion
+	cost = 4
+	x = 0
+	y = 5
+	prerequisite = { focus = GRE_personality_cult }
+	prerequisite = { focus = GRE_who_needs_democracy }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_religious_state"
+		add_ideas = GRE_state_religion
+	}
+}
+
+focus = {
+	id = GRE_exclude_minorities
+	icon = GFX_goal_GRE_nominorities
+	cost = 4
+	x = 2
+	y = 5
+	prerequisite = { focus = GRE_who_needs_democracy }
+	prerequisite = { focus = GRE_direct_rule }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_exclude_minorities"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+			add_idea = GRE_encouraging_discrimination
+		}
+		add_manpower = -250
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_third_greek_generations
+	icon = GFX_goal_GRE_third_generation
+	cost = 4
+	x = 0
+	y = 6
+	prerequisite = { focus = GRE_nationalism_in_schools }
+	prerequisite = { focus = GRE_religious_state }
+	prerequisite = { focus = GRE_exclude_minorities }
+	relative_position_id = GRE_freethinker
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_third_greek_generations"
+		add_ideas = GRE_third_greek_generation
+		set_rule = {
+			desc = can_use_kamikaze_pilots
+			can_use_kamikaze_pilots = yes
+		}
+	}
+}
+
+#SOCIALISM
+
+focus = {
+	id = GRE_liberal_socialism
+	icon = GFX_goal_GRE_liberal_socialism
+	cost = 0
+	x = 10
+	y = 1
+	available = {
+		always = false
+	}
+	prerequisite = { focus = GRE_elections }
+	mutually_exclusive = { focus = GRE_hardliners }
+	relative_position_id = GRE_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_liberal_socialism"
+		remove_ideas = GRE_anathema
+	}
+}
+
+focus = {
+	id = GRE_hardliners
+	icon = GFX_goal_GRE_hardliners
+	cost = 0
+	x = 20
+	y = 1
+	available = {
+		always = false
+	}
+	prerequisite = { focus = GRE_elections }
+	mutually_exclusive = { focus = GRE_liberal_socialism }
+	relative_position_id = GRE_elections
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_hardliners"
+		remove_ideas = GRE_anathema
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_total_secularization
+	icon = GFX_goal_GRE_total_secularization
+	cost = 4
+	x = -1
+	y = 1
+	prerequisite = { focus = GRE_liberal_socialism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_political_power = 100
+		add_ideas = GRE_decentralization
+	}
+}
+
+focus = {
+	id = GRE_safeguard_democracy
+	icon = GFX_goal_GRE_safeguard_democracy
+	cost = 4
+	x = 1
+	y = 1
+	prerequisite = { focus = GRE_liberal_socialism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_political_power = 75
+	}
+}
+
+##
+
+focus = {
+	id = GRE_healthcare_for_everyone
+	icon = GFX_goal_GRE_healthcare_for_everyone
+	cost = 4
+	x = 3
+	y = 1
+	prerequisite = { focus = GRE_liberal_socialism focus = GRE_hardliners }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_healthcare_for_everyone"
+		add_ideas = GRE_healthcare_reform
+	}
+}
+
+focus = {
+	id = GRE_rights_of_woman
+	icon = GFX_goal_GRE_rights_of_woman
+	cost = 4
+	x = 5
+	y = 1
+	prerequisite = { focus = GRE_liberal_socialism focus = GRE_hardliners }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_rights_of_woman"
+		add_ideas = GRE_rights_of_woman
+	}
+}
+
+focus = {
+	id = GRE_mass_urbanisation
+	icon = GFX_goal_GRE_mass_urbanisation
+	cost = 4
+	x = 7
+	y = 1
+	prerequisite = { focus = GRE_liberal_socialism focus = GRE_hardliners }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_mass_urbanisation"
+		add_political_power = -50
+		add_extra_state_shared_building_slots = 8
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+			province = {
+				all_provinces = yes
+				limit_to_border = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_demonize_capitalists
+	icon = GFX_goal_GRE_demonize_capitalists
+	cost = 4
+	x = 9
+	y = 1
+	prerequisite = { focus = GRE_hardliners }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_demonize_capitalists"
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.03
+		}
+	}
+}
+
+focus = {
+	id = GRE_state_atheism
+	icon = GFX_goal_GRE_state_atheism
+	cost = 4
+	x = 11
+	y = 1
+	prerequisite = { focus = GRE_hardliners }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_state_atheism"
+		add_political_power = 125
+		add_manpower = -50
+	}
+}
+
+###############
+
+focus = {
+	id = GRE_worker_councills
+	icon = GFX_goal_GRE_worker_councills
+	cost = 4
+	x = -1
+	y = 2
+	prerequisite = { focus = GRE_total_secularization }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_worker_councills"
+		47 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_denounce_radicalism
+	icon = GFX_goal_GRE_denounce_radicalism
+	cost = 4
+	x = 1
+	y = 2
+	prerequisite = { focus = GRE_safeguard_democracy }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_denounce_radicalism"
+		add_stability = 0.1
+	}
+}
+
+focus = {
+	id = GRE_destroy_the_nationalism
+	icon = GFX_goal_GRE_destroy_the_nationalism
+	cost = 4
+	x = 3
+	y = 2
+	prerequisite = { focus = GRE_healthcare_for_everyone }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_destroy_the_nationalism"
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = valkist
+			popularity = -0.04
+		}
+	}
+}
+
+focus = {
+	id = GRE_rights_of_workers
+	icon = GFX_goal_GRE_rights_of_workers
+	cost = 4
+	x = 5
+	y = 2
+	prerequisite = { focus = GRE_rights_of_woman }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_rights_of_workers"
+		add_ideas = GRE_rights_of_worker
+	}
+}
+
+focus = {
+	id = GRE_protect_the_poor
+	icon = GFX_goal_GRE_protect_the_poor
+	cost = 4
+	x = 7
+	y = 2
+	prerequisite = { focus = GRE_mass_urbanisation }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_protect_the_poor"
+		add_country_leader_trait = protector_of_the_poor
+	}
+}
+
+focus = {
+	id = GRE_propaganda_machine
+	icon = GFX_goal_GRE_propaganda_machine
+	cost = 4
+	x = 9
+	y = 2
+	prerequisite = { focus = GRE_demonize_capitalists }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_propaganda_machine"
+		add_popularity = {
+			ideology = collectivist
+			popularity = 0.1
+		}
+	}
+}
+
+focus = {
+	id = GRE_ideals_of_marx
+	icon = GFX_goal_GRE_ideals_of_marx
+	cost = 4
+	x = 11
+	y = 2
+	prerequisite = { focus = GRE_state_atheism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_ideals_of_marx"
+		add_war_support = 0.1
+	}
+}
+
+############
+
+focus = {
+	id = GRE_cosmopolitanism
+	icon = GFX_goal_GRE_cosmopolitanism
+	cost = 4
+	x = -1
+	y = 3
+	prerequisite = { focus = GRE_worker_councills }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_cosmopolitanism"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+			add_idea = GRE_cosmopolitanism
+		}
+	}
+}
+
+focus = {
+	id = GRE_decentralizationn
+	icon = GFX_goal_GRE_decentralizationn
+	cost = 4
+	x = 1
+	y = 3
+	prerequisite = { focus = GRE_denounce_radicalism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_decentralizationn"
+		add_ideas = GRE_decentralization
+	}
+}
+
+focus = {
+	id = GRE_country_of_steel
+	icon = GFX_goal_GRE_country_of_steel
+	cost = 4
+	x = 3
+	y = 3
+	prerequisite = { focus = GRE_destroy_the_nationalism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_country_of_steel"
+		add_ideas = GRE_steel
+	}
+}
+
+focus = {
+	id = GRE_education_reform #freeeducation
+	icon = GFX_goal_GRE_education_reformm
+	cost = 4
+	x = 5
+	y = 3
+	prerequisite = { focus = GRE_rights_of_workers}
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_education_reform"
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = GRE_for_greece
+	icon = GFX_goal_GRE_for_greece
+	cost = 4
+	x = 7
+	y = 3
+	prerequisite = { focus = GRE_protect_the_poor }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_for_greece"
+		185 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		731 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_collectivisation
+	icon = GFX_goal_GRE_collectivisation
+	cost = 4
+	x = 9
+	y = 3
+	prerequisite = { focus = GRE_propaganda_machine }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_collectivisation"
+		add_stability = -0.05
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+
+focus = {
+	id = GRE_spread_patriotism
+	icon = GFX_goal_GRE_spread_patriotism
+	cost = 4
+	x = 11
+	y = 3
+	prerequisite = { focus = GRE_ideals_of_marx }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_spread_patriotism"
+		add_manpower = 10000
+	}
+}
+
+#######
+
+focus = {
+	id = GRE_paving_the_way_to_socialism
+	icon = GFX_goal_GRE_paving_the_way_to_socialism
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_decentralizationn }
+	prerequisite = { focus = GRE_cosmopolitanism }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_ideas = GRE_true_socialism 
+	}
+}
+
+focus = {
+	id = GRE_onwards
+	icon = GFX_goal_GRE_onwards
+	cost = 4
+	x = 10
+	y = 4
+	prerequisite = { focus = GRE_spread_patriotism }
+	prerequisite = { focus = GRE_collectivisation }
+	relative_position_id = GRE_liberal_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_ideas = GRE_onwards
+	}
+}
+
+#####################################################################
+#####################################################################
+#############################-INDUSTRY-##############################
+#####################################################################
+#####################################################################
+
+focus = {
+	id = GRE_drachma_devaluation
+	icon = GFX_goal_generic_foreign_investments
+	available = {
+	}
+	cost = 3
+	x = 33
+	y = 9
+	ai_will_do = {
+		factor = 4000
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_drachma_devaluation"
+		hidden_effect = {
+			add_political_power = 25
+		}
+		custom_effect_tooltip = GRE_tt_GRE_drachma_devaluation
+	}
+}
+
+########
+
+focus = {
+	id = GRE_support_workers
+	icon = GFX_goal_workers_for_business
+	cost = 3
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_drachma_devaluation }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_support_workers"
+		swap_ideas = {
+			remove_idea = GRE_abysmal_economy
+			add_idea = GRE_abysmal_economy2
+		}
+	}
+}
+
+focus = {
+	id = GRE_safeguard_banking
+	icon = GFX_goal_generic_banking_legislation
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_drachma_devaluation }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_safeguard_banking"
+		add_political_power = 75
+	}
+}
+
+focus = {
+	id = GRE_smyrna_aid
+	icon = GFX_goal_GRE_smyrna_aid
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_drachma_devaluation }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_smyrna_aid"
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = GRE_economic_withering_of_smyrna
+				add_idea = GRE_economic_withering_of_smyrna2
+			}
+		}
+		custom_effect_tooltip = GRE_tt_GRE_smyrna_aid
+	}
+}
+
+########
+
+focus = {
+	id = GRE_invest_consumer_goods
+	icon = GFX_goal_generic_food_processing
+	cost = 3
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_support_workers }
+	prerequisite = { focus = GRE_safeguard_banking }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_invest_consumer_goods"
+		swap_ideas = {
+			remove_idea = GRE_abysmal_economy2
+			add_idea = GRE_abysmal_economy3
+		}
+	}
+}
+
+focus = {
+	id = GRE_reevaluate_budget
+	icon = GFX_goal_generic_dissolve_parliament1
+	cost = 3
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_safeguard_banking }
+	prerequisite = { focus = GRE_smyrna_aid }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_offsite_building = { type = industrial_complex level = 2 }
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_back_on_feet
+	icon = GFX_goal_generic_takeover_industries
+	cost = 3
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 4000
+	}
+	prerequisite = { focus = GRE_invest_consumer_goods }
+	prerequisite = { focus = GRE_reevaluate_budget }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_back_on_feet"
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = GRE_abysmal_economy3
+				add_idea = GRE_abysmal_economy4
+			}
+		}
+		custom_effect_tooltip = GRE_tt_GRE_back_on_feet
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_advancements_mining
+	icon = GFX_goal_generic_coal_mining
+	cost = 3
+	x = -1
+	y = 4
+	prerequisite = { focus = GRE_back_on_feet }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_advancements_mining"
+		47 = {
+			add_resource = {
+				type = tungsten
+				amount = 15
+			}
+		}
+		185 = {
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_autarky
+	icon = GFX_goal_generic_autarky
+	cost = 3
+	x = 1
+	y = 4
+	prerequisite = { focus = GRE_back_on_feet }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_autarky"
+		add_ideas = GRE_autarky
+	}
+}
+
+#######
+
+focus = {
+	id = GRE_develop_arms_industry
+	icon = GFX_goal_generic_military_equipment
+	cost = 3
+	x = -4
+	y = 5
+	prerequisite = { focus = GRE_advancements_mining }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_develop_arms_industry"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.69
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+focus = {
+	id = GRE_modernize_agro
+	icon = GFX_goal_agriculture2
+	cost = 3
+	x = -1
+	y = 5
+	prerequisite = { focus = GRE_advancements_mining }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_modernize_agro"
+		add_ideas = GRE_agro_modernisation
+	}
+}
+
+focus = {
+	id = GRE_infrastructure_development
+	icon = GFX_goal_generic_railroad
+	cost = 3
+	x = 1
+	y = 5
+	prerequisite = { focus = GRE_autarky }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_infrastructure_development"
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+############
+
+focus = {
+	id = GRE_heavy_industry
+	icon = GFX_goal_generic_heavy_armour_german
+	cost = 3
+	x = -5
+	y = 6
+	prerequisite = { focus = GRE_develop_arms_industry }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_heavy_industry"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = armor
+		}
+	}
+}
+
+focus = {
+	id = GRE_pyrkal
+	icon = GFX_goal_GRE_pyrkal
+	cost = 3
+	x = -3
+	y = 6
+	prerequisite = { focus = GRE_develop_arms_industry }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_pyrkal"
+		add_ideas = greek_powder
+		47 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_electryfication
+	icon = GFX_goal_generic_electricity
+	cost = 3
+	x = -1
+	y = 6
+	prerequisite = { focus = GRE_modernize_agro }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_innovative_production_methods
+	icon = GFX_goal_generic_design_equipment_standards
+	cost = 3
+	x = 1
+	y = 6
+	prerequisite = { focus = GRE_infrastructure_development }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_innovative_production_methods"
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 3
+			category = industry
+		}
+	}
+}
+
+focus = {
+	id = GRE_invest_in_aviation
+	icon = GFX_goal_generic_airports
+	cost = 3
+	x = 3
+	y = 6
+	prerequisite = { focus = GRE_infrastructure_development }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_invest_in_aviation"
+		47 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		set_technology = {
+			interwar_antiair = 1
+		}
+	}
+}
+
+###########
+
+focus = {
+	id = GRE_emergency_procedures
+	icon = GFX_goal_GRE_emergency_procedures
+	cost = 3
+	x = -5
+	y = 7
+	prerequisite = { focus = GRE_heavy_industry }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_emergency_procedures"
+		add_ideas = GRE_emergency_procedures
+	}
+}
+
+focus = {
+	id = GRE_supply_fuel
+	icon = GFX_goal_oil_derrick
+	cost = 3
+	x = -3
+	y = 7
+	prerequisite = { focus = GRE_pyrkal }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_supply_fuel"
+		add_offsite_building = { type = fuel_silo level = 2 }
+		add_offsite_building = { type = synthetic_refinery level = 1 }
+	}
+}
+
+focus = {
+	id = GRE_university_of_athenes
+	icon = GFX_goal_double_research
+	cost = 3
+	x = -1
+	y = 7
+	prerequisite = { focus = GRE_electryfication }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_university_of_athenes"
+		add_research_slot = 1
+	}
+}
+
+focus = {
+	id = GRE_tourist_paradise
+	icon = GFX_goal_generic_tourism
+	cost = 3
+	x = 1
+	y = 7
+	prerequisite = { focus = GRE_innovative_production_methods }
+	prerequisite = { focus = GRE_invest_in_aviation }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promote_trade"
+		add_offsite_building = { type = industrial_complex level = 3 }
+		add_political_power = 50
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_economic_boom
+	icon = GFX_goal_generic_debt_negotiations
+	cost = 3
+	x = -4
+	y = 8
+	prerequisite = { focus = GRE_emergency_procedures }
+	prerequisite = { focus = GRE_supply_fuel }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_economic_boom"
+		custom_effect_tooltip = GRE_tt_GRE_economic_boom
+	}
+}
+
+focus = {
+	id = GRE_pay_off_dept
+	icon = GFX_goal_GRE_pay_off_dept
+	cost = 3
+	x = 0
+	y = 8
+	prerequisite = { focus = GRE_university_of_athenes }
+	prerequisite = { focus = GRE_tourist_paradise }
+	relative_position_id = GRE_drachma_devaluation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_pay_off_dept"
+		hidden_effect= {
+			remove_ideas = GRE_abysmal_economy4
+		}
+		custom_effect_tooltip = GRE_tt_GRE_pay_off
+	}
+}
+
+##########################################
+################# EEE
+########################################
+
+focus = {
+	id = GRE_eee
+	icon = GFX_goal_GRE_eee
+	cost = 4
+	x = 74
+	y = 0
+	available = {
+		always = false
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_eee"
+	}
+}
+
+########
+
+focus = {
+	id = GRE_convert_or_suffer
+	icon = GFX_goal_GRE_convert_or_suffer
+	cost = 4
+	x = -1
+	y = 1
+	prerequisite = { focus = GRE_eee }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_convert_or_suffer"
+		add_political_power = 200
+		add_manpower = -500
+	}
+}
+
+focus = {
+	id = GRE_old_ways
+	icon = GFX_goal_GRE_old_ways
+	cost = 4
+	x = 1
+	y = 1
+	prerequisite = { focus = GRE_eee }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_old_ways"
+		add_ideas = GRE_old_ways
+	}
+}
+
+##########
+
+focus = {
+	id = GRE_burn_jews
+	icon = GFX_goal_GRE_burn_jews
+	cost = 4
+	x = -2
+	y = 2
+	prerequisite = { focus = GRE_convert_or_suffer }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_burn_jews"
+		add_political_power = 100
+		add_manpower = -1000
+	}
+}
+
+focus = {
+	id = GRE_ghetto
+	icon = GFX_goal_GRE_ghetto
+	cost = 4
+	x = 0
+	y = 2
+	prerequisite = { focus = GRE_convert_or_suffer }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_old_ways"
+		add_stability = 0.1
+		add_manpower = -100
+	}
+}
+
+focus = {
+	id = GRE_blame_entente
+	icon = GFX_goal_GRE_blame_entente
+	cost = 4
+	x = 2
+	y = 2
+	prerequisite = { focus = GRE_old_ways }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: FocusGRE_blame_entente"
+		add_ideas = GRE_we_are_alone
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_nothing_against_state
+	icon = GFX_goal_GRE_nothing_against_state
+	cost = 4
+	x = -1
+	y = 3
+	prerequisite = { focus = GRE_burn_jews }
+	prerequisite = { focus = GRE_ghetto }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_nothing_against_state"
+		add_ideas = GRE_nothing_against_state
+	}
+}
+
+focus = {
+	id = GRE_lawful_territory
+	icon = GFX_goal_GRE_lawful_territory
+	cost = 4
+	x = 1
+	y = 3
+	prerequisite = { focus = GRE_blame_entente }
+	prerequisite = { focus = GRE_ghetto }
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_lawful_territory"
+		add_state_core = 347	
+		add_state_core = 776
+		add_state_core = 340
+		add_state_core = 339
+		add_state_core = 1034
+		add_state_core = 343
+		add_state_core = 345
+		add_state_core = 1030
+		add_state_core = 346
+		add_state_core = 49
+		add_state_core = 777
+		add_state_core = 779
+		add_state_core = 356
+		add_state_core = 355
+		add_state_core = 780
+		add_state_core = 348
+		add_state_core = 349
+		add_state_core = 778
+		add_state_core = 781
+		add_state_core = 344
+		add_state_core = 350
+		add_state_core = 352
+		add_state_core = 353
+		add_state_core = 354
+		add_state_core = 902
+	}
+}
+
+###########
+
+focus = {
+	id = GRE_imperium_romanum
+	icon = GFX_goal_GRE_imperium_romanum
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_nothing_against_state }
+	prerequisite = { focus = GRE_lawful_territory}
+	relative_position_id = GRE_eee
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_imperium_romanum"
+		custom_effect_tooltip = GRE_tt_GRE_imperium_romanum
+		set_capital = {state = 341}
+		hidden_effect = {
+			load_focus_tree = greece_rome_focus
+			set_cosmetic_tag = GRE_roman
+		}
+	}
+}
+
+######################################
+############ GOLDEN DAWN
+######################################
+
+focus = {
+	id = GRE_golden_dawn_focus
+	icon = GFX_goal_GRE_golden_dawn
+	cost = 4
+	x = 82
+	y = 0
+	available = {
+		always = false
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_golden_dawn"
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_agoge
+	icon = GFX_goal_GRE_agoge
+	cost = 4
+	x = -1
+	y = 1
+	prerequisite = { focus = GRE_golden_dawn_focus }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_agoge
+	}
+}
+
+focus = {
+	id = GRE_spartan_constitution
+	icon = GFX_goal_GRE_spartan_constitution
+	cost = 4
+	x = 1
+	y = 1
+	prerequisite = { focus = GRE_golden_dawn_focus }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_stability = 0.05
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_spartiate	
+	icon = GFX_goal_GRE_spartiate	
+	cost = 4
+	x = -2
+	y = 2
+	prerequisite = { focus = GRE_agoge }
+	prerequisite = { focus = GRE_spartan_constitution }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_spartiate
+	}
+}
+
+focus = {
+	id = GRE_perioikoi
+	icon = GFX_goal_GRE_perioikoi
+	cost = 4
+	x = 0
+	y = 2
+	prerequisite = { focus = GRE_agoge }
+	prerequisite = { focus = GRE_spartan_constitution }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		swap_ideas = {
+			remove_idea = GRE_minority_unrests
+    		add_idea = GRE_perioikoi
+		}
+	}
+}
+
+focus = {
+	id = GRE_helots
+	icon = GFX_goal_GRE_helots
+	cost = 4
+	x = 2
+	y = 2
+	prerequisite = { focus = GRE_agoge }
+	prerequisite = { focus = GRE_spartan_constitution }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_slavery
+	}
+}
+
+########
+
+focus = {
+	id = GRE_neodamode
+	icon = GFX_goal_GRE_neodamode
+	cost = 4
+	x = -1
+	y = 3
+	prerequisite = { focus = GRE_spartiate }
+	prerequisite = { focus = GRE_perioikoi }
+	prerequisite = { focus = GRE_helots }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_manpower = 10000
+	}
+}
+
+focus = {
+	id = GRE_burn_down_churches
+	icon = GFX_goal_GRE_burn_down_churches
+	cost = 4
+	x = 1
+	y = 3
+	prerequisite = { focus = GRE_spartiate }
+	prerequisite = { focus = GRE_perioikoi }
+	prerequisite = { focus = GRE_helots }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_political_power = 100
+	}
+}
+
+############
+
+focus = {
+	id = GRE_hephaestus
+	icon = GFX_goal_GRE_hephaestus
+	cost = 4
+	x = -2
+	y = 4
+	prerequisite = { focus = GRE_neodamode }
+	prerequisite = { focus = GRE_burn_down_churches }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+focus = {
+	id = GRE_ares
+	icon = GFX_goal_GRE_ares
+	cost = 4
+	x = 0
+	y = 4
+	prerequisite = { focus = GRE_neodamode }
+	prerequisite = { focus = GRE_burn_down_churches }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_ares
+	}
+}
+
+focus = {
+	id = GRE_hyperborea
+	icon = GFX_goal_GRE_hyperborea
+	cost = 4
+	x = 2
+	y = 4
+	prerequisite = { focus = GRE_neodamode }
+	prerequisite = { focus = GRE_burn_down_churches }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		country_event = gre.18
+	}
+}
+
+#############
+
+focus = {
+	id = GRE_infant_selection
+	icon = GFX_goal_GRE_infant_selection
+	cost = 4
+	x = -1
+	y = 5
+	prerequisite = { focus = GRE_hephaestus }
+	prerequisite = { focus = GRE_ares }
+	prerequisite = { focus = GRE_hyperborea }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_infant_selection"
+		add_ideas = GRE_infant_selection
+	}
+}
+
+focus = {
+	id = GRE_honour_ancestors
+	icon = GFX_goal_GRE_honour_ancestors
+	cost = 4
+	x = 1
+	y = 5
+	prerequisite = { focus = GRE_hephaestus }
+	prerequisite = { focus = GRE_ares }
+	prerequisite = { focus = GRE_hyperborea }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_honour_ancestors
+	}
+}
+
+######
+
+focus = {
+	id = GRE_free_art
+	icon = GFX_goal_GRE_free_art
+	cost = 4
+	x = -1
+	y = 6
+	prerequisite = { focus = GRE_infant_selection }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_political_power = 100
+	}
+}
+
+focus = {
+	id = GRE_molon_labe
+	icon = GFX_goal_GRE_molon_labe
+	cost = 4
+	x = 1
+	y = 6
+	prerequisite = { focus = GRE_honour_ancestors }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		add_ideas = GRE_molon_labe
+	}
+}
+
+#########
+
+focus = {
+	id = GRE_legacy_leonidas
+	icon = GFX_goal_GRE_legacy_leonidas
+	cost = 4
+	x = 0
+	y = 7
+	prerequisite = { focus = GRE_free_art }
+	prerequisite = { focus = GRE_molon_labe }
+	relative_position_id = GRE_golden_dawn_focus
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+		swap_ideas = {
+			remove_idea = GRE_molon_labe
+			add_idea = GRE_legacy_leonidas
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

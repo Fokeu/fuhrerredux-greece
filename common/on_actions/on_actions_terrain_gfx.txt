@@ -585,7 +585,7 @@ on_actions = {
 				}
 			}
 
-			1034 = {
+			104 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_sarajevo }
 					province = { id = 11899 }
@@ -1615,20 +1615,17 @@ on_actions = {
 			
 			345 = {
 				add_province_modifier = {
+					static_modifiers = { terrain_adana }
+					province = { id = 11746 }
+				}
+				add_province_modifier = {
 					static_modifiers = { terrain_antalya }
 					province = { id = 1005 }
-				}	
-			}
-
-			1030 = {
+				}
 				add_province_modifier = {
 					static_modifiers = { terrain_mersin }
 					province = { id = 10056 }
-				}
-				add_province_modifier = {
-					static_modifiers = { terrain_adana }
-					province = { id = 11746 }
-				}	
+				}				
 			}
 			
 			349 = {
@@ -2244,7 +2241,7 @@ on_actions = {
 				}
 			}
 
-			1026 = {
+			596 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_hangzhou }
 					province = { id = 7191 }
@@ -2258,7 +2255,7 @@ on_actions = {
 				}
 			}
 
-			1022 = {
+			602 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_changsha }
 					province = { id = 7097 }
@@ -2321,7 +2318,7 @@ on_actions = {
 				}
 			}
 
-			812 = {
+			288 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_mandalay }
 					province = { id = 1492 }
@@ -2557,14 +2554,10 @@ on_actions = {
 				}
 			}
 			
-			1031 = {
+			679 = {
 				add_province_modifier = {
 					static_modifiers = { terrain_medina }
 					province = { id = 10835 }
-				}
-				add_province_modifier = {
-					static_modifiers = { terrain_hail }
-					province = { id = 7934 }
 				}
 			}
 
@@ -2821,6 +2814,13 @@ on_actions = {
 				add_province_modifier = {
 					static_modifiers = { terrain_manama }
 					province = { id = 13552 }
+				}
+			}
+
+			679 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_hail }
+					province = { id = 7934 }
 				}
 			}
 

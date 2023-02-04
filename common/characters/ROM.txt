@@ -64,12 +64,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Regency_Council_hog_pau_hired }
 			}
 			idea_token = ROM_Regency_Council_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = ROM_Regency_Council_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Regency_Council_hog_pau_hired }
-			}
+			on_add = { set_country_flag = ROM_Regency_Council_hog_pau_hired }
+			on_remove = { clr_country_flag = ROM_Regency_Council_hog_pau_hired }
 			traits = {
 				paternal_autocrat
 				hog_happy_amateur
@@ -95,12 +91,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Corneliu_Zelea_Codreanu_hog_val_hired }
 			}
 			idea_token = ROM_Corneliu_Zelea_Codreanu_hog_val
-			on_add = {
-				ROOT = { set_country_flag = ROM_Corneliu_Zelea_Codreanu_hog_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Corneliu_Zelea_Codreanu_hog_val_hired }
-			}
+			on_add = { set_country_flag = ROM_Corneliu_Zelea_Codreanu_hog_val_hired }
+			on_remove = { clr_country_flag = ROM_Corneliu_Zelea_Codreanu_hog_val_hired }
 			traits = {
 				valkist
 				hog_determined_populist
@@ -141,7 +133,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = ROM_Ion_Antonescu_cos
 			traits = {
 				cos_school_of_fire_support
@@ -166,7 +158,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = ROM_Gheorghe_Argeseanu_cos
 			traits = {
 				cos_school_of_commando_operations
@@ -255,7 +247,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = ROM_Constantin_Pantazi_cos
 			traits = {
 				cos_school_of_psychology
@@ -392,7 +384,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = ROM_Horia_Macellariu_cnav
 			traits = {
 				cnav_base_control_doctrine
@@ -413,12 +405,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Gheorghe_Apostol_hog_col_hired }
 			}
 			idea_token = ROM_Gheorghe_Apostol_hog_col
-			on_add = {
-				ROOT = { set_country_flag = ROM_Gheorghe_Apostol_hog_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Gheorghe_Apostol_hog_col_hired }
-			}
+			on_add = { set_country_flag = ROM_Gheorghe_Apostol_hog_col_hired }
+			on_remove = { clr_country_flag = ROM_Gheorghe_Apostol_hog_col_hired }
 			traits = {
 				collectivist
 				hog_red_chairmen
@@ -439,12 +427,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Virgil_Madgearu_hog_sde_hired }
 			}
 			idea_token = ROM_Virgil_Madgearu_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = ROM_Virgil_Madgearu_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Virgil_Madgearu_hog_sde_hired }
-			}
+			on_add = { set_country_flag = ROM_Virgil_Madgearu_hog_sde_hired }
+			on_remove = { clr_country_flag = ROM_Virgil_Madgearu_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_sincere_internationalist
@@ -465,12 +449,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Iuliu_Maniu_hog_sli_hired }
 			}
 			idea_token = ROM_Iuliu_Maniu_hog_sli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Iuliu_Maniu_hog_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Iuliu_Maniu_hog_sli_hired }
-			}
+			on_add = { set_country_flag = ROM_Iuliu_Maniu_hog_sli_hired }
+			on_remove = { clr_country_flag = ROM_Iuliu_Maniu_hog_sli_hired }
 			traits = {
 				social_liberal
 				hog_naive_optimist
@@ -491,12 +471,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Constantin_Bratianu_hog_mli_hired }
 			}
 			idea_token = ROM_Constantin_Bratianu_hog_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Constantin_Bratianu_hog_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Constantin_Bratianu_hog_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Constantin_Bratianu_hog_mli_hired }
+			on_remove = { clr_country_flag = ROM_Constantin_Bratianu_hog_mli_hired }
 			traits = {
 				market_liberal
 				hog_smiling_oilman
@@ -517,12 +493,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Constantin_Angelescu_hog_mli_hired }
 			}
 			idea_token = ROM_Constantin_Angelescu_hog_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Constantin_Angelescu_hog_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Constantin_Angelescu_hog_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Constantin_Angelescu_hog_mli_hired }
+			on_remove = { clr_country_flag = ROM_Constantin_Angelescu_hog_mli_hired }
 			traits = {
 				market_liberal
 				hog_corporate_suit
@@ -543,12 +515,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Alexandru_Vaida_Voevod_hog_sco_hired }
 			}
 			idea_token = ROM_Alexandru_Vaida_Voevod_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = ROM_Alexandru_Vaida_Voevod_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Alexandru_Vaida_Voevod_hog_sco_hired }
-			}
+			on_add = { set_country_flag = ROM_Alexandru_Vaida_Voevod_hog_sco_hired }
+			on_remove = { clr_country_flag = ROM_Alexandru_Vaida_Voevod_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_accomplished_diplomat
@@ -569,12 +537,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Armand_Calinescu_hog_ade_hired }
 			}
 			idea_token = ROM_Armand_Calinescu_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = ROM_Armand_Calinescu_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Armand_Calinescu_hog_ade_hired }
-			}
+			on_add = { set_country_flag = ROM_Armand_Calinescu_hog_ade_hired }
+			on_remove = { clr_country_flag = ROM_Armand_Calinescu_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_silent_workhorse
@@ -595,12 +559,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Alexandru_Cantacuzino_hog_pau_hired }
 			}
 			idea_token = ROM_Alexandru_Cantacuzino_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = ROM_Alexandru_Cantacuzino_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Alexandru_Cantacuzino_hog_pau_hired }
-			}
+			on_add = { set_country_flag = ROM_Alexandru_Cantacuzino_hog_pau_hired }
+			on_remove = { clr_country_flag = ROM_Alexandru_Cantacuzino_hog_pau_hired }
 			traits = {
 				paternal_autocrat
 				hog_flamboyant_tough_guy
@@ -621,12 +581,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Horia_Sima_hog_npo_hired }
 			}
 			idea_token = ROM_Horia_Sima_hog_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Horia_Sima_hog_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Horia_Sima_hog_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Horia_Sima_hog_npo_hired }
+			on_remove = { clr_country_flag = ROM_Horia_Sima_hog_npo_hired }
 			traits = {
 				national_populist
 				hog_backroom_backstabber
@@ -648,12 +604,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ion_Mota_hog_val_hired }
 			}
 			idea_token = ROM_Ion_Mota_hog_val
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ion_Mota_hog_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ion_Mota_hog_val_hired }
-			}
+			on_add = { set_country_flag = ROM_Ion_Mota_hog_val_hired }
+			on_remove = { clr_country_flag = ROM_Ion_Mota_hog_val_hired }
 			traits = {
 				valkist
 				hog_local_tyrant
@@ -666,12 +618,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ion_Mota_for_val_hired }
 			}
 			idea_token = ROM_Ion_Mota_for_val
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ion_Mota_for_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ion_Mota_for_val_hired }
-			}
+			on_add = { set_country_flag = ROM_Ion_Mota_for_val_hired }
+			on_remove = { clr_country_flag = ROM_Ion_Mota_for_val_hired }
 			traits = {
 				valkist
 				for_iron_fisted_brute
@@ -692,12 +640,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ana_Pauker_for_col_hired }
 			}
 			idea_token = ROM_Ana_Pauker_for_col
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ana_Pauker_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ana_Pauker_for_col_hired }
-			}
+			on_add = { set_country_flag = ROM_Ana_Pauker_for_col_hired }
+			on_remove = { clr_country_flag = ROM_Ana_Pauker_for_col_hired }
 			traits = {
 				collectivist
 				for_moderate_among_radicals
@@ -718,12 +662,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Grigore_Gafencu_for_sli_hired }
 			}
 			idea_token = ROM_Grigore_Gafencu_for_sli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Grigore_Gafencu_for_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Grigore_Gafencu_for_sli_hired }
-			}
+			on_add = { set_country_flag = ROM_Grigore_Gafencu_for_sli_hired }
+			on_remove = { clr_country_flag = ROM_Grigore_Gafencu_for_sli_hired }
 			traits = {
 				social_liberal
 				for_biased_intellectual
@@ -744,12 +684,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Gheorghe_Tatarescu_for_mli_hired }
 			}
 			idea_token = ROM_Gheorghe_Tatarescu_for_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Gheorghe_Tatarescu_for_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Gheorghe_Tatarescu_for_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Gheorghe_Tatarescu_for_mli_hired }
+			on_remove = { clr_country_flag = ROM_Gheorghe_Tatarescu_for_mli_hired }
 			traits = {
 				market_liberal
 				for_iron_fisted_brute
@@ -770,12 +706,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Savel_Radulescu_for_mli_hired }
 			}
 			idea_token = ROM_Savel_Radulescu_for_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Savel_Radulescu_for_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Savel_Radulescu_for_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Savel_Radulescu_for_mli_hired }
+			on_remove = { clr_country_flag = ROM_Savel_Radulescu_for_mli_hired }
 			traits = {
 				market_liberal
 				for_ideological_crusader
@@ -796,12 +728,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Viorel_Tilea_for_sco_hired }
 			}
 			idea_token = ROM_Viorel_Tilea_for_sco
-			on_add = {
-				ROOT = { set_country_flag = ROM_Viorel_Tilea_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Viorel_Tilea_for_sco_hired }
-			}
+			on_add = { set_country_flag = ROM_Viorel_Tilea_for_sco_hired }
+			on_remove = { clr_country_flag = ROM_Viorel_Tilea_for_sco_hired }
 			traits = {
 				social_conservative
 				for_general_staffer
@@ -822,12 +750,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Grigore_Niculescu_Buzesti_for_ade_hired }
 			}
 			idea_token = ROM_Grigore_Niculescu_Buzesti_for_ade
-			on_add = {
-				ROOT = { set_country_flag = ROM_Grigore_Niculescu_Buzesti_for_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Grigore_Niculescu_Buzesti_for_ade_hired }
-			}
+			on_add = { set_country_flag = ROM_Grigore_Niculescu_Buzesti_for_ade_hired }
+			on_remove = { clr_country_flag = ROM_Grigore_Niculescu_Buzesti_for_ade_hired }
 			traits = {
 				authoritarian_democrat
 				for_general_staffer
@@ -848,12 +772,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Constantin_Papanace_for_npo_hired }
 			}
 			idea_token = ROM_Constantin_Papanace_for_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Constantin_Papanace_for_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Constantin_Papanace_for_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Constantin_Papanace_for_npo_hired }
+			on_remove = { clr_country_flag = ROM_Constantin_Papanace_for_npo_hired }
 			traits = {
 				national_populist
 				for_moderate_among_radicals
@@ -874,12 +794,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Mihail_Sturdza_for_npo_hired }
 			}
 			idea_token = ROM_Mihail_Sturdza_for_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Mihail_Sturdza_for_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Mihail_Sturdza_for_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Mihail_Sturdza_for_npo_hired }
+			on_remove = { clr_country_flag = ROM_Mihail_Sturdza_for_npo_hired }
 			traits = {
 				national_populist
 				for_hawkish_intervener
@@ -900,12 +816,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Radu_Mironovici_for_npo_hired }
 			}
 			idea_token = ROM_Radu_Mironovici_for_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Radu_Mironovici_for_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Radu_Mironovici_for_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Radu_Mironovici_for_npo_hired }
+			on_remove = { clr_country_flag = ROM_Radu_Mironovici_for_npo_hired }
 			traits = {
 				national_populist
 				for_biased_intellectual
@@ -926,12 +838,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Miron_Constantinescu_eco_van_hired }
 			}
 			idea_token = ROM_Miron_Constantinescu_eco_van
-			on_add = {
-				ROOT = { set_country_flag = ROM_Miron_Constantinescu_eco_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Miron_Constantinescu_eco_van_hired }
-			}
+			on_add = { set_country_flag = ROM_Miron_Constantinescu_eco_van_hired }
+			on_remove = { clr_country_flag = ROM_Miron_Constantinescu_eco_van_hired }
 			traits = {
 				vanguardist
 				eco_planned_economy_proponent
@@ -952,12 +860,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ion_Mihalache_eco_sde_hired }
 			}
 			idea_token = ROM_Ion_Mihalache_eco_sde
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ion_Mihalache_eco_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ion_Mihalache_eco_sde_hired }
-			}
+			on_add = { set_country_flag = ROM_Ion_Mihalache_eco_sde_hired }
+			on_remove = { clr_country_flag = ROM_Ion_Mihalache_eco_sde_hired }
 			traits = {
 				social_democrat
 				eco_balanced_budget_economy
@@ -978,12 +882,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Victor_Slavescu_eco_mli_hired }
 			}
 			idea_token = ROM_Victor_Slavescu_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Victor_Slavescu_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Victor_Slavescu_eco_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Victor_Slavescu_eco_mli_hired }
+			on_remove = { clr_country_flag = ROM_Victor_Slavescu_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_bank_president
@@ -1004,12 +904,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Mitita_Constantinescu_eco_mli_hired }
 			}
 			idea_token = ROM_Mitita_Constantinescu_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Mitita_Constantinescu_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Mitita_Constantinescu_eco_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Mitita_Constantinescu_eco_mli_hired }
+			on_remove = { clr_country_flag = ROM_Mitita_Constantinescu_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_construction_magnate
@@ -1030,12 +926,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Gheorghe_Mironescu_eco_sco_hired }
 			}
 			idea_token = ROM_Gheorghe_Mironescu_eco_sco
-			on_add = {
-				ROOT = { set_country_flag = ROM_Gheorghe_Mironescu_eco_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Gheorghe_Mironescu_eco_sco_hired }
-			}
+			on_add = { set_country_flag = ROM_Gheorghe_Mironescu_eco_sco_hired }
+			on_remove = { clr_country_flag = ROM_Gheorghe_Mironescu_eco_sco_hired }
 			traits = {
 				social_conservative
 				eco_tank_proponent
@@ -1056,12 +948,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Gheorghe_Potopeanu_eco_pau_hired }
 			}
 			idea_token = ROM_Gheorghe_Potopeanu_eco_pau
-			on_add = {
-				ROOT = { set_country_flag = ROM_Gheorghe_Potopeanu_eco_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Gheorghe_Potopeanu_eco_pau_hired }
-			}
+			on_add = { set_country_flag = ROM_Gheorghe_Potopeanu_eco_pau_hired }
+			on_remove = { clr_country_flag = ROM_Gheorghe_Potopeanu_eco_pau_hired }
 			traits = {
 				paternal_autocrat
 				eco_industrialiser
@@ -1082,12 +970,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ilie_Garneata_eco_npo_hired }
 			}
 			idea_token = ROM_Ilie_Garneata_eco_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ilie_Garneata_eco_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ilie_Garneata_eco_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Ilie_Garneata_eco_npo_hired }
+			on_remove = { clr_country_flag = ROM_Ilie_Garneata_eco_npo_hired }
 			traits = {
 				national_populist
 				eco_mixed_economy
@@ -1108,12 +992,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Mihail_Manoilescu_eco_npo_hired }
 			}
 			idea_token = ROM_Mihail_Manoilescu_eco_npo
-			on_add = {
-				ROOT = { set_country_flag = ROM_Mihail_Manoilescu_eco_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Mihail_Manoilescu_eco_npo_hired }
-			}
+			on_add = { set_country_flag = ROM_Mihail_Manoilescu_eco_npo_hired }
+			on_remove = { clr_country_flag = ROM_Mihail_Manoilescu_eco_npo_hired }
 			traits = {
 				national_populist
 				eco_steel_magnate
@@ -1134,12 +1014,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Gheorghe_Clime_eco_val_hired }
 			}
 			idea_token = ROM_Gheorghe_Clime_eco_val
-			on_add = {
-				ROOT = { set_country_flag = ROM_Gheorghe_Clime_eco_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Gheorghe_Clime_eco_val_hired }
-			}
+			on_add = { set_country_flag = ROM_Gheorghe_Clime_eco_val_hired }
+			on_remove = { clr_country_flag = ROM_Gheorghe_Clime_eco_val_hired }
 			traits = {
 				valkist
 				eco_resource_industrialist
@@ -1160,12 +1036,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Teohari_Georgescu_sec_van_hired }
 			}
 			idea_token = ROM_Teohari_Georgescu_sec_van
-			on_add = {
-				ROOT = { set_country_flag = ROM_Teohari_Georgescu_sec_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Teohari_Georgescu_sec_van_hired }
-			}
+			on_add = { set_country_flag = ROM_Teohari_Georgescu_sec_van_hired }
+			on_remove = { clr_country_flag = ROM_Teohari_Georgescu_sec_van_hired }
 			traits = {
 				vanguardist
 				sec_man_of_the_people
@@ -1186,12 +1058,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Pantelimon_Halippa_sec_sde_hired }
 			}
 			idea_token = ROM_Pantelimon_Halippa_sec_sde
-			on_add = {
-				ROOT = { set_country_flag = ROM_Pantelimon_Halippa_sec_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Pantelimon_Halippa_sec_sde_hired }
-			}
+			on_add = { set_country_flag = ROM_Pantelimon_Halippa_sec_sde_hired }
+			on_remove = { clr_country_flag = ROM_Pantelimon_Halippa_sec_sde_hired }
 			traits = {
 				social_democrat
 				sec_silent_lawyer
@@ -1212,12 +1080,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Victor_Iamandi_sec_mli_hired }
 			}
 			idea_token = ROM_Victor_Iamandi_sec_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Victor_Iamandi_sec_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Victor_Iamandi_sec_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Victor_Iamandi_sec_mli_hired }
+			on_remove = { clr_country_flag = ROM_Victor_Iamandi_sec_mli_hired }
 			traits = {
 				market_liberal
 				sec_compassionate_gentleman
@@ -1238,12 +1102,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Richard_Franasovici_sec_mli_hired }
 			}
 			idea_token = ROM_Richard_Franasovici_sec_mli
-			on_add = {
-				ROOT = { set_country_flag = ROM_Richard_Franasovici_sec_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Richard_Franasovici_sec_mli_hired }
-			}
+			on_add = { set_country_flag = ROM_Richard_Franasovici_sec_mli_hired }
+			on_remove = { clr_country_flag = ROM_Richard_Franasovici_sec_mli_hired }
 			traits = {
 				market_liberal
 				sec_crime_fighter
@@ -1264,12 +1124,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Mihail_Ghelmegeanu_sec_sco_hired }
 			}
 			idea_token = ROM_Mihail_Ghelmegeanu_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = ROM_Mihail_Ghelmegeanu_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Mihail_Ghelmegeanu_sec_sco_hired }
-			}
+			on_add = { set_country_flag = ROM_Mihail_Ghelmegeanu_sec_sco_hired }
+			on_remove = { clr_country_flag = ROM_Mihail_Ghelmegeanu_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_efficient_sociopath
@@ -1290,12 +1146,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Aurel_Aldea_sec_sco_hired }
 			}
 			idea_token = ROM_Aurel_Aldea_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = ROM_Aurel_Aldea_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Aurel_Aldea_sec_sco_hired }
-			}
+			on_add = { set_country_flag = ROM_Aurel_Aldea_sec_sco_hired }
+			on_remove = { clr_country_flag = ROM_Aurel_Aldea_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_secret_police_chief
@@ -1316,12 +1168,8 @@ characters = {
 				hidden_trigger = { has_country_flag = ROM_Ion_Belgea_sec_val_hired }
 			}
 			idea_token = ROM_Ion_Belgea_sec_val
-			on_add = {
-				ROOT = { set_country_flag = ROM_Ion_Belgea_sec_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = ROM_Ion_Belgea_sec_val_hired }
-			}
+			on_add = { set_country_flag = ROM_Ion_Belgea_sec_val_hired }
+			on_remove = { clr_country_flag = ROM_Ion_Belgea_sec_val_hired }
 			traits = {
 				valkist
 				sec_preserver_of_culture
@@ -1337,7 +1185,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = ROM_Ioan_Ilcus_cos_sli
 			traits = {
 				cos_school_of_manoeuvre
@@ -1353,7 +1201,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = ROM_Mihail_Racovita_cos_sli
 			traits = {
 				cos_school_of_defence
@@ -1369,7 +1217,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = ROM_Costin_Ionascu_carm_sli
 			traits = {
 				carm_decisive_battle_doctrine
@@ -1385,7 +1233,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = ROM_Constantin_Sanatescu_carm_ade
 			traits = {
 				carm_guns_and_butter_doctrine
@@ -1401,7 +1249,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = ROM_Gheorghe_Mihail_carm_ade
 			traits = {
 				carm_doctrine_of_autonomy
@@ -1417,7 +1265,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = ROM_Ilie_Steflea_carm_pau
 			traits = {
 				carm_commando_doctrine
@@ -1433,7 +1281,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = ROM_Alexandru_Ioanitiu_carm_npo
 			traits = {
 				carm_armoured_spearhead_doctrine
@@ -1449,7 +1297,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = ROM_Nicolae_Sova_cnav_ade
 			traits = {
 				cnav_indirect_approach_doctrine
@@ -1465,7 +1313,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = ROM_Ioan_Georgescu_cnav_pau
 			traits = {
 				cnav_power_projection_doctrine
@@ -1481,7 +1329,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = ROM_Gheorghe_Jienescu_cair_ade
 			traits = {
 				cair_air_superiority_doctrine
@@ -1497,7 +1345,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = ROM_Paul_Teodorescu_cair_ade
 			traits = {
 				cair_battlefield_support_doctrine
@@ -1513,7 +1361,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = ROM_Ermil_Gheorghiu_cair_pau
 			traits = {
 				cair_naval_aviation_doctrine

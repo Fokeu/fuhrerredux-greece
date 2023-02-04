@@ -74,3 +74,12 @@ units = {
 		start_experience_factor = 0.1
 	}
 }
+
+air_wings = {
+	229 = {
+		fighter_equipment_0 = {
+			owner = "AZR" 
+			amount = 50
+		}
+	}
+}

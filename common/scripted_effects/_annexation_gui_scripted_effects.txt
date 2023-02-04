@@ -25,6 +25,10 @@ check_potential_annexations = {
     # KR added central america
     check_potential_annexations_central_america = yes
   }
+  # else_if = {
+  #   limit = { is_on_continent = central_america }
+  #   check_potential_annexations_central_america = yes
+  # }
   else_if = {
     limit = { is_on_continent = south_america }
     check_potential_annexations_south_america = yes
@@ -969,7 +973,7 @@ check_potential_annexations_asia = {
   }
   else_if = {
     limit = { can_release_shanxxi = yes }
-    ROOT = { activate_mission = annexation_SHX_CONQ }
+    ROOT = { activate_mission = annexation_SCH_CONQ }
   }
   else_if = {
     limit = { can_release_siam = yes }
@@ -981,7 +985,7 @@ check_potential_annexations_asia = {
   }
   else_if = {
     limit = { can_release_tibet = yes }
-    ROOT = { activate_mission = annexation_TIB_CONQ }
+    ROOT = { activate_mission = annexation_SIK_CONQ }
   }
   else_if = {
     limit = { can_release_turkestan = yes }
@@ -998,6 +1002,10 @@ check_potential_annexations_asia = {
   else_if = {
     limit = { can_release_yunnan = yes }
     ROOT = { activate_mission = annexation_YUN_CONQ }
+  }
+  else_if = {
+    limit = { can_release_zhili = yes }
+    ROOT = { activate_mission = annexation_ZHI_CONQ }
   }
   else_if = {
     limit = { can_release_sabah = yes }

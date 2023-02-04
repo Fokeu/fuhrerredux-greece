@@ -1,0 +1,271 @@
+#GREEK FOCUS TREE BY FOKEŁ 2022
+
+focus_tree = {
+	id = greece_rome_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1800 }
+
+	focus = {
+		id = GRE_turkish_plot
+		icon = GFX_goal_GRE_turkish_plot
+		cost = 4
+		x = 82
+		y = 10
+		available = {
+			always = false
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_turkish_plot"
+			hidden_effect = {
+				set_variable = { romevar = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_the_final_solution
+		icon = GFX_goal_GRE_the_final_solution
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = { focus = GRE_turkish_plot }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			custom_effect_tooltip = GRE_tt_unlock
+		}
+	}
+
+	#########
+
+	focus = {
+		id = GRE_take_what_is_ours
+		icon = GFX_goal_GRE_take_what_is_ours
+		cost = 4
+		x = -1
+		y = 2
+		prerequisite = { focus = GRE_the_final_solution }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			BUL = {
+				every_core_state = { 
+					add_core_of = GRE
+				}
+			}
+			SER = {
+				every_core_state = { 
+					add_core_of = GRE
+				}
+			}
+			ALB = {
+				every_core_state = { 
+					add_core_of = GRE
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BUL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SER
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ALB
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_hunt_the_leaders
+		icon = GFX_goal_GRE_hunt_the_leaders
+		cost = 4
+		x = 1
+		y = 2
+		prerequisite = { focus = GRE_the_final_solution }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_political_power = 50
+			custom_effect_tooltip = GRE_tt_unlock
+		}
+	}
+
+	##########
+
+	focus = {
+		id = GRE_total_war
+		icon = GFX_goal_GRE_total_war
+		cost = 4
+		x = -2
+		y = 3
+		prerequisite = { focus = GRE_take_what_is_ours }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_ideas = GRE_total_war
+		}
+	}
+
+	focus = {
+		id = GRE_scorched_earth
+		icon = GFX_goal_GRE_scorched_earth
+		cost = 4
+		x = 0
+		y = 3
+		prerequisite = { focus = GRE_hunt_the_leaders }
+		prerequisite = { focus = GRE_take_what_is_ours }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_ideas = GRE_scorched_earth
+		}
+	}
+
+	focus = {
+		id = GRE_colonization_of_anatolia
+		icon = GFX_goal_GRE_colonization_of_anatolia
+		cost = 4
+		x = 2
+		y = 3
+		prerequisite = { focus = GRE_hunt_the_leaders }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_state_core = 343
+			add_state_core = 346
+			add_state_core = 777
+			add_state_core = 1030
+			add_state_core = 348
+			add_state_core = 780
+			add_state_core = 779
+			add_state_core = 356
+			add_state_core = 355
+			add_state_core = 349
+			add_state_core = 778
+			add_state_core = 781
+		}
+	}
+
+	#############
+
+	focus = {
+		id = GRE_confiscation
+		icon = GFX_goal_GRE_confiscation
+		cost = 4
+		x = -1
+		y = 4
+		prerequisite = { focus = GRE_total_war }
+		prerequisite = { focus = GRE_scorched_earth }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 750
+				producer = GRE
+			}
+		}
+	}
+
+	focus = {
+		id = GRE_parousia
+		icon = GFX_goal_GRE_parousia
+		cost = 4
+		x = 1
+		y = 4
+		prerequisite = { focus = GRE_colonization_of_anatolia }
+		prerequisite = { focus = GRE_scorched_earth }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			custom_effect_tooltip = GRE_tt_unlock
+		}
+	}
+
+	###########
+
+	focus = {
+		id = GRE_amnestic_agents
+		icon = GFX_goal_GRE_amnestic_agents
+		cost = 4
+		x = -2
+		y = 5
+		prerequisite = { focus = GRE_confiscation }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			custom_effect_tooltip = GRE_tt_unlock
+		}
+	}
+
+	focus = {
+		id = GRE_to_ashes
+		icon = GFX_goal_GRE_to_ashes
+		cost = 4
+		x = 0
+		y = 5
+		prerequisite = { focus = GRE_confiscation }
+		prerequisite = { focus = GRE_parousia }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			custom_effect_tooltip = GRE_tt_unlock
+		}
+	}
+
+	focus = {
+		id = GRE_purity_laws
+		icon = GFX_goal_GRE_purity_laws
+		cost = 4
+		x = 2
+		y = 5
+		prerequisite = { focus = GRE_parousia }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			add_manpower = -2500
+		}
+	}
+
+	###############
+
+	focus = {
+		id = GRE_remain_calm
+		icon = GFX_goal_GRE_remain_calm
+		cost = 4
+		x = 0
+		y = 6
+		prerequisite = { focus = GRE_amnestic_agents }
+		prerequisite = { focus = GRE_to_ashes }
+		prerequisite = { focus = GRE_purity_laws }
+		relative_position_id = GRE_turkish_plot
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRE_the_final_solution"
+			if = { 
+				limit = { romevar > 4 }
+				country_event = {
+					id = gre.22
+					days = 5
+				} 
+			}
+			else = {
+				country_event = {
+					id = gre.21
+					days = 5
+				} 
+			}
+		}
+	}
+}
+

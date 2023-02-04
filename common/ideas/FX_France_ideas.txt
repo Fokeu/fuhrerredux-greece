@@ -17,11 +17,11 @@ ideas = {
     }
 		FRA_great_war_legacy = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_great_war_legacy"}
-			picture = FRA_memories
-			modifier = {
-				experience_gain_army_factor = -0.2
-				experience_gain_navy_factor = -0.1
-				experience_gain_air_factor = -0.1
+			picture = generic_manpower_bonus
+			research_bonus = {
+				land_doctrine = -0.5
+				naval_doctrine = -0.5
+				air_doctrine = -0.5
 			}
 		}
 		FRA_somme = {
@@ -46,7 +46,7 @@ ideas = {
 		}
 		FRA_colonial_profits = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_divided_military_staff"}
-			picture = generic_foreign_capital
+			picture = generic_goods_red_bonus
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_factory = 0.05
@@ -196,7 +196,7 @@ ideas = {
 		}
 		FRA_christian_africa = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea fra_christian_africa"}
-			picture = IRE_catholic
+			picture = generic_morale_bonus
 			modifier = {
 				offence = 0.1
 			}
@@ -265,7 +265,7 @@ ideas = {
 			picture = generic_wall_line
 			targeted_modifier = {
 				tag = GER
-				defense_bonus_against = 0.05
+				defense_bonus_against = 0.01
 			}
 		}
 		FRA_german_defense2 = {
@@ -666,7 +666,7 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_BB_rebuild"}
 			picture = generic_navy_bonus
 			equipment_bonus = {
-				battleship = {
+				bb_tech = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -676,13 +676,13 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_we_alone"}
 			picture = generic_coastal_navy
 			equipment_bonus = {
-				light_cruiser = {
+				cl_tech = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
 			}
 			equipment_bonus = {
-				destroyer = {
+				dd_tech = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
@@ -695,7 +695,7 @@ ideas = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRA_armada"}
 			picture = generic_coastal_defense_ships
 			equipment_bonus = {
-				submarine = {
+				ss_tech = {
 					build_cost_ic = -0.05
 					instant = yes
 				}

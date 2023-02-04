@@ -64,7 +64,7 @@ spriteTypes = {
 		colortwo = { 1.0 1.0 1.0 }
 		textureFile1 = "gfx/interface/autonomy/subject_progress_bar_long.dds"
 		textureFile2 = "gfx/interface/autonomy/subject_progress_bar_long_bg.dds"
-		size = { x = 150 y = 16 }
+		size = { x = 181 y = 16 }
 		effectFile = "gfx/FX/progress.lua"
 	}	
 	
@@ -187,18 +187,6 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}	
-
-	frameAnimatedSpriteType = {
-		name = "GFX_spirit_glow"
-		texturefile = "gfx/interface/officer_corp/spirit_glow.dds"
-		noOfFrames = 3
-		animation_rate_fps = 1
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-		alwaystransparent = yes
-		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}
 	
 	frameAnimatedSpriteType = {
 		name = "GFX_ongoing_focus_goal_polview"
@@ -713,13 +701,4 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
-	spriteType = {
-		name = "GFX_power_balance_button_kr"
-		textureFile = "gfx/interface/power_balance_button_kr.png"
-	}
-
-	spriteType = {
-		name = "GFX_power_balance_icon_kr"
-		textureFile = "gfx/interface/power_balance_icon_kr.png"
-	}
 }

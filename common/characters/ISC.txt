@@ -1,0 +1,66 @@
+characters = {
+	ISC_International_Straits_Commission = {
+		name = "International Straits Commision"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ISC/Portrait_ISC_International_Straits_Commission.png"
+				small = "gfx/interface/ministers/GRE/GRE_Eleftherios_Kyriakou_Venizelos.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = social_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = social_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = market_liberal_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = social_conservative_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = authoritarian_democrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = vanguardist_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = collectivist_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = libertarian_socialist_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = paternal_autocrat_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = national_populist_subtype
+			traits = { }
+		}
+		country_leader = {
+			desc = "POLITICS_ISC_DESC"
+			ideology = valkist_subtype
+			traits = { }
+		}
+	}
+}

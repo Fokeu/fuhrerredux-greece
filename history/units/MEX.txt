@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "División de Infanteria"
-	division_names_group = SPAN_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,7 +15,6 @@
 }
 division_template = {
 	name = "División de Milicia"
-	division_names_group = SPAN_GAR_01
 
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -32,7 +30,6 @@ division_template = {
 }
 division_template = {
 	name = "División de Caballería"  
-	division_names_group = SPAN_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -182,3 +179,14 @@ units = {
 
 }
 
+
+air_wings = {
+	### Fuerza Aérea Mexicana -- Mexico City
+	277 = {
+		# CAS Air Group -- de Haviland DH-4Bs
+		CAS_equipment_1 =  {
+			owner = "MEX" 
+			amount = 48
+		}
+	}
+}

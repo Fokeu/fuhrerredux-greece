@@ -25,10 +25,8 @@ ARG_conquest_of_south_atlantic = {
  			has_global_flag = ARG_LPA_coalition
  		}
 		highlight_states = {
-			highlight_state_targets = {
-				state = 299
-				state = 720
-			}
+			state = 299
+			state = 720
 		}
 		ai_will_do = {
 			factor = 1
@@ -384,9 +382,7 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
-			has_equipment = {
-				small_plane_airframe > 50
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = valkist
  	 			has_government = national_populist
@@ -440,10 +436,7 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
-			 stockpile_ratio = {
-				archetype = small_plane_airframe
-				ratio > 0.2
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = social_democrat
  	 			has_government = social_liberal
@@ -500,10 +493,7 @@ SAM_SCW_matters = {
 				}
  			}
  			has_war = no
-			 stockpile_ratio = {
-				archetype = small_plane_airframe
-				ratio > 0.2
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = libertarian_socialist
  	 			has_government = collectivist
@@ -910,10 +900,7 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
-			 stockpile_ratio = {
-				archetype = small_plane_airframe
-				ratio > 0.2
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = valkist
  	 			has_government = national_populist
@@ -961,10 +948,7 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
-			 stockpile_ratio = {
-				archetype = small_plane_airframe
-				ratio > 0.2
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = social_democrat
  	 			has_government = social_liberal
@@ -1015,10 +999,7 @@ SAM_BCW_matters = {
 				}
  			}
  			has_war = no
-			 stockpile_ratio = {
-				archetype = small_plane_airframe
-				ratio > 0.2
-			}
+ 	 		has_equipment = { fighter_equipment > 50 } 
  	 		OR = {
  	 			has_government = libertarian_socialist
  	 			has_government = collectivist

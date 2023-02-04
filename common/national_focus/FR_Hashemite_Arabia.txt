@@ -1406,6 +1406,9 @@ focus_tree = {
         }
       }
     }
+    mutually_exclusive = {
+      focus = ARB_snatch_the_trucial_states
+    }
     prerequisite = { focus = ARB_our_northern_brothers }
     relative_position_id = ARB_our_northern_brothers
     completion_reward = {
@@ -1595,8 +1598,47 @@ focus_tree = {
       ARB_Abdul_Qadir_Pasha_el_Jundi = {
         remove_unit_leader_role = yes
       }
-      ENG = {
-        country_event = { id = arabia.43 days = 2 }
+      ARB_Ronald_Forbes_Adam = {
+        add_field_marshal_role = {
+          traits = {
+            organizer
+            thorough_planner
+            infantry_leader
+            infantry_expert
+            old_guard
+          }
+          skill = 3
+          attack_skill = 2
+          defense_skill = 2
+          planning_skill = 4
+          logistics_skill = 2
+        }
+      }
+      ARB_Clement_Armitage = {
+        add_corps_commander_role = {
+          traits = {
+            infantry_leader
+            artillery_officer
+          }
+          skill = 2
+          attack_skill = 2
+          defense_skill = 1
+          planning_skill = 2
+          logistics_skill = 2
+        }
+      }
+      ARB_Herbert_Lumsdon = {
+        add_corps_commander_role = {
+          traits = {
+            cavalry_officer
+            artillery_officer
+          }
+          skill = 2
+          attack_skill = 3
+          defense_skill = 1
+          planning_skill = 1
+          logistics_skill = 2
+        }
       }
     }
   }

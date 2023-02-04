@@ -1,11 +1,10 @@
 ITA_socialist_control = {
 	ITA_socialist_control_campania = {
+
 		icon = socialist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 117 
-			}
-		}
+
+		highlight_states = { state = 117 }
+
 		on_map_mode = map_only
 
 		visible = {
@@ -15,18 +14,20 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_pulgia = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 156
-			}
-		}
+
+		highlight_states = { state = 156 }
 
 		on_map_mode = map_only
 
@@ -37,18 +38,20 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_molise = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 849
-			}
-		}
+
+		highlight_states = { state = 849 }
 
 		on_map_mode = map_only
 
@@ -59,18 +62,20 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_calabria = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 850
-			}
-		}
+
+		highlight_states = { state = 850 }
 
 		on_map_mode = map_only
 
@@ -81,18 +86,20 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_socialist_control_emilia_romagna = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 161
-			}
-		}
+
+		highlight_states = { state = 161 }
 
 		on_map_mode = map_only
 
@@ -103,18 +110,21 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_piedmont = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 158
-			}
-		}
+
+		highlight_states = { state = 158 }
+
 		on_map_mode = map_only
 
 		visible = {
@@ -124,18 +134,20 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_lombardy = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 159
-			}
-		}
+
+		highlight_states = { state = 159 }
 
 		on_map_mode = map_only
 
@@ -146,18 +158,21 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_tuscany = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 162 
-			}
-		}
+
+		highlight_states = { state = 162 }
+
 		on_map_mode = map_only
 
 		visible = {
@@ -167,18 +182,21 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_marche = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 851
-			}
-		}
+
+		highlight_states = { state = 851 }
+
 		on_map_mode = map_only
 
 		visible = {
@@ -188,18 +206,21 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_umbria = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 852 
-			}
-		}
+
+		highlight_states = { state = 852 }
+
 		on_map_mode = map_only
 
 		visible = {
@@ -209,19 +230,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_latium = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 2
-			}
-		}
+
+		highlight_states = { state = 2 }
+
 		on_map_mode = map_only
+
 		visible = {
 			2 = {
 				has_state_flag = ITA_state_socialist
@@ -229,20 +254,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_socialist_control_abruzzo = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 157
-			}
-		}
+
+		highlight_states = { state = 157 }
 
 		on_map_mode = map_only
+
 		visible = {
 			157 = {
 				has_state_flag = ITA_state_socialist
@@ -250,20 +278,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_socialist_control_sicily = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 115
-			}
-		}
+
+		highlight_states = { state = 115 }
 
 		on_map_mode = map_only
+
 		visible = {
 			115 = {
 				has_state_flag = ITA_state_socialist
@@ -271,20 +302,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_sardinia = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 114
-			}
-		}
+
+		highlight_states = { state = 114 }
 
 		on_map_mode = map_only
+
 		visible = {
 			114 = {
 				has_state_flag = ITA_state_socialist
@@ -292,20 +326,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_trentino = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 774
-			}
-		}
+
+		highlight_states = { state = 774 }
 
 		on_map_mode = map_only
+
 		visible = {
 			774 = {
 				has_state_flag = ITA_state_socialist
@@ -313,20 +350,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_socialist_control_veneto = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 160
-			}
-		}
+
+		highlight_states = { state = 160 }
 
 		on_map_mode = map_only
+
 		visible = {
 			160 = {
 				has_state_flag = ITA_state_socialist
@@ -334,20 +374,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_trieste = {
+
 		icon = socialist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 770
-			}
-		}
+
+		highlight_states = { state = 770 }
 
 		on_map_mode = map_only
+
 		visible = {
 			770 = {
 				has_state_flag = ITA_state_socialist
@@ -355,20 +398,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_socialist_control_istria = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 736
-			}
-		}
+
+		highlight_states = { state = 736 }
 
 		on_map_mode = map_only
+
 		visible = {
 			736 = {
 				has_state_flag = ITA_state_socialist
@@ -376,20 +422,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_fiume = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 917
-			}
-		}
+
+		highlight_states = { state = 917 }
 
 		on_map_mode = map_only
+
 		visible = {
 			917 = {
 				has_state_flag = ITA_state_socialist
@@ -397,20 +446,23 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_socialist_control_zara = {
+
 		icon = socialist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 163
-			}
-		}
+
+		highlight_states = { state = 163 }
 
 		on_map_mode = map_only
+
 		visible = {
 			163 = {
 				has_state_flag = ITA_state_socialist
@@ -418,6 +470,10 @@ ITA_socialist_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -426,14 +482,13 @@ ITA_socialist_control = {
 
 ITA_syndie_control = {
 	ITA_syndie_control_campania = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 117
-			}
-		}
+
+		highlight_states = { state = 117 }
 
 		on_map_mode = map_only
+
 		visible = {
 			117 = {
 				has_state_flag = ITA_state_syndie
@@ -441,20 +496,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_pulgia = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 156
-			}
-		}
+
+		highlight_states = { state = 156 }
 
 		on_map_mode = map_only
+
 		visible = {
 			156 = {
 				has_state_flag = ITA_state_syndie
@@ -462,20 +520,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_molise = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 849
-			}
-		}
+
+		highlight_states = { state = 849 }
 
 		on_map_mode = map_only
+
 		visible = {
 			849 = {
 				has_state_flag = ITA_state_syndie
@@ -483,6 +544,10 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -513,14 +578,13 @@ ITA_syndie_control = {
 	}
 
 	ITA_syndie_control_emilia_romagna = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 161
-			}
-		}
+
+		highlight_states = { state = 161 }
 
 		on_map_mode = map_only
+
 		visible = {
 			161 = {
 				has_state_flag = ITA_state_syndie
@@ -528,20 +592,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_piedmont = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 158
-			}
-		}
+
+		highlight_states = { state = 158 }
 
 		on_map_mode = map_only
+
 		visible = {
 			158 = {
 				has_state_flag = ITA_state_syndie
@@ -549,20 +616,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_lombardy = {
+
 		icon = valkist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 159 
-			}
-		}
+
+		highlight_states = { state = 159 }
 
 		on_map_mode = map_only
+
 		visible = {
 			159 = {
 				has_state_flag = ITA_state_syndie
@@ -570,20 +640,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_tuscany = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 162 
-			}
-		}
+
+		highlight_states = { state = 162 }
 
 		on_map_mode = map_only
+
 		visible = {
 			162 = {
 				has_state_flag = ITA_state_syndie
@@ -591,20 +664,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_marche = {
+
 		icon = valkist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 851
-			}
-		}
+
+		highlight_states = { state = 851 }
 
 		on_map_mode = map_only
+
 		visible = {
 			851 = {
 				has_state_flag = ITA_state_syndie
@@ -612,20 +688,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_umbria = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 852
-			}
-		}
+
+		highlight_states = { state = 852 }
 
 		on_map_mode = map_only
+
 		visible = {
 			852 = {
 				has_state_flag = ITA_state_syndie
@@ -633,20 +712,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_latium = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 2
-			}
-		}
+
+		highlight_states = { state = 2 }
 
 		on_map_mode = map_only
+
 		visible = {
 			2 = {
 				has_state_flag = ITA_state_syndie
@@ -654,20 +736,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_syndie_control_abruzzo = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 157
-			}
-		}
+
+		highlight_states = { state = 157 }
 
 		on_map_mode = map_only
+
 		visible = {
 			157 = {
 				has_state_flag = ITA_state_syndie
@@ -675,20 +760,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_syndie_control_sicily = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 115
-			}
-		}
+
+		highlight_states = { state = 115 }
 
 		on_map_mode = map_only
+
 		visible = {
 			115 = {
 				has_state_flag = ITA_state_syndie
@@ -696,20 +784,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_sardinia = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 114
-			}
-		}
+
+		highlight_states = { state = 114 }
 
 		on_map_mode = map_only
+
 		visible = {
 			114 = {
 				has_state_flag = ITA_state_syndie
@@ -717,20 +808,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_trentino = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 774 
-			}
-		}
+
+		highlight_states = { state = 774 }
 
 		on_map_mode = map_only
+
 		visible = {
 			774 = {
 				has_state_flag = ITA_state_syndie
@@ -738,20 +832,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_syndie_control_veneto = {
+
 		icon = valkist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 160 
-			}
-		}
+
+		highlight_states = { state = 160 }
 
 		on_map_mode = map_only
+
 		visible = {
 			160 = {
 				has_state_flag = ITA_state_syndie
@@ -759,20 +856,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_trieste = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 770
-			}
-		}
+
+		highlight_states = { state = 770 }
 
 		on_map_mode = map_only
+
 		visible = {
 			770 = {
 				has_state_flag = ITA_state_syndie
@@ -780,20 +880,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 
 	ITA_syndie_control_istria = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 736 
-			}
-		}
+
+		highlight_states = { state = 736 }
 
 		on_map_mode = map_only
+
 		visible = {
 			736 = {
 				has_state_flag = ITA_state_syndie
@@ -801,20 +904,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_fiume = {
+
 		icon = valkist_march
-		highlight_states = {
-			highlight_state_targets = {
-				state = 917
-			}
-		}
+
+		highlight_states = { state = 917 }
 
 		on_map_mode = map_only
+
 		visible = {
 			917 = {
 				has_state_flag = ITA_state_syndie
@@ -822,20 +928,23 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
 	
 	ITA_syndie_control_zara = {
+
 		icon = valkist_march
-		highlight_states = { 
-			highlight_state_targets = {
-				state = 163
-			}
-		}
+
+		highlight_states = { state = 163 }
 
 		on_map_mode = map_only
+
 		visible = {
 			163 = {
 				has_state_flag = ITA_state_syndie
@@ -843,6 +952,10 @@ ITA_syndie_control = {
 		}
 
 		cancel_if_not_visible = yes
+
+		complete_effect = {
+		}
+
 		ai_will_do = {
 			factor = 0
 		}

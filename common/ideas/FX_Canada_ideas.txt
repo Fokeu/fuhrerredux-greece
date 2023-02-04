@@ -157,7 +157,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				political_power_cost = 0.1
 			}
-			picture = HOL_labor_camps
+			picture = generic_industrial_concern_1
 			removal_cost = -1
 		}
 		CAN_relief_idea_CPC = {#Relief Camps - CPC Plan
@@ -168,7 +168,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = 0.05
 			}
-			picture = HOL_labor_camps
+			picture = generic_industrial_concern_1
 			removal_cost = -1
 		}
 		CAN_relief_idea_WUL = {#Relief Camps - WUL Plan
@@ -182,7 +182,7 @@ ideas = {
 				consumer_goods_factor = 0.025
 				political_power_cost = 0.05
 			}
-			picture = HOL_labor_camps
+			picture = generic_industrial_concern_1
 			removal_cost = -1
 		}
 		CAN_relief_idea_Strikers = {#Relief Camps - Direct Negotiations
@@ -193,7 +193,7 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = -0.025
 			}
-			picture = HOL_labor_camps
+			picture = generic_industrial_concern_1
 			removal_cost = -1
 		}
 		CAN_char_idea = {#The Charlottes Program
@@ -245,7 +245,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.1
 			}
-			picture = CAN_french_tension
+			picture = FRA_matignon_agreements
 			removal_cost = -1
 		}
 		CAN_black_wednesday = {#Black Wednesday
@@ -622,7 +622,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-				heavy_cruiser = {
+				screen_ship = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -639,7 +639,7 @@ ideas = {
 			allowed = {	always = no	}
 			allowed_civil_war = { always = yes }
 			equipment_bonus = {
-			battleship = {
+			capital_ship = {
 					instant = yes
 					build_cost_ic = -0.1
 				}
@@ -812,7 +812,6 @@ ideas = {
 		designer = yes
 	
 		vickers_armstrong_can = {
-			name = vickers_armstrong
 			picture = generic_tank_manufacturer_1
 			allowed = { original_tag = CAN }
 			research_bonus = {

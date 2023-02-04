@@ -3,8 +3,11 @@ state={
 	id=521
 	name="STATE_521"
 	manpower = 505650
-	state_category = large_town
 	
+	resources={
+	}
+	
+	state_category = large_town
 	history={
 		owner = AST
 		buildings = {

@@ -128,10 +128,10 @@ ideas = {
       allowed = { original_tag = USA }
       picture = generic_economic_turmoil
       modifier = {
-        consumer_goods_factor = 0.15
+        consumer_goods_factor = 0.2
         production_factory_max_efficiency_factor = -0.1
-        industrial_capacity_factory = -0.05
-        industrial_capacity_dockyard = -0.05
+        industrial_capacity_factory = -0.15
+        industrial_capacity_dockyard = -0.15
       }
     }
     USA_malnourished_populace = {
@@ -172,7 +172,7 @@ ideas = {
     }
     USA_failed_offensive = {
       allowed = { original_tag = USA }
-      picture = USA_failed_offensive
+      picture = ENG_the_war_to_end_all_wars
       modifier = {
         army_attack_factor = -0.15
         army_morale_factor = -0.05
@@ -187,21 +187,11 @@ ideas = {
           armor = { build_cost_ic = -0.15 instant = yes }
       }
     }
-		USA_american_auto_industry_idea = {
-			picture = FRA_motorized_focus
-			allowed = { always = no }
-			equipment_bonus = {
-				motorized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
     USA_weapons_manufacturing = {
       allowed = { original_tag = USA }
       picture = generic_artillery_regiments
       equipment_bonus = {
-        infantry_equipment = { build_cost_ic = -0.15 instant = yes }
+        infantry_weapons = { build_cost_ic = -0.15 instant = yes }
         artillery = { build_cost_ic = -0.15 instant = yes }
       }
     }
@@ -221,53 +211,6 @@ ideas = {
         max_planning = 0.15
       }
     }
-		USA_expanded_officer_schools = {
-      allowed = { original_tag = USA }
-      picture = generic_army_war_college
-      modifier = {
-        supply_consumption_factor = -0.15
-        army_leader_start_level = 1
-        experience_gain_army_unit_factor = 0.15
-      }
-    }
-		USA_womens_army_corps_idea = {
-			picture = generic_reserve_divisions
-			allowed = { always = no }
-			modifier = {
-				local_resources_factor = 0.10
-				conscription_factor = 0.03
-				army_morale_factor = 0.05
-			}
-		}
-		USA_liberty_ships_idea = {
-			allowed = { original_tag = USA }
-			picture = liberty_ships_focus
-			equipment_bonus = {	
-				convoy = { 
-					build_cost_ic = -0.25 
-					instant = yes 
-				}	
-			}
-		}
-		USA_maritime_industry_idea = {
-			allowed = { original_tag = USA }
-			picture = generic_coastal_defense_ships2
-			modifier = {
-				production_speed_naval_base_factor = 0.2
-				production_speed_dockyard_factor = 0.1
-				industrial_capacity_dockyard = 0.1
-			}
-			equipment_bonus = {
-				submarine = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				destroyer = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
     USA_the_waves_idea = {
       allowed = { original_tag = USA }
       picture = generic_maritime_industry
@@ -275,22 +218,11 @@ ideas = {
         repair_speed_factor = 0.15
       }
     }
-		USA_america_rules_the_waves = {
-			allowed = { original_tag = USA }
-			picture = USA_ships
-			modifier = {
-				navy_max_range_factor = 0.20
-				naval_coordination = 0.05
-				naval_morale = 0.1
-			}
-		}
     USA_advisors = {
       picture = advisors_USA
       modifier = {
-        experience_gain_army = 0.08
-				army_org_factor = 0.05
-				max_command_power_mult = 0.25
-				command_power_gain_mult = 0.15
+        army_org_factor = 0.05
+        planning_speed = 0.05
       }
     }
     USA_workers_rights = {
@@ -397,98 +329,6 @@ ideas = {
         production_speed_buildings_factor = 0.25
       }
     }
-		# Foreign Policy
-		USA_continued_isolationism = {
-			allowed = { original_tag = USA }
-			picture = generic_neutrality_drift_bonus
-			modifier = {
-				army_defence_factor = 0.10
-				justify_war_goal_time = 0.5
-				enemy_justify_war_goal_time = 0.5
-			}
-		}
-		USA_persued_interventionism = {
-			allowed = { original_tag = USA }
-			picture = USA_fighting_for_america
-			modifier = {
-				army_attack_factor = 0.10
-				transport_capacity = -0.1
-				naval_invasion_capacity = 10
-			}
-		}
-		USA_persued_interventionism_1 = {
-			allowed = { original_tag = USA }
-			picture = USA_fighting_for_america
-			modifier = {
-				army_attack_factor = 0.10
-				transport_capacity = -0.1
-				naval_invasion_capacity = 10
-				special_forces_out_of_supply_factor = -0.10
-				special_forces_cap = 0.15
-			}
-		}
-		USA_arsenal_of_democracy_idea = {
-			picture = generic_victors_of_ww1
-			allowed = { always = no }
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				motorized_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				mechanized_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				armor = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				fighter = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				tactical_bomber = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-			}
-			modifier = {
-				war_support_factor = 0.10
-				production_speed_arms_factory_factor = 0.1
-			}
-		}
-		USA_clamp_down_on_valkism = {
-			picture = generic_oppression
-			modifier = {
-				paternal_autocrat_drift = -0.1
-				national_populist_drift = -0.1
-				valkist_drift = -0.1
-			}
-		}
-		USA_equipment_support_idea = {
-			picture = HUN_secret_rearmament
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-			}
-			modifier = {
-				production_speed_arms_factory_factor = 0.05
-			}
-		}
   }
   ### Industrial Companies ###
 	industrial_concern = {

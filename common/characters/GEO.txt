@@ -18,12 +18,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Grigol_Robakidze_hog_val_hired }
 			}
 			idea_token = GEO_Grigol_Robakidze_hog_val
-			on_add = {
-				ROOT = { set_country_flag = GEO_Grigol_Robakidze_hog_val_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Grigol_Robakidze_hog_val_hired }
-			}
+			on_add = { set_country_flag = GEO_Grigol_Robakidze_hog_val_hired }
+			on_remove = { clr_country_flag = GEO_Grigol_Robakidze_hog_val_hired }
 			traits = {
 				valkist
 				hog_underground_figurehead
@@ -69,12 +65,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Raphiel_Ingilo_Ivanitski_hog_sco_hired }
 			}
 			idea_token = GEO_Raphiel_Ingilo_Ivanitski_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = GEO_Raphiel_Ingilo_Ivanitski_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Raphiel_Ingilo_Ivanitski_hog_sco_hired }
-			}
+			on_add = { set_country_flag = GEO_Raphiel_Ingilo_Ivanitski_hog_sco_hired }
+			on_remove = { clr_country_flag = GEO_Raphiel_Ingilo_Ivanitski_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_charismatic_charmer
@@ -100,12 +92,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Aleqsandre_Asatiani_hog_mli_hired }
 			}
 			idea_token = GEO_Aleqsandre_Asatiani_hog_mli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Aleqsandre_Asatiani_hog_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Aleqsandre_Asatiani_hog_mli_hired }
-			}
+			on_add = { set_country_flag = GEO_Aleqsandre_Asatiani_hog_mli_hired }
+			on_remove = { clr_country_flag = GEO_Aleqsandre_Asatiani_hog_mli_hired }
 			traits = {
 				market_liberal
 				hog_smiling_oilman
@@ -118,12 +106,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Aleqsandre_Asatiani_eco_mli_hired }
 			}
 			idea_token = GEO_Aleqsandre_Asatiani_eco_mli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Aleqsandre_Asatiani_eco_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Aleqsandre_Asatiani_eco_mli_hired }
-			}
+			on_add = { set_country_flag = GEO_Aleqsandre_Asatiani_eco_mli_hired }
+			on_remove = { clr_country_flag = GEO_Aleqsandre_Asatiani_eco_mli_hired }
 			traits = {
 				market_liberal
 				eco_balanced_budget_economy
@@ -149,12 +133,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Ioseb_Baratashvili_hog_sli_hired }
 			}
 			idea_token = GEO_Ioseb_Baratashvili_hog_sli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Ioseb_Baratashvili_hog_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Ioseb_Baratashvili_hog_sli_hired }
-			}
+			on_add = { set_country_flag = GEO_Ioseb_Baratashvili_hog_sli_hired }
+			on_remove = { clr_country_flag = GEO_Ioseb_Baratashvili_hog_sli_hired }
 			traits = {
 				social_liberal
 				hog_reformist_soldier
@@ -180,12 +160,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Akaki_Chkhenkeli_hog_sde_hired }
 			}
 			idea_token = GEO_Akaki_Chkhenkeli_hog_sde
-			on_add = {
-				ROOT = { set_country_flag = GEO_Akaki_Chkhenkeli_hog_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Akaki_Chkhenkeli_hog_sde_hired }
-			}
+			on_add = { set_country_flag = GEO_Akaki_Chkhenkeli_hog_sde_hired }
+			on_remove = { clr_country_flag = GEO_Akaki_Chkhenkeli_hog_sde_hired }
 			traits = {
 				social_democrat
 				hog_silent_workhorse
@@ -211,12 +187,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Irakli_Tsereteli_hog_lib_hired }
 			}
 			idea_token = GEO_Irakli_Tsereteli_hog_lib
-			on_add = {
-				ROOT = { set_country_flag = GEO_Irakli_Tsereteli_hog_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Irakli_Tsereteli_hog_lib_hired }
-			}
+			on_add = { set_country_flag = GEO_Irakli_Tsereteli_hog_lib_hired }
+			on_remove = { clr_country_flag = GEO_Irakli_Tsereteli_hog_lib_hired }
 			traits = {
 				libertarian_socialist
 				hog_ambitious_union_boss
@@ -380,7 +352,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = GEO_Yaroslav_Iosseliani_cnav
 			traits = {
 				cnav_indirect_approach_doctrine
@@ -402,12 +374,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Ioseb_Jugashvili_hog_van_hired }
 			}
 			idea_token = GEO_Ioseb_Jugashvili_hog_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Ioseb_Jugashvili_hog_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Ioseb_Jugashvili_hog_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Ioseb_Jugashvili_hog_van_hired }
+			on_remove = { clr_country_flag = GEO_Ioseb_Jugashvili_hog_van_hired }
 			traits = {
 				vanguardist
 				hog_flamboyant_tough_guy
@@ -428,12 +396,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Mamia_Orakhelashvili_hog_col_hired }
 			}
 			idea_token = GEO_Mamia_Orakhelashvili_hog_col
-			on_add = {
-				ROOT = { set_country_flag = GEO_Mamia_Orakhelashvili_hog_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Mamia_Orakhelashvili_hog_col_hired }
-			}
+			on_add = { set_country_flag = GEO_Mamia_Orakhelashvili_hog_col_hired }
+			on_remove = { clr_country_flag = GEO_Mamia_Orakhelashvili_hog_col_hired }
 			traits = {
 				collectivist
 				hog_red_chairmen
@@ -454,12 +418,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Revaz_Gabashvili_hog_sco_hired }
 			}
 			idea_token = GEO_Revaz_Gabashvili_hog_sco
-			on_add = {
-				ROOT = { set_country_flag = GEO_Revaz_Gabashvili_hog_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Revaz_Gabashvili_hog_sco_hired }
-			}
+			on_add = { set_country_flag = GEO_Revaz_Gabashvili_hog_sco_hired }
+			on_remove = { clr_country_flag = GEO_Revaz_Gabashvili_hog_sco_hired }
 			traits = {
 				social_conservative
 				hog_happy_amateur
@@ -480,12 +440,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Mikheil_Tsereteli_hog_ade_hired }
 			}
 			idea_token = GEO_Mikheil_Tsereteli_hog_ade
-			on_add = {
-				ROOT = { set_country_flag = GEO_Mikheil_Tsereteli_hog_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Mikheil_Tsereteli_hog_ade_hired }
-			}
+			on_add = { set_country_flag = GEO_Mikheil_Tsereteli_hog_ade_hired }
+			on_remove = { clr_country_flag = GEO_Mikheil_Tsereteli_hog_ade_hired }
 			traits = {
 				authoritarian_democrat
 				hog_silent_workhorse
@@ -506,12 +462,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Georges_Vasili_Matchabelli_hog_pau_hired }
 			}
 			idea_token = GEO_Georges_Vasili_Matchabelli_hog_pau
-			on_add = {
-				ROOT = { set_country_flag = GEO_Georges_Vasili_Matchabelli_hog_pau_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Georges_Vasili_Matchabelli_hog_pau_hired }
-			}
+			on_add = { set_country_flag = GEO_Georges_Vasili_Matchabelli_hog_pau_hired }
+			on_remove = { clr_country_flag = GEO_Georges_Vasili_Matchabelli_hog_pau_hired }
 			traits = {
 				paternal_autocrat
 				hog_naive_optimist
@@ -533,12 +485,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Salva_Karumidze_hog_npo_hired }
 			}
 			idea_token = GEO_Salva_Karumidze_hog_npo
-			on_add = {
-				ROOT = { set_country_flag = GEO_Salva_Karumidze_hog_npo_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Salva_Karumidze_hog_npo_hired }
-			}
+			on_add = { set_country_flag = GEO_Salva_Karumidze_hog_npo_hired }
+			on_remove = { clr_country_flag = GEO_Salva_Karumidze_hog_npo_hired }
 			traits = {
 				national_populist
 				hog_pragmatic_statesman
@@ -563,12 +511,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Levan_Gogoberidze_for_van_hired }
 			}
 			idea_token = GEO_Levan_Gogoberidze_for_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Levan_Gogoberidze_for_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Levan_Gogoberidze_for_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Levan_Gogoberidze_for_van_hired }
+			on_remove = { clr_country_flag = GEO_Levan_Gogoberidze_for_van_hired }
 			traits = {
 				vanguardist
 				for_ideological_crusader
@@ -589,12 +533,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Mikheil_Kakhiani_for_van_hired }
 			}
 			idea_token = GEO_Mikheil_Kakhiani_for_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Mikheil_Kakhiani_for_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Mikheil_Kakhiani_for_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Mikheil_Kakhiani_for_van_hired }
+			on_remove = { clr_country_flag = GEO_Mikheil_Kakhiani_for_van_hired }
 			traits = {
 				vanguardist
 				for_radical_among_moderates
@@ -615,12 +555,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Grigol_Uratadze_for_col_hired }
 			}
 			idea_token = GEO_Grigol_Uratadze_for_col
-			on_add = {
-				ROOT = { set_country_flag = GEO_Grigol_Uratadze_for_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Grigol_Uratadze_for_col_hired }
-			}
+			on_add = { set_country_flag = GEO_Grigol_Uratadze_for_col_hired }
+			on_remove = { clr_country_flag = GEO_Grigol_Uratadze_for_col_hired }
 			traits = {
 				collectivist
 				for_apologetic_clerk
@@ -641,12 +577,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Zurab_Avalishvili_for_sde_hired }
 			}
 			idea_token = GEO_Zurab_Avalishvili_for_sde
-			on_add = {
-				ROOT = { set_country_flag = GEO_Zurab_Avalishvili_for_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Zurab_Avalishvili_for_sde_hired }
-			}
+			on_add = { set_country_flag = GEO_Zurab_Avalishvili_for_sde_hired }
+			on_remove = { clr_country_flag = GEO_Zurab_Avalishvili_for_sde_hired }
 			traits = {
 				social_democrat
 				for_biased_intellectual
@@ -667,12 +599,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Simon_Mdivani_for_sli_hired }
 			}
 			idea_token = GEO_Simon_Mdivani_for_sli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Simon_Mdivani_for_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Simon_Mdivani_for_sli_hired }
-			}
+			on_add = { set_country_flag = GEO_Simon_Mdivani_for_sli_hired }
+			on_remove = { clr_country_flag = GEO_Simon_Mdivani_for_sli_hired }
 			traits = {
 				social_liberal
 				for_great_compromiser
@@ -693,12 +621,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Akaki_Khoshtaria_for_mli_hired }
 			}
 			idea_token = GEO_Akaki_Khoshtaria_for_mli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Akaki_Khoshtaria_for_mli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Akaki_Khoshtaria_for_mli_hired }
-			}
+			on_add = { set_country_flag = GEO_Akaki_Khoshtaria_for_mli_hired }
+			on_remove = { clr_country_flag = GEO_Akaki_Khoshtaria_for_mli_hired }
 			traits = {
 				market_liberal
 				for_great_compromiser
@@ -719,12 +643,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Haidar_Bammat_for_sco_hired }
 			}
 			idea_token = GEO_Haidar_Bammat_for_sco
-			on_add = {
-				ROOT = { set_country_flag = GEO_Haidar_Bammat_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Haidar_Bammat_for_sco_hired }
-			}
+			on_add = { set_country_flag = GEO_Haidar_Bammat_for_sco_hired }
+			on_remove = { clr_country_flag = GEO_Haidar_Bammat_for_sco_hired }
 			traits = {
 				social_conservative
 				for_biased_intellectual
@@ -745,12 +665,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Konstantine_Gamsakhurdia_for_sco_hired }
 			}
 			idea_token = GEO_Konstantine_Gamsakhurdia_for_sco
-			on_add = {
-				ROOT = { set_country_flag = GEO_Konstantine_Gamsakhurdia_for_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Konstantine_Gamsakhurdia_for_sco_hired }
-			}
+			on_add = { set_country_flag = GEO_Konstantine_Gamsakhurdia_for_sco_hired }
+			on_remove = { clr_country_flag = GEO_Konstantine_Gamsakhurdia_for_sco_hired }
 			traits = {
 				social_conservative
 				for_iron_fisted_brute
@@ -771,12 +687,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Alexander_Svanidze_eco_van_hired }
 			}
 			idea_token = GEO_Alexander_Svanidze_eco_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Alexander_Svanidze_eco_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Alexander_Svanidze_eco_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Alexander_Svanidze_eco_van_hired }
+			on_remove = { clr_country_flag = GEO_Alexander_Svanidze_eco_van_hired }
 			traits = {
 				vanguardist
 				eco_planned_economy_proponent
@@ -797,12 +709,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Ilya_Tsivtsivadze_eco_van_hired }
 			}
 			idea_token = GEO_Ilya_Tsivtsivadze_eco_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Ilya_Tsivtsivadze_eco_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Ilya_Tsivtsivadze_eco_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Ilya_Tsivtsivadze_eco_van_hired }
+			on_remove = { clr_country_flag = GEO_Ilya_Tsivtsivadze_eco_van_hired }
 			traits = {
 				vanguardist
 				eco_resource_industrialist
@@ -823,12 +731,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Beso_Lominadze_eco_col_hired }
 			}
 			idea_token = GEO_Beso_Lominadze_eco_col
-			on_add = {
-				ROOT = { set_country_flag = GEO_Beso_Lominadze_eco_col_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Beso_Lominadze_eco_col_hired }
-			}
+			on_add = { set_country_flag = GEO_Beso_Lominadze_eco_col_hired }
+			on_remove = { clr_country_flag = GEO_Beso_Lominadze_eco_col_hired }
 			traits = {
 				collectivist
 				eco_the_minister_for_everything
@@ -849,12 +753,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Giorgi_Tsintsadze_eco_lib_hired }
 			}
 			idea_token = GEO_Giorgi_Tsintsadze_eco_lib
-			on_add = {
-				ROOT = { set_country_flag = GEO_Giorgi_Tsintsadze_eco_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Giorgi_Tsintsadze_eco_lib_hired }
-			}
+			on_add = { set_country_flag = GEO_Giorgi_Tsintsadze_eco_lib_hired }
+			on_remove = { clr_country_flag = GEO_Giorgi_Tsintsadze_eco_lib_hired }
 			traits = {
 				libertarian_socialist
 				eco_industrialiser
@@ -875,12 +775,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Teimuraz_Chelidze_eco_lib_hired }
 			}
 			idea_token = GEO_Teimuraz_Chelidze_eco_lib
-			on_add = {
-				ROOT = { set_country_flag = GEO_Teimuraz_Chelidze_eco_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Teimuraz_Chelidze_eco_lib_hired }
-			}
+			on_add = { set_country_flag = GEO_Teimuraz_Chelidze_eco_lib_hired }
+			on_remove = { clr_country_flag = GEO_Teimuraz_Chelidze_eco_lib_hired }
 			traits = {
 				libertarian_socialist
 				eco_balanced_budget_economy
@@ -901,12 +797,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Victor_Tevzaia_eco_sde_hired }
 			}
 			idea_token = GEO_Victor_Tevzaia_eco_sde
-			on_add = {
-				ROOT = { set_country_flag = GEO_Victor_Tevzaia_eco_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Victor_Tevzaia_eco_sde_hired }
-			}
+			on_add = { set_country_flag = GEO_Victor_Tevzaia_eco_sde_hired }
+			on_remove = { clr_country_flag = GEO_Victor_Tevzaia_eco_sde_hired }
 			traits = {
 				social_democrat
 				eco_construction_magnate
@@ -927,12 +819,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Mammad_Yusif_Jafarov_eco_sli_hired }
 			}
 			idea_token = GEO_Mammad_Yusif_Jafarov_eco_sli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Mammad_Yusif_Jafarov_eco_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Mammad_Yusif_Jafarov_eco_sli_hired }
-			}
+			on_add = { set_country_flag = GEO_Mammad_Yusif_Jafarov_eco_sli_hired }
+			on_remove = { clr_country_flag = GEO_Mammad_Yusif_Jafarov_eco_sli_hired }
 			traits = {
 				social_liberal
 				eco_construction_magnate
@@ -953,12 +841,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Grigol_Natadze_eco_sli_hired }
 			}
 			idea_token = GEO_Grigol_Natadze_eco_sli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Grigol_Natadze_eco_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Grigol_Natadze_eco_sli_hired }
-			}
+			on_add = { set_country_flag = GEO_Grigol_Natadze_eco_sli_hired }
+			on_remove = { clr_country_flag = GEO_Grigol_Natadze_eco_sli_hired }
 			traits = {
 				social_liberal
 				eco_national_liberal
@@ -979,12 +863,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Georgi_Atarbekov_sec_van_hired }
 			}
 			idea_token = GEO_Georgi_Atarbekov_sec_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Georgi_Atarbekov_sec_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Georgi_Atarbekov_sec_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Georgi_Atarbekov_sec_van_hired }
+			on_remove = { clr_country_flag = GEO_Georgi_Atarbekov_sec_van_hired }
 			traits = {
 				vanguardist
 				sec_efficient_sociopath
@@ -1005,12 +885,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Mikhail_Givishiani_sec_van_hired }
 			}
 			idea_token = GEO_Mikhail_Givishiani_sec_van
-			on_add = {
-				ROOT = { set_country_flag = GEO_Mikhail_Givishiani_sec_van_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Mikhail_Givishiani_sec_van_hired }
-			}
+			on_add = { set_country_flag = GEO_Mikhail_Givishiani_sec_van_hired }
+			on_remove = { clr_country_flag = GEO_Mikhail_Givishiani_sec_van_hired }
 			traits = {
 				vanguardist
 				sec_back_stabber
@@ -1031,12 +907,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Vlasa_Mgeladze_sec_lib_hired }
 			}
 			idea_token = GEO_Vlasa_Mgeladze_sec_lib
-			on_add = {
-				ROOT = { set_country_flag = GEO_Vlasa_Mgeladze_sec_lib_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Vlasa_Mgeladze_sec_lib_hired }
-			}
+			on_add = { set_country_flag = GEO_Vlasa_Mgeladze_sec_lib_hired }
+			on_remove = { clr_country_flag = GEO_Vlasa_Mgeladze_sec_lib_hired }
 			traits = {
 				libertarian_socialist
 				sec_health_and_safety
@@ -1057,12 +929,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Ruben_Ter_Minasian_sec_sde_hired }
 			}
 			idea_token = GEO_Ruben_Ter_Minasian_sec_sde
-			on_add = {
-				ROOT = { set_country_flag = GEO_Ruben_Ter_Minasian_sec_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Ruben_Ter_Minasian_sec_sde_hired }
-			}
+			on_add = { set_country_flag = GEO_Ruben_Ter_Minasian_sec_sde_hired }
+			on_remove = { clr_country_flag = GEO_Ruben_Ter_Minasian_sec_sde_hired }
 			traits = {
 				social_democrat
 				sec_compassionate_gentleman
@@ -1083,12 +951,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Aslan_Beg_Abashidze_sec_sde_hired }
 			}
 			idea_token = GEO_Aslan_Beg_Abashidze_sec_sde
-			on_add = {
-				ROOT = { set_country_flag = GEO_Aslan_Beg_Abashidze_sec_sde_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Aslan_Beg_Abashidze_sec_sde_hired }
-			}
+			on_add = { set_country_flag = GEO_Aslan_Beg_Abashidze_sec_sde_hired }
+			on_remove = { clr_country_flag = GEO_Aslan_Beg_Abashidze_sec_sde_hired }
 			traits = {
 				social_democrat
 				sec_efficient_sociopath
@@ -1109,12 +973,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Ioseb_Gedevanishvili_sec_sli_hired }
 			}
 			idea_token = GEO_Ioseb_Gedevanishvili_sec_sli
-			on_add = {
-				ROOT = { set_country_flag = GEO_Ioseb_Gedevanishvili_sec_sli_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Ioseb_Gedevanishvili_sec_sli_hired }
-			}
+			on_add = { set_country_flag = GEO_Ioseb_Gedevanishvili_sec_sli_hired }
+			on_remove = { clr_country_flag = GEO_Ioseb_Gedevanishvili_sec_sli_hired }
 			traits = {
 				social_liberal
 				sec_silent_lawyer
@@ -1135,12 +995,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Leo_Kereselidze_sec_sco_hired }
 			}
 			idea_token = GEO_Leo_Kereselidze_sec_sco
-			on_add = {
-				ROOT = { set_country_flag = GEO_Leo_Kereselidze_sec_sco_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Leo_Kereselidze_sec_sco_hired }
-			}
+			on_add = { set_country_flag = GEO_Leo_Kereselidze_sec_sco_hired }
+			on_remove = { clr_country_flag = GEO_Leo_Kereselidze_sec_sco_hired }
 			traits = {
 				social_conservative
 				sec_efficient_sociopath
@@ -1161,12 +1017,8 @@ characters = {
 				hidden_trigger = { has_country_flag = GEO_Shalva_Maglakelidze_sec_ade_hired }
 			}
 			idea_token = GEO_Shalva_Maglakelidze_sec_ade
-			on_add = {
-				ROOT = { set_country_flag = GEO_Shalva_Maglakelidze_sec_ade_hired }
-			}
-			on_remove = {
-				ROOT = { clr_country_flag = GEO_Shalva_Maglakelidze_sec_ade_hired }
-			}
+			on_add = { set_country_flag = GEO_Shalva_Maglakelidze_sec_ade_hired }
+			on_remove = { clr_country_flag = GEO_Shalva_Maglakelidze_sec_ade_hired }
 			traits = {
 				authoritarian_democrat
 				sec_prince_of_terror
@@ -1182,7 +1034,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = GEO_Simon_Arshaki_Ter_Petrosian_cos
 			traits = {
 				cos_school_of_manoeuvre
@@ -1198,7 +1050,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = GEO_Andria_Chiabrishvili_cos
 			traits = {
 				cos_school_of_fire_support
@@ -1214,7 +1066,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = high_command
+			slot = chief_of_staff
 			idea_token = GEO_Artem_Jijikhia_cos
 			traits = {
 				cos_school_of_psychology
@@ -1230,7 +1082,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = GEO_Ivane_Kazbegi_carm
 			traits = {
 				carm_elastic_defence_doctrine
@@ -1246,7 +1098,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = GEO_Aleksandre_Andronikashvili_carm
 			traits = {
 				carm_static_defence_doctrine
@@ -1262,7 +1114,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = GEO_Konstantin_Leselidze_carm
 			traits = {
 				carm_armoured_spearhead_doctrine
@@ -1278,7 +1130,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = GEO_Aleks_Inauri_carm
 			traits = {
 				carm_guns_and_butter_doctrine
@@ -1294,7 +1146,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = chief_of_army
 			idea_token = GEO_Varden_Tsuluksidze_carm
 			traits = {
 				carm_doctrine_of_autonomy
@@ -1310,7 +1162,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = GEO_Vikto_Lomidze_cnav
 			traits = {
 				cnav_open_seas_doctrine
@@ -1326,7 +1178,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = navy_chief
+			slot = chief_of_navy
 			idea_token = GEO_Giorgi_Tumanishvili_cnav
 			traits = {
 				cnav_power_projection_doctrine
@@ -1342,7 +1194,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = GEO_Vakhtang_Makashvili_cair
 			traits = {
 				cair_air_superiority_doctrine
@@ -1358,7 +1210,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = GEO_Evstafii_Tatanashvili_cair
 			traits = {
 				cair_battlefield_support_doctrine
@@ -1374,7 +1226,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = GEO_Chichiko_Bendeliani_cair
 			traits = {
 				cair_carpet_bombing_doctrine
@@ -1390,7 +1242,7 @@ characters = {
 		}
 		advisor = {
 			cost = 150
-			slot = air_chief
+			slot = chief_of_air_force
 			idea_token = GEO_Nikolo_Abramishvili_cair
 			traits = {
 				cair_vertical_envelopment_doctrine

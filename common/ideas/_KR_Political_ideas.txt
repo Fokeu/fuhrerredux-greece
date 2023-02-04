@@ -3,6 +3,7 @@ ideas = {
 	hidden_ideas = {
 
 		party_pop_0_00 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_00" }
@@ -10,6 +11,7 @@ ideas = {
 		}
 
 		party_pop_0_10 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_10" }
@@ -17,6 +19,7 @@ ideas = {
 		}
 
 		party_pop_0_20 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_20" }
@@ -24,6 +27,7 @@ ideas = {
 		}
 
 		party_pop_0_30 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_30" }
@@ -31,6 +35,7 @@ ideas = {
 		}
 
 		party_pop_0_40 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_40" }
@@ -38,6 +43,7 @@ ideas = {
 		}
 
 		party_pop_0_50 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_50" }
@@ -45,6 +51,7 @@ ideas = {
 		}
 
 		party_pop_0_60 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_60" }
@@ -52,6 +59,7 @@ ideas = {
 		}
 
 		party_pop_0_70 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_70" }
@@ -59,6 +67,7 @@ ideas = {
 		}
 
 		party_pop_0_80 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_80" }
@@ -66,6 +75,7 @@ ideas = {
 		}
 
 		party_pop_0_90 = {
+			allowed_to_remove = { always = no }
 			available = { always = no }
 			cancel_if_invalid = no
 			on_add = { log = "[GetDateText] [Root.GetName]: add idea party_pop_0_90" }

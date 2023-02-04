@@ -1,7 +1,7 @@
 ## Norway Shared Focuses ##
 	shared_focus = {
 		id = NOR_new_army_plan
-		icon = GFX_goal_NOR_army
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5
 		x = 21
 		y = 0
@@ -31,7 +31,7 @@
 	}
 	shared_focus = {
 		id = NOR_norwegian_navy
-		icon = GFX_goal_NOR_navy
+		icon = GFX_goal_generic_build_navy
 		cost = 5
 		x = 28
 		y = 0
@@ -66,7 +66,7 @@
 	}
 	shared_focus = {
 		id = NOR_update_army_air_force
-		icon = GFX_goal_NOR_airforce
+		icon = GFX_goal_NOR_army_airforce
 		cost = 5
 		x = 32
 		y = 0
@@ -737,7 +737,7 @@
 	}
 	shared_focus = {
 		id = NOR_establish_labour_welfare_administration
-		icon = GFX_goal_generic_enforce_labor_regulation
+		icon = GFX_goal_continuous_increase_nu
 		cost = 8
 		prerequisite = {
 			focus = NOR_new_farmer_quotas
@@ -1468,7 +1468,7 @@
 	}
 	shared_focus = {
 		id = NOR_experienced_general_staff
-		icon = GFX_goal_generic_army_high_command
+		icon = GFX_goal_generic_position_armies
 		cost = 10
 		prerequisite = {
 			focus = NOR_new_production_quotas

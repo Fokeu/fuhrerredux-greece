@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Brigada de Infanteria"
-	division_names_group = SPAN_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,8 +9,7 @@
 	}
 }
 division_template = {
-	name = "Brigada de Caballería"
-	division_names_group = SPAN_CAV_01 
+	name = "Brigada de Caballería"  
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

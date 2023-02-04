@@ -3018,7 +3018,7 @@
 
 	shared_focus = {
 		id = ITA_support_hungary
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_hungary_handshake
 		x = 33
 		y = 11
 		cost = 5	
@@ -4481,9 +4481,6 @@
 						is_ai = yes
 					}
 				}
-				448 = {
-					add_claim_by = ITA
-				}
 				ITA = {
 					annex_country = {
 						target = LBA
@@ -4816,10 +4813,7 @@
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_train_askaris"
-			custom_effect_tooltip = ITA_Askari_tt
-			hidden_effect = {
-				load_oob = ITA_Askari
-			}
+			load_oob = ITA_Askari
 		}
 	}
 	
@@ -6278,7 +6272,7 @@
 	
 	shared_focus = {
 		id = ITA_infantry_production
-		icon = GFX_goal_generic_military_equipment
+		icon = GFX_goal_LEC_police3
 		x = 12
 		y = 17
 		cost = 5
@@ -6311,7 +6305,7 @@
 	
 	shared_focus = {
 		id = ITA_infantry_quality
-		icon = GFX_goal_generic_design_equipment_standards
+		icon = GFX_goal_national_arsenal
 		x = 14
 		y = 17
 		cost = 5
@@ -7018,10 +7012,10 @@
 			log = "[GetDateText]: [Root.GetName]: Focus ITA_finalize_navy"
 			navy_experience = 40
 			add_doctrine_cost_reduction = {
-				name = ITA_finalize_navy
 				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
 		}
 	}
+}

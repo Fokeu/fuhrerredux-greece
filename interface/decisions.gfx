@@ -495,7 +495,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_picture_soviet_national_academy_of_sciences.dds"
 	}
 
-
 	### decision icons
 
 	spriteType = {

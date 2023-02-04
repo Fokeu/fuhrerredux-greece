@@ -1,0 +1,48 @@
+defined_text = {
+	name = GETgolden_dawn_influence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { golden_dawn_influence < 21 }
+				check_variable = { golden_dawn_influence > -50 }
+			}
+		}
+		localization_key = golden_dawn_influence_20
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { golden_dawn_influence < 41 }
+				check_variable = { golden_dawn_influence > 20 }
+			}
+		}
+		localization_key = golden_dawn_influence_40
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { golden_dawn_influence < 61 }
+				check_variable = { golden_dawn_influence > 40 }
+			}
+		}
+		localization_key = golden_dawn_influence_60
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { golden_dawn_influence < 81 }
+				check_variable = { golden_dawn_influence > 60 }
+			}
+		}
+		localization_key = golden_dawn_influence_80
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { golden_dawn_influence < 1000 }
+				check_variable = { golden_dawn_influence > 80 }
+			}
+		}
+		localization_key = golden_dawn_influence_90
+	}
+}

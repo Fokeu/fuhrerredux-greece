@@ -7,3 +7,7 @@
 	}
 	priority = 0
 }
+
+
+instant_effect = {
+}
